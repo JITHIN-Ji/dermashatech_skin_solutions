@@ -14,13 +14,6 @@ import ProductDetails from './pages/productdetails';
 import Contact from './pages/Contact';
 import Reviews from './pages/reviews';
 function App() {
-  const pageTransition = {
-    initial: { opacity: 0, y: 20 },
-    animate: { opacity: 1, y: 0 },
-    exit: { opacity: 0, y: -20 },
-    transition: { duration: 0.3 },
-  };
-
   return (
     <Router>
       <div className="min-h-screen bg-white dark:bg-dark-900 text-gray-900 dark:text-white transition-colors duration-200">

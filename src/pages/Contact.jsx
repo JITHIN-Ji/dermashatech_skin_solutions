@@ -4,7 +4,6 @@ import { MapPin, Phone, Mail, Clock, MessageCircle } from 'lucide-react';
 
 const Contact = () => {
   const phoneNumber1 = '918451088204'; // WhatsApp format
-  const phoneNumber2 = '918303620636'; // WhatsApp format
 
   const handleWhatsAppClick = (number) => {
     window.open(`https://wa.me/${number}`, '_blank');

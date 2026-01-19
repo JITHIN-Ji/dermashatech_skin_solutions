@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Award, Shield, Headphones, MapPin, TrendingUp, Users, Zap, Check, Heart, Target, Lightbulb } from 'lucide-react';
+import { Award, Shield, Headphones, MapPin, TrendingUp, Users, Check, Heart, Target, Lightbulb } from 'lucide-react';
 
 const About = () => {
   // Scroll to top when component mounts
