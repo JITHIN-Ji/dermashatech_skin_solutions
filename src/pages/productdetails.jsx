@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
-
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Check, Phone, Mail } from 'lucide-react';
 
@@ -10,6 +9,10 @@ import { productDetailsData } from '../data/productDetails';
 const ProductDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
+  
+  // Get the category from location state (if coming from category page)
+  const categoryId = location.state?.categoryId;
   
   // Find product by ID from URL parameter
   const product = productDetailsData.find(p => p.id === parseInt(id));
@@ -18,39 +21,35 @@ const ProductDetails = () => {
     window.scrollTo(0, 0);
   }, [id]);
 
-  // If product not found, redirect to portfolio
-  if (!product) {
-    navigate('/portfolio');
-    return null;
-  }
-
   
+  const handleBackClick = () => {
+    if (categoryId) {
+      // If we have a categoryId, go back to that category's products page
+      navigate(`/category/${categoryId}`);
+    } else {
+      // Otherwise, go back to machines (categories) page
+      navigate('/machines');
+    }
+  };
 
   return (
     <div className="min-h-screen bg-white dark:bg-dark-900">
-      {/* Back Button */}
-      <div className="bg-white dark:bg-dark-800 border-b dark:border-dark-700 sticky top-16 z-10 mt-6">
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <motion.button
+      {/* Hero Section with Product Image */}
+      <section className="pt-24 pb-16 bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 dark:from-dark-800 dark:via-dark-700 dark:to-dark-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Back Button */}
+          <motion.button
             whileHover={{ x: -3 }}
-            onClick={() => navigate('/products')}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-200 dark:border-dark-700 
-                      bg-white dark:bg-dark-800 text-gray-700 dark:text-gray-300 
-                      hover:border-purple-400 hover:text-purple-600 
+            onClick={handleBackClick} 
+            className="inline-flex items-center gap-2 px-0 py-2 mb-8
+                      text-gray-700 dark:text-gray-300 
+                      hover:text-black dark:hover:text-white
                       transition-all text-sm font-medium"
           >
-  <ArrowLeft className="w-4 h-4" />
-  <span>Back to Products</span>
-</motion.button>
+            <ArrowLeft className="w-5 h-5" />
+            <span>{categoryId ? 'Back to Products' : 'Back to Categories'}</span>
+          </motion.button>
 
-      </div>
-    </div>
-
-
-      {/* Hero Section with Product Image */}
-      <section className="py-16 bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 dark:from-dark-800 dark:via-dark-700 dark:to-dark-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -231,7 +230,6 @@ const ProductDetails = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
-                  
                 </motion.div>
               ))}
             </div>

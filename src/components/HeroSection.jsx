@@ -68,14 +68,14 @@ const HeroSection = () => {
               </motion.div>
 
               {/* Tagline */}
-              <motion.h2
+              {/* <motion.h2
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-purple-200 font-light mb-6 sm:mb-8"
               >
                 Skin Aesthetic Solutions
-              </motion.h2>
+              </motion.h2> */}
 
               {/* Description */}
               <motion.p

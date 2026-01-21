@@ -9,10 +9,12 @@ import Footer from './components/Footer';
 // Pages
 import Home from './pages/Home';
 import About from './pages/About';
-import Products from './pages/products';
+import Machines from './pages/Machines'; 
+import CategoryProducts from './pages/CategoryProducts'; 
 import ProductDetails from './pages/productdetails';
 import Contact from './pages/Contact';
 import Reviews from './pages/reviews';
+
 function App() {
   return (
     <Router>
@@ -42,14 +44,27 @@ function App() {
               </motion.div>
             } />
             
-            <Route path="/products" element={
+            {/* Machines Route - Shows all categories */}
+            <Route path="/machines" element={
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.3 }}
               >
-                <Products />
+                <Machines />
+              </motion.div>
+            } />
+
+            {/* Category Products Route - Shows products in a category */}
+            <Route path="/category/:categoryId" element={
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.3 }}
+              >
+                <CategoryProducts />
               </motion.div>
             } />
 

@@ -3,6 +3,7 @@ export const products = [
     id: 1,
     name: "ULTRA Q",
     title: "Nd:Yag Q switch laser machine",
+    imageHeading: "PICO",
     tagline: "Professional Laser Treatment Technology",
     mainImage: "/images/1.png",
     
@@ -45,6 +46,7 @@ export const products = [
     id: 3,
     name: "DIODE HAIR REMOVAL",
     title: "Advanced Diode + Picosecond System",
+    imageHeading: "DIODE",
     tagline: "Permanent Hair Removal Solution",
     mainImage: "/images/3.png",
     resultImages: ["/images/10.png", "/images/11.png"],

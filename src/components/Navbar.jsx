@@ -20,8 +20,7 @@ const Navbar = () => {
   const navItems = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
-    
-    { name: 'Products', path: '/products' },
+    { name: 'Machines', path: '/machines' }, // Changed from Products to Machines
     { name: 'Reviews', path: '/reviews' },
     { name: 'Contact', path: '/contact' }
   ];
@@ -92,13 +91,6 @@ const Navbar = () => {
 
           {/* Contact Info - Desktop */}
           <div className="hidden lg:flex items-center space-x-4">
-            {/* <a
-              href="tel:+918451088204"
-              className="flex items-center space-x-2 px-4 py-2 text-sm text-gray-700 hover:text-gray-900 transition-colors"
-            >
-              <Phone className="w-4 h-4" />
-              <span>+91 84510 88204</span>
-            </a> */}
             <a
               href="mailto:info@dermashatech.com"
               className="px-6 py-2 bg-gray-900 text-white text-sm font-medium rounded-lg hover:bg-gray-800 transition-all duration-300"
