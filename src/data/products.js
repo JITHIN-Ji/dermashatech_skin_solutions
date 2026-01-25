@@ -505,7 +505,93 @@ export const products = [
     "Spot Size": "12x20 mm",
     "Pulse Width": "10–300 ms"
   }
+},
+
+{
+  "id": 22,
+  "name": "NEW DOUBLO HIFU",
+  "title": "Macro & Micro HIFU Ultrasound Lifting System",
+  "tagline": "Non-Invasive Skin Lifting, Tightening & Body Contouring",
+  "mainImage": "/images/46.png",
+  "resultImages": [],
+  "keyPoints": [
+    "Macro & Micro HIFU technology for face and body lifting",
+    "Multiple cartridges: 1.5mm, 2.0mm, 3.0mm, 4.5mm, 6.0mm, 9.0mm",
+    "MFU, SD, and RF treatment modes",
+    "RF frequency 2MHz with level 1–10 control",
+    "Precise depth targeting for collagen stimulation",
+    "Non-invasive treatment with minimal downtime"
+  ],
+  "specifications": {
+    "Model": "New Doublo HIFU",
+    "FL Cartridge": "1.5mm (7MHz, 0.1J–0.5J), 2.0mm (7MHz, 0.1J–1.0J), 3.0mm (7MHz, 0.1J–1.0J), 4.5mm (4MHz, 0.1J–1.5J), 6.0mm (2MHz, 0.1J–3.0J), 9.0mm (2MHz, 0.1J–3.0J)",
+    "SD Cartridge": "1.5mm (7MHz, 0.1J–0.5J), 3.0mm (7MHz, 0.1J–2.0J), 4.5mm (4MHz, 0.1J–1.5J), 9.0mm (2MHz, 0.1J–3.0J)",
+    "RF Frequency": "2MHz",
+    "RF Level": "Level 1–10",
+    "Spacing": "1.0–5.0mm",
+    "Scope": "5.0–25mm (1.0mm step)",
+    "Screen": "12.1in Wide LCD",
+    "Handpieces": "Quattro handpieces",
+    "System": "TIS (Treatment Information System), RMS (Remote Maintenance System)",
+    "Operation Mode": "Auto mode and Manual mode",
+    "Size": "700(W) × 605(L) × 1315(H) mm",
+    "Weight": "43.5 kg"
+  }
+},
+{
+  "id": 23,
+  "name": "8 IN 1 + 9 HYDRA FACIAL MACHINE",
+  "title": "Hydra Facial Skincare System",
+  "tagline": "Deep Cleansing, Skin Tightening & Rejuvenation",
+  "mainImage": "/images/47.png",
+  "resultImages": [],
+  "keyPoints": [
+    "8+9 multifunctional hydra facial system",
+    "Deep cleansing and blackhead removal",
+    "Skin tightening, firming, and lifting",
+    "Hydro dermabrasion and photon light technology",
+    "Non-invasive and painless treatment",
+    "Suitable for all skin types"
+  ],
+  "specifications": {
+    "Vacuum": ">100Kpa",
+    "Technology": "Hydro dermabrasion, photon light",
+    "Max Output": "250VA",
+    "Treatment Handle": "8 (standard) + 9 (optional)",
+    "Screen": "10.4in Touch LCD",
+    "Voltage": "100–240VAC, 50Hz/60Hz"
+  }
+},
+
+{
+  "id": 24,
+  "name": "EMSLIM NEO RF",
+  "title": "Muscle Sculpting & Fat Reduction System",
+  "tagline": "HI-EMT Muscle Building with RF Tightening",
+  "mainImage": "/images/48.png",
+  "resultImages": [],
+  "keyPoints": [
+    "HI-EMT electromagnetic muscle stimulation",
+    "RF technology for fat reduction and skin tightening",
+    "Equivalent to 20,000 sit-ups in 30 minutes",
+    "Non-invasive body sculpting treatment",
+    "Adjustable EMS and RF intensity levels",
+    "Suitable for multiple body areas"
+  ],
+  "specifications": {
+    "Model": "B610B+RF",
+    "Output Power": "2800W",
+    "EMS Frequency": "5–100Hz",
+    "RF Frequency": "27.12MHz",
+    "Cooling Method": "Air Cooled",
+    "Screen Size": "18 inches",
+    "Gross Weight": "101 kg"
+  }
 }
+
+
+
+
 
 
 

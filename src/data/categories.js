@@ -28,7 +28,7 @@ export const categories = [
     name: 'Hydrafacial',
     description: 'Deep cleansing and hydration systems',
     image: '/images/6.png',
-    productIds: [7, 8, 18], // OXYGEN JET PEEL, ALLICE BUBBLE, 9-IN-1
+    productIds: [7, 8, 18, 23], // OXYGEN JET PEEL, ALLICE BUBBLE, 9-IN-1
     gradient: 'from-sky-100 via-blue-50 to-sky-50'
   },
   {
@@ -52,7 +52,7 @@ export const categories = [
     name: 'Energy Based Devices',
     description: 'HIFU and RF technologies for lifting and tightening',
     image: '/images/4.png',
-    productIds: [4], // MEDI LIFT HIFU, EMSLIM NEO RF, EM SCULPT
+    productIds: [4, 22], // MEDI LIFT HIFU, Macro & Micro HIFU
     gradient: 'from-rose-100 via-pink-50 to-rose-50'
   },
   {
@@ -84,7 +84,7 @@ export const categories = [
     name: 'Body Toning',
     description: 'EMS technology for muscle building and fat reduction',
     image: '/images/40.png',
-    productIds: [15, 16], // EMSLIM NEO RF, EM SCULPT
+    productIds: [15, 16,24], // EMSLIM NEO RF, EM SCULPT
     gradient: 'from-orange-100 via-amber-50 to-orange-50'
   }
 ];

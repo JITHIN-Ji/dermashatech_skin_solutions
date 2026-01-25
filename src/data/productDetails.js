@@ -1131,7 +1131,164 @@ export const productDetailsData = [
     "Professional-grade display and interface for easy operation",
     "Multiple treatment options in a single device"
   ]
+},
+
+{
+  "id": 22,
+  "name": "NEW DOUBLO HIFU",
+  "title": "Macro & Micro HIFU Ultrasound Lifting System",
+  "tagline": "Non-Invasive Skin Lifting, Tightening & Body Contouring",
+  "description": "New Doublo HIFU is an advanced Macro & Micro focused ultrasound system designed for non-invasive face lifting, skin tightening, wrinkle reduction, and body contouring. Using MFU, SD, and RF technologies with multiple cartridge depths, it delivers precise energy to different skin layers for collagen stimulation, fascia tightening, and fat compaction with minimal downtime.",
+  "mainImage": "/images/46.png",
+  "resultImages": ["/images/48.1.png", "/images/48.2.png", "/images/48.3.png"],
+  "hasResults": true,
+  "resultsHeading": "Before & After",
+  
+  "keyPoints": [
+    "Macro & Micro HIFU technology for face and body treatments",
+    "Multiple cartridges for different skin depths (1.5mm–9.0mm)",
+    "MFU, SD, and RF treatment modes",
+    "Non-invasive skin lifting and tightening",
+    "Stimulates collagen and tightens fascia",
+    "Minimal downtime and safe clinical operation"
+  ],
+  "specifications": {
+    "Model": "New Doublo HIFU",
+    "FL Cartridge Parameters": "1.5mm (7MHz, 0.1J–0.5J), 2.0mm (7MHz, 0.1J–1.0J), 3.0mm (7MHz, 0.1J–1.0J), 4.5mm (4MHz, 0.1J–1.5J), 6.0mm (2MHz, 0.1J–3.0J), 9.0mm (2MHz, 0.1J–3.0J)",
+    "SD Cartridge Parameters": "1.5mm (7MHz, 0.1J–0.5J), 3.0mm (7MHz, 0.1J–2.0J), 4.5mm (4MHz, 0.1J–1.5J), 9.0mm (2MHz, 0.1J–3.0J)",
+    "RF Frequency": "2MHz",
+    "RF Level": "Level 1–10",
+    "Spacing": "1.0–5.0mm",
+    "Scope": "5.0–25mm (1.0mm step)",
+    "Handpieces": "Quattro handpieces",
+    "Display": "12.1in Wide LCD",
+    "System Features": "TIS (Treatment Information System), RMS (Remote Maintenance System)",
+    "Operation Mode": "Auto mode and Manual mode",
+    "Handpiece Sensor": "Automatic handpiece sensor",
+    "User Interface": "Easy & intuitive GUI",
+    "Size": "700(W) × 605(L) × 1315(H) mm",
+    "Weight": "43.5 kg"
+  },
+  "applications": [
+    "Face lifting and skin tightening",
+    "Wrinkle reduction and anti-aging",
+    "Jawline and cheek lifting",
+    "Double chin and fat compaction",
+    "Body contouring",
+    "Skin firming and rejuvenation"
+  ],
+  "features": [
+    "Macro & Micro HIFU technology for multi-layer treatment",
+    "Multiple cartridge depths for precise targeting",
+    "MFU, SD, and RF combined system",
+    "Collagen stimulation and fascia tightening",
+    "Non-invasive treatment with minimal downtime",
+    "Advanced smart system with treatment tracking",
+    "Stable performance with professional clinical design",
+    "Easy-to-use wide LCD interface",
+    "Designed for face and body treatments",
+    "Professional medical-aesthetic grade device"
+  ]
+},
+{
+  "id": 23,
+  "name": "8 IN 1 + 9 HYDRA FACIAL MACHINE",
+  "title": "Advanced Hydra Facial Machine",
+  "tagline": "One Machine, Multiple Skin Care Functions",
+  "description": "8 in 1 + 9 Hydra Facial Machine is a multifunctional skincare system combining hydro dermabrasion, photon light, oxygen therapy, microcurrent, RF, ultrasonic, and plasma technologies. Designed for deep cleansing, skin rejuvenation, pore tightening, lifting, and firming with non-invasive and painless treatment suitable for all skin types.",
+  "mainImage": "/images/47.png",
+
+  "resultsHeading": "Treatment Results",
+  "keyPoints": [
+    "8+9 multifunctional hydra facial skincare system",
+    "Deep cleansing and blackhead removal",
+    "Skin tightening, lifting, and firming",
+    "Non-invasive, painless, and bloodless treatment",
+    "4 solution bottles (A, B, C, D) for continuous operation",
+    "Suitable for all skin types"
+  ],
+  "specifications": {
+    "Vacuum": ">100Kpa",
+    "Technology": "Hydro dermabrasion, photon light",
+    "Max Output": "250VA",
+    "Treatment Handle": "8 (standard) + 9 (optional)",
+    "Screen": "10.4in Touch LCD",
+    "Voltage": "100–240VAC, 50Hz/60Hz"
+  },
+  "applications": [
+    "Deep skin cleansing",
+    "Blackhead and acne removal",
+    "Skin rejuvenation",
+    "Shrink pores",
+    "Skin tightening and firming",
+    "Moisturizing and skin care"
+  ],
+  "features": [
+    "Multiple skincare functions in one machine",
+    "Hydro dermabrasion and oxygen revitalizing bubble",
+    "Ultrasonic, RF, microcurrent, and plasma treatments",
+    "Diamond microdermabrasion and electric microneedle support",
+    "Color light masks for skin improvement",
+    "User-friendly interface with large touch screen",
+    "Non-invasive and painless therapy",
+    "Professional aesthetic clinic design"
+  ]
+},
+{
+  "id": 24,
+  "name": "EMSLIM NEO RF",
+  "title": "HI-EMT Muscle Building & RF Fat Reduction System",
+  "tagline": "Muscle Sculpting, Fat Reduction & Body Toning",
+  "description": "EMSLIM NEO RF (B610B+RF) is a non-invasive body sculpting system combining HI-EMT (High Intensity Electromagnetic Technology) and RF heating. It induces extreme muscle contractions to build muscle density and volume while accelerating fat decomposition and tightening skin through controlled RF heating.",
+  "mainImage": "/images/48.png",
+
+  "resultsHeading": "Treatment Results",
+  "keyPoints": [
+    "HI-EMT technology for intense muscle contraction",
+    "RF heating for fat reduction and skin tightening",
+    "30-minute session equals 20,000 sit-ups or squats",
+    "Builds muscle and reduces fat simultaneously",
+    "Non-invasive, painless, and bloodless treatment",
+    "Suitable for abdomen, buttocks, thighs, arms, calves, and flanks"
+  ],
+  "specifications": {
+    "Model": "B610B+RF",
+    "Input Power": "110–220V, 50Hz–60Hz",
+    "Output Power": "2800W",
+    "EMS Frequency": "5–100Hz",
+    "EMS Intensity": "0–100",
+    "RF Frequency": "27.12MHz",
+    "RF Intensity": "0–100",
+    "Cooling Method": "Air Cooled",
+    "Screen Size": "18 inches",
+    "Packing Size": "57 × 75 × 122 cm",
+    "Gross Weight": "101 kg"
+  },
+  "applications": [
+    "Muscle building and strengthening",
+    "Abdomen toning and fat reduction",
+    "Buttock lifting and shaping",
+    "Thigh and arm muscle sculpting",
+    "Body contouring",
+    "Skin tightening with RF heating"
+  ],
+  "features": [
+    "HI-EMT focused electromagnetic muscle stimulation",
+    "RF-assisted fat reduction and skin firming",
+    "Dual treatment for muscle growth and fat apoptosis",
+    "Independent A/B/C/D handle operation",
+    "Adjustable EMS and RF intensity levels",
+    "Large 18-inch touch screen interface",
+    "Air-cooled system for stable performance",
+    "Non-invasive alternative to surgical body sculpting",
+    "Suitable for men and women",
+    "Professional body contouring device"
+  ]
 }
+
+
+
+
 
 
 
