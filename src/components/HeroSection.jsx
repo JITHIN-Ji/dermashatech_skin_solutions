@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 // Demo images - replace with your actual images
 const images = [
@@ -28,7 +29,8 @@ const HeroSection = () => {
 
   return (
     <>
-      <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+      {/* Offset for fixed navbar (h-20 = 5rem) so hero never sits behind it */}
+      <section className="relative min-h-screen pt-20 overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
         {/* Background Image Slider with Overlay */}
         <div className="absolute inset-0">
           <AnimatePresence initial={false}>
@@ -52,7 +54,7 @@ const HeroSection = () => {
         </div>
 
         {/* Content Container - FIXED MOBILE ALIGNMENT */}
-        <div className="relative z-10 h-screen flex items-center">
+        <div className="relative z-10 min-h-[calc(100vh-5rem)] flex items-center">
           <div className="container mx-auto px-4 sm:px-6 lg:px-16 w-full">
             <div className="max-w-3xl">
               {/* Main Heading */}
@@ -115,17 +117,23 @@ const HeroSection = () => {
               transition={{ duration: 0.8, delay: 1 }}
               className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4"
             >
-              <a href="/products">
-                <button className="px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 text-sm sm:text-base">
+              <Link to="/products">
+                <button
+                  type="button"
+                  className="px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 text-sm sm:text-base"
+                >
                   Explore Products
                 </button>
-              </a>
+              </Link>
 
-              <a href="/contact">
-                <button className="px-6 sm:px-8 py-3 sm:py-4 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white font-semibold rounded-lg hover:bg-white/20 transition-all duration-300 text-sm sm:text-base">
+              <Link to="/contact">
+                <button
+                  type="button"
+                  className="px-6 sm:px-8 py-3 sm:py-4 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white font-semibold rounded-lg hover:bg-white/20 transition-all duration-300 text-sm sm:text-base"
+                >
                   Contact Us
                 </button>
-              </a>
+              </Link>
             </motion.div>
 
             </div>

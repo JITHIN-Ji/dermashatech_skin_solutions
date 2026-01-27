@@ -94,7 +94,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="pt-16">
+    <div className="pt-0">
       {/* Hero Section */}
       <HeroSection />
 
