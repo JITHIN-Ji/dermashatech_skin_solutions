@@ -14,6 +14,8 @@ import CategoryProducts from './pages/CategoryProducts';
 import ProductDetails from './pages/productdetails';
 import Contact from './pages/Contact';
 import Reviews from './pages/reviews';
+import SkinProducts from './pages/skinproducts';
+import SkinProductDetails from './pages/SkinProductDetails';
 
 function App() {
   return (
@@ -77,6 +79,30 @@ function App() {
                 transition={{ duration: 0.3 }}
               >
                 <ProductDetails />
+              </motion.div>
+            } />
+
+            {/* Skin Products Routes */}
+            <Route path="/skinproducts" element={
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.3 }}
+              >
+                <SkinProducts />
+              </motion.div>
+            } />
+
+            {/* Skin Product Details Route */}
+            <Route path="/skinproduct/:id" element={
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.3 }}
+              >
+                <SkinProductDetails />
               </motion.div>
             } />
 
