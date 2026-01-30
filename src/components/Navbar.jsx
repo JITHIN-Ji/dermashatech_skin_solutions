@@ -216,10 +216,10 @@ const Navbar = () => {
                 ))}
 
                 {/* Products Dropdown - Mobile */}
-                <div>
+                <div className="w-full">
                   <button
                     onClick={() => setProductsDropdownOpen(!productsDropdownOpen)}
-                    className={`w-full text-left px-4 py-3 text-base font-medium transition-colors duration-200 flex items-center justify-between ${
+                    className={`w-full text-left px-4 py-3 text-base font-medium transition-colors duration-200 flex items-center gap-2 ${
                       isProductsActive()
                         ? 'text-gray-900 bg-gray-100 font-semibold'
                         : 'text-gray-700 hover:text-gray-900 hover:bg-gray-50'
@@ -227,7 +227,7 @@ const Navbar = () => {
                   >
                     <span>Products</span>
                     <ChevronDown 
-                      className={`w-5 h-5 transition-transform duration-200 ${
+                      className={`ml-auto w-5 h-5 transition-transform duration-200 ${
                         productsDropdownOpen ? 'rotate-180' : ''
                       }`} 
                     />

@@ -27,8 +27,8 @@ const HairProducts = () => {
 
   return (
     <div className="pt-16 min-h-screen bg-white">
-      {/* Hero Section - Minimal */}
-      <section className="relative py-8 bg-gradient-to-br from-[#F0F9FF] via-[#E0F2FE] to-[#BAE6FD] overflow-hidden">
+      {/* Hero Section - Minimal (smaller on mobile, same on desktop) */}
+      <section className="relative py-6 md:py-8 bg-gradient-to-br from-[#F0F9FF] via-[#E0F2FE] to-[#BAE6FD] overflow-hidden">
         {/* Subtle Background Pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-0 right-0 w-96 h-96 bg-blue-200 rounded-full blur-3xl"></div>
@@ -36,7 +36,7 @@ const HairProducts = () => {
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-6 items-center">
+          <div className="grid lg:grid-cols-2 gap-4 md:gap-6 items-center">
             {/* Left Side - Text Content */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -44,14 +44,14 @@ const HairProducts = () => {
               transition={{ duration: 0.8 }}
               className="text-center lg:text-left z-10"
             >
-              <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3 leading-tight">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2 sm:mb-3 leading-tight">
                 Hair Care
                 <span className="block bg-gradient-to-r from-[#0EA5E9] via-[#06B6D4] to-[#3B82F6] bg-clip-text text-transparent">
                   Products
                 </span>
               </h1>
               
-              <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
                 Discover our premium collection of hair care essentials designed for healthy, strong, and beautiful hair
               </p>
             </motion.div>
@@ -61,9 +61,9 @@ const HairProducts = () => {
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative"
+              className="relative mt-4 md:mt-0"
             >
-              <div className="grid grid-cols-3 gap-3 h-48">
+              <div className="grid grid-cols-3 gap-2 md:gap-3 h-36 sm:h-40 md:h-48">
                 {/* Placeholder for hair product images */}
               </div>
 
