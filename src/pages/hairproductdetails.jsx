@@ -3,10 +3,10 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, Check, Sparkles, Droplets, Package } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-// Import skin products data
-import { getProductById } from '../data/skinproducts';
+// Import hair products data
+import { getProductById } from '../data/hairproducts';
 
-const SkinProductDetails = () => {
+const HairProductDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const product = getProductById(id);
@@ -16,71 +16,14 @@ const SkinProductDetails = () => {
     window.scrollTo(0, 0);
   }, [id]);
 
-  // Define 3 light cream color themes
-  const colorThemes = [
-    {
-      // Peach Cream
-      mainBg: 'from-[#FFF9F0] to-[#FFF5EB]',
-      heroBg: 'from-[#FFF5EB] to-[#FFE8D6]',
-      badge: 'bg-[#FFF5EB]',
-      badgeText: 'text-[#C9915C]',
-      button1: 'bg-[#F5E6D3] hover:bg-[#E8D4BD]',
-      button2: 'bg-[#FFEFD5] border-[#E8D4BD] hover:bg-[#FFE4B5]',
-      suitableBox: 'from-[#FFF5EB] to-[#FFE8D6] border-[#E8D4BD]',
-      benefitBg: 'bg-[#FFF9F0] hover:bg-[#FFF5EB]',
-      iconBg: 'from-amber-100 to-orange-100',
-      iconColor: 'text-[#C9915C]',
-      stepBg: 'from-[#F5E6D3] to-[#E8D4BD]'
-    },
-    {
-      // Lavender Cream
-      mainBg: 'from-[#FAF5FF] to-[#F3E8FF]',
-      heroBg: 'from-[#F3E8FF] to-[#E9D5FF]',
-      badge: 'bg-[#F3E8FF]',
-      badgeText: 'text-[#9333EA]',
-      button1: 'bg-[#E9D5FF] hover:bg-[#D8B4FE]',
-      button2: 'bg-[#F3E8FF] border-[#D8B4FE] hover:bg-[#E9D5FF]',
-      suitableBox: 'from-[#F3E8FF] to-[#E9D5FF] border-[#D8B4FE]',
-      benefitBg: 'bg-[#FAF5FF] hover:bg-[#F3E8FF]',
-      iconBg: 'from-purple-100 to-violet-100',
-      iconColor: 'text-[#9333EA]',
-      stepBg: 'from-[#E9D5FF] to-[#D8B4FE]'
-    },
-    {
-      // Mint Cream
-      mainBg: 'from-[#F0FDF9] to-[#ECFDF5]',
-      heroBg: 'from-[#ECFDF5] to-[#D1FAE5]',
-      badge: 'bg-[#ECFDF5]',
-      badgeText: 'text-[#059669]',
-      button1: 'bg-[#D1FAE5] hover:bg-[#A7F3D0]',
-      button2: 'bg-[#ECFDF5] border-[#A7F3D0] hover:bg-[#D1FAE5]',
-      suitableBox: 'from-[#ECFDF5] to-[#D1FAE5] border-[#A7F3D0]',
-      benefitBg: 'bg-[#F0FDF9] hover:bg-[#ECFDF5]',
-      iconBg: 'from-emerald-100 to-green-100',
-      iconColor: 'text-[#059669]',
-      stepBg: 'from-[#D1FAE5] to-[#A7F3D0]'
-    }
-  ];
-
-  // Get theme based on product ID (cycle through the 3 themes)
-  const getThemeIndex = (productId) => {
-    // Convert ID to number if it's a string, or use a hash if it's not numeric
-    const numericId = typeof productId === 'string' && !isNaN(productId) 
-      ? parseInt(productId) 
-      : productId.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
-    return numericId % 3;
-  };
-
-  const currentTheme = product ? colorThemes[getThemeIndex(product.id)] : colorThemes[0];
-
   if (!product) {
     return (
-      <div className="pt-16 min-h-screen bg-white flex items-center justify-center">
+      <div className="pt-16 min-h-screen bg-[#FFF8F0] flex items-center justify-center">
         <div className="text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Product Not Found</h2>
           <button
-            onClick={() => navigate('/skinproducts')}
-            className="px-6 py-3 bg-[#F5E6D3] text-gray-800 font-semibold rounded-xl hover:bg-[#E8D4BD] transition-all duration-300"
+            onClick={() => navigate('/hairproducts')}
+            className="px-6 py-3 bg-[#E8D5C4] text-gray-800 font-semibold rounded-xl hover:bg-[#D4C4B0] transition-all duration-300"
           >
             Back to Products
           </button>
@@ -90,10 +33,7 @@ const SkinProductDetails = () => {
   }
 
   return (
-    <div className={`pt-16 min-h-screen bg-gradient-to-br ${currentTheme.mainBg}`}>
-      {/* Back Button */}
-      
-
+    <div className="pt-16 min-h-screen bg-[#FFF8F0]">
       {/* Hero Product Section */}
       <section className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -104,10 +44,10 @@ const SkinProductDetails = () => {
                 initial={{ opacity: 0, x: -30 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6 }}
-                className={`bg-gradient-to-br ${currentTheme.heroBg} p-12 flex items-center justify-center`}
+                className="bg-gradient-to-br from-[#FFF5EB] to-[#FFE8D6] p-12 flex items-center justify-center"
               >
                 <div className="relative max-w-md">
-                  <div className="absolute inset-0 bg-gradient-to-br from-amber-200/30 to-orange-200/30 rounded-full blur-3xl"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-amber-100/30 to-orange-100/30 rounded-full blur-3xl"></div>
                   <img
                     src={product.image}
                     alt={product.name}
@@ -126,8 +66,8 @@ const SkinProductDetails = () => {
                 transition={{ duration: 0.6 }}
                 className="p-12"
               >
-                <div className={`inline-block px-4 py-1.5 ${currentTheme.badge} rounded-full mb-4`}>
-                  <p className={`text-sm font-semibold ${currentTheme.badgeText}`}>
+                <div className="inline-block px-4 py-1.5 bg-[#FFE8D6] rounded-full mb-4">
+                  <p className="text-sm font-semibold text-[#C2734A]">
                     {product.subtitle}
                   </p>
                 </div>
@@ -144,24 +84,24 @@ const SkinProductDetails = () => {
                   {product.fullDescription}
                 </p>
 
-                {/* Action Buttons - Dynamic Colors */}
+                {/* Action Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 mb-8">
                   <a
                     href="tel:+918451088204"
-                    className={`flex-1 px-8 py-4 ${currentTheme.button1} text-gray-800 font-semibold rounded-xl shadow-md hover:shadow-lg transition-all duration-300 text-center`}
+                    className="flex-1 px-8 py-4 bg-[#E8D5C4] text-gray-800 font-semibold rounded-xl shadow-md hover:shadow-lg hover:bg-[#D4C4B0] transition-all duration-300 text-center"
                   >
                     Call to Order
                   </a>
                   <a
                     href="mailto:info@dermashatech.com"
-                    className={`flex-1 px-8 py-4 ${currentTheme.button2} text-gray-800 font-semibold rounded-xl border-2 transition-all duration-300 text-center`}
+                    className="flex-1 px-8 py-4 bg-[#FFF5EB] text-gray-800 font-semibold rounded-xl border-2 border-[#E8D5C4] hover:bg-[#FFE8D6] transition-all duration-300 text-center"
                   >
                     Email Inquiry
                   </a>
                 </div>
 
                 {/* Suitable For Tag */}
-                <div className={`bg-gradient-to-r ${currentTheme.suitableBox} rounded-xl p-4 border`}>
+                <div className="bg-gradient-to-r from-[#FFF5EB] to-[#FFE8D6] rounded-xl p-4 border border-[#E8D5C4]">
                   <p className="text-sm font-semibold text-gray-700 mb-1">Suitable For:</p>
                   <p className="text-base text-gray-900 font-medium">{product.suitableFor}</p>
                 </div>
@@ -184,8 +124,8 @@ const SkinProductDetails = () => {
               className="bg-white rounded-2xl p-8 shadow-lg"
             >
               <div className="flex items-center gap-3 mb-6">
-                <div className={`w-10 h-10 bg-gradient-to-br ${currentTheme.iconBg} rounded-lg flex items-center justify-center`}>
-                  <Sparkles className={`w-6 h-6 ${currentTheme.iconColor}`} />
+                <div className="w-10 h-10 bg-gradient-to-br from-amber-100 to-orange-100 rounded-lg flex items-center justify-center">
+                  <Sparkles className="w-6 h-6 text-amber-600" />
                 </div>
                 <h2 className="text-2xl font-bold text-gray-900">Key Benefits</h2>
               </div>
@@ -193,7 +133,7 @@ const SkinProductDetails = () => {
                 {product.keyBenefits.map((benefit, index) => (
                   <div
                     key={index}
-                    className={`flex items-start gap-3 p-3 ${currentTheme.benefitBg} rounded-xl transition-colors`}
+                    className="flex items-start gap-3 p-3 bg-[#FFF8F0] hover:bg-[#FFF5EB] rounded-xl transition-colors"
                   >
                     <span className="text-2xl flex-shrink-0">{benefit.icon}</span>
                     <span className="text-gray-800 font-medium pt-1">{benefit.text}</span>
@@ -216,7 +156,7 @@ const SkinProductDetails = () => {
                 </div>
                 <h2 className="text-2xl font-bold text-gray-900">Key Ingredient</h2>
               </div>
-              <h3 className={`text-xl font-bold text-gray-800 mb-3 ${currentTheme.badgeText}`}>
+              <h3 className="text-xl font-bold text-[#C2734A] mb-3">
                 {product.keyIngredient.name}
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -260,7 +200,7 @@ const SkinProductDetails = () => {
               <ol className="space-y-4">
                 {product.howToUse.map((step, index) => (
                   <li key={index} className="flex gap-4">
-                    <span className={`flex-shrink-0 w-8 h-8 bg-gradient-to-br ${currentTheme.stepBg} text-gray-800 rounded-full flex items-center justify-center font-bold text-sm`}>
+                    <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-amber-200 to-orange-200 text-gray-800 rounded-full flex items-center justify-center font-bold text-sm">
                       {index + 1}
                     </span>
                     <span className="text-gray-800 pt-1">{step}</span>
@@ -272,11 +212,8 @@ const SkinProductDetails = () => {
         </div>
       </section>
 
-      {/* Beauty Images Section with Description */}
-      
-
       {/* Explore More Products */}
-      <section className={`py-16 bg-gradient-to-br ${currentTheme.mainBg}`}>
+      <section className="py-16 bg-[#FFF8F0]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -288,11 +225,11 @@ const SkinProductDetails = () => {
               Explore More Products
             </h2>
             <p className="text-gray-600 mb-8 text-lg">
-              Discover our complete range of premium skincare solutions
+              Discover our complete range of premium hair care solutions
             </p>
             <button
-              onClick={() => navigate('/skinproducts')}
-              className="px-8 py-4 bg-[#1ba9a0] text-white font-semibold rounded-xl shadow-md hover:shadow-lg hover:bg-[#16958d] transition-all duration-300 inline-flex items-center gap-2"
+              onClick={() => navigate('/hairproducts')}
+              className="px-8 py-4 bg-[#C2734A] text-white font-semibold rounded-xl shadow-md hover:shadow-lg hover:bg-[#A6603B] transition-all duration-300 inline-flex items-center gap-2"
             >
               <span>View All Products</span>
               <ArrowRight className="w-5 h-5" />
@@ -304,4 +241,4 @@ const SkinProductDetails = () => {
   );
 };
 
-export default SkinProductDetails;
+export default HairProductDetails;

@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, Mail } from 'lucide-react';
+import { Menu, X, Phone, Mail, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [productsDropdownOpen, setProductsDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -17,16 +19,35 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setProductsDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
   const navItems = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
-    { name: 'Machines', path: '/machines' }, 
-    { name: 'Products', path: '/skinproducts' }, 
+    
     { name: 'Reviews', path: '/reviews' },
-    { name: 'Contact', path: '/contact' }
+    { name: 'Contact', path: '/contact' },
+    { name: 'Machines', path: '/machines' }
+  ];
+
+  const productCategories = [
+    { name: 'Skin Products', path: '/skinproducts' },
+    { name: 'Hair Products', path: '/hairproducts' }
   ];
 
   const isActive = (path) => location.pathname === path;
+  const isProductsActive = () => 
+    location.pathname === '/skinproducts' || location.pathname === '/hairproducts';
 
   return (
     <nav
@@ -88,6 +109,60 @@ const Navbar = () => {
                 </Link>
               </motion.div>
             ))}
+
+            {/* Products Dropdown - Desktop */}
+            <div className="relative" ref={dropdownRef}>
+              <button
+                onClick={() => setProductsDropdownOpen(!productsDropdownOpen)}
+                className={`relative px-4 py-2 text-sm font-medium transition-colors duration-200 flex items-center space-x-1 ${
+                  isProductsActive()
+                    ? 'text-gray-900 font-semibold'
+                    : 'text-gray-700 hover:text-gray-900'
+                }`}
+              >
+                <span>Products</span>
+                <ChevronDown 
+                  className={`w-4 h-4 transition-transform duration-200 ${
+                    productsDropdownOpen ? 'rotate-180' : ''
+                  }`} 
+                />
+                {isProductsActive() && (
+                  <motion.div
+                    layoutId="activeTab"
+                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-gray-900"
+                    initial={false}
+                    transition={{ type: "spring", stiffness: 500, damping: 30 }}
+                  />
+                )}
+              </button>
+
+              <AnimatePresence>
+                {productsDropdownOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    transition={{ duration: 0.2 }}
+                    className="absolute top-full mt-2 left-0 w-48 bg-white rounded-lg shadow-xl border border-gray-100 overflow-hidden"
+                  >
+                    {productCategories.map((category) => (
+                      <Link
+                        key={category.name}
+                        to={category.path}
+                        onClick={() => setProductsDropdownOpen(false)}
+                        className={`block px-4 py-3 text-sm font-medium transition-colors duration-200 ${
+                          isActive(category.path)
+                            ? 'bg-gray-100 text-gray-900'
+                            : 'text-gray-700 hover:bg-gray-50 hover:text-gray-900'
+                        }`}
+                      >
+                        {category.name}
+                      </Link>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
           </div>
 
           {/* Contact Info - Desktop */}
@@ -139,6 +214,55 @@ const Navbar = () => {
                     {item.name}
                   </Link>
                 ))}
+
+                {/* Products Dropdown - Mobile */}
+                <div>
+                  <button
+                    onClick={() => setProductsDropdownOpen(!productsDropdownOpen)}
+                    className={`w-full text-left px-4 py-3 text-base font-medium transition-colors duration-200 flex items-center justify-between ${
+                      isProductsActive()
+                        ? 'text-gray-900 bg-gray-100 font-semibold'
+                        : 'text-gray-700 hover:text-gray-900 hover:bg-gray-50'
+                    }`}
+                  >
+                    <span>Products</span>
+                    <ChevronDown 
+                      className={`w-5 h-5 transition-transform duration-200 ${
+                        productsDropdownOpen ? 'rotate-180' : ''
+                      }`} 
+                    />
+                  </button>
+                  
+                  <AnimatePresence>
+                    {productsDropdownOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.2 }}
+                        className="bg-gray-50 overflow-hidden"
+                      >
+                        {productCategories.map((category) => (
+                          <Link
+                            key={category.name}
+                            to={category.path}
+                            onClick={() => {
+                              setProductsDropdownOpen(false);
+                              setIsOpen(false);
+                            }}
+                            className={`block px-8 py-3 text-sm font-medium transition-colors duration-200 ${
+                              isActive(category.path)
+                                ? 'text-gray-900 bg-gray-200'
+                                : 'text-gray-700 hover:text-gray-900 hover:bg-gray-100'
+                            }`}
+                          >
+                            {category.name}
+                          </Link>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
                 
                 {/* Mobile Contact Info */}
                 <div className="border-t border-gray-200 pt-4 px-4 space-y-3">

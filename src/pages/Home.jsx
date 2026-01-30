@@ -7,6 +7,7 @@ import HeroSection from '../components/HeroSection';
 
 // Data
 import { featuredProducts } from '../data/products';
+import { skinProducts, hairProducts } from '../data/homeproducts';
 
 // ProductCard Component
 const ProductCard = ({ product }) => {
@@ -38,6 +39,37 @@ const ProductCard = ({ product }) => {
         <h3 className="font-bold text-gray-900 text-lg text-center group-hover:text-purple-600 transition-colors">{product.title}</h3>
       </div>
     </motion.div>
+  );
+};
+
+// Scrolling Product Card Component
+const ScrollingProductCard = ({ product }) => {
+  return (
+    <div className="flex-shrink-0 w-72 mx-4">
+      <motion.div
+        whileHover={{ scale: 1.05, y: -5 }}
+        transition={{ duration: 0.3 }}
+        className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-2xl transition-all duration-300"
+      >
+        {/* Image */}
+        <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
+          <img
+            src={product.image}
+            alt={product.name}
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+        </div>
+
+        {/* Product Name */}
+        <div className="p-5">
+          <h3 className="font-bold text-gray-900 text-lg text-center">
+            {product.name}
+          </h3>
+        </div>
+      </motion.div>
+    </div>
   );
 };
 
@@ -99,7 +131,7 @@ const Home = () => {
       <HeroSection />
 
       {/* Product Overview Section */}
-      <section className="py-20 bg-gray-50">
+      <section id="about" className="py-20 bg-gray-50 scroll-mt-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
@@ -273,6 +305,130 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Hair Products - Scrolling Left to Right */}
+      <section className="py-20 bg-gradient-to-br from-purple-50 via-pink-50 to-purple-50 overflow-hidden">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Products for Hair
+            </h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Transform your hair care routine with scientifically formulated solutions for strength, shine, and vitality
+            </p>
+          </motion.div>
+        </div>
+
+        {/* Scrolling Container - Left to Right */}
+        <div className="relative">
+          <motion.div
+            animate={{
+              x: [0, -2000],
+            }}
+            transition={{
+              x: {
+                repeat: Infinity,
+                repeatType: "loop",
+                duration: 30,
+                ease: "linear",
+              },
+            }}
+            className="flex"
+          >
+            {/* Duplicate the array to create seamless loop */}
+            {[...hairProducts, ...hairProducts, ...hairProducts].map((product, index) => (
+              <ScrollingProductCard key={`hair-${index}`} product={product} />
+            ))}
+          </motion.div>
+        </div>
+
+        {/* Button Below Grid */}
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center"
+          >
+            <motion.a
+              href="/hairproducts?category=hair"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+            >
+              <span>Explore Hair Products</span>
+              <ArrowRight className="w-5 h-5" />
+            </motion.a>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Skin Products - Scrolling Right to Left */}
+      <section className="py-20 bg-gradient-to-br from-teal-50 via-cyan-50 to-teal-50 overflow-hidden">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Products for Skin
+            </h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Reveal your natural radiance with premium skincare formulations designed for healthy, glowing skin
+            </p>
+          </motion.div>
+        </div>
+
+        {/* Scrolling Container - Right to Left */}
+        <div className="relative">
+          <motion.div
+            animate={{
+              x: [-2000, 0],
+            }}
+            transition={{
+              x: {
+                repeat: Infinity,
+                repeatType: "loop",
+                duration: 30,
+                ease: "linear",
+              },
+            }}
+            className="flex"
+          >
+            {/* Duplicate the array to create seamless loop */}
+            {[...skinProducts, ...skinProducts, ...skinProducts].map((product, index) => (
+              <ScrollingProductCard key={`skin-${index}`} product={product} />
+            ))}
+          </motion.div>
+        </div>
+
+        {/* Button Below Grid */}
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center"
+          >
+            <motion.a
+              href="/products?category=skin"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-[#1ba9a0] to-teal-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+            >
+              <span>Explore Skin Products</span>
+              <ArrowRight className="w-5 h-5" />
+            </motion.a>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Why Choose Us Section */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -326,7 +482,7 @@ const Home = () => {
             className="text-center mb-12"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Our Featured Products
+              Our Featured Machines
             </h2>
             <p className="text-gray-600 text-lg max-w-3xl mx-auto">
               Wide range of laser aesthetic machines with advanced technology for dermatology and aesthetic treatments
@@ -365,7 +521,7 @@ const Home = () => {
               whileTap={{ scale: 0.95 }}
               className="px-10 py-4 bg-[#1ba9a0] text-white font-semibold rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 flex items-center space-x-2 mx-auto inline-flex"
             >
-              <span>View All Products</span>
+              <span>View All Machines</span>
               <ArrowRight className="h-5 w-5" />
             </motion.a>
 

@@ -9,23 +9,23 @@ export const skinProducts = [
     fullDescription: 'Designed to improve skin texture, radiance, and overall skin health with regular use.',
     keyBenefits: [
       {
-        icon: '💧',
+       
         text: 'Deep hydration with a water-light texture'
       },
       {
-        icon: '✨',
+        
         text: 'Helps improve skin glow and smoothness'
       },
       {
-        icon: '🔄',
+        
         text: 'Supports skin repair and renewal'
       },
       {
-        icon: '🧴',
+        
         text: 'Enhances skin elasticity and firmness'
       },
       {
-        icon: '🌿',
+        
         text: 'Suitable for dull, dry, and tired-looking skin'
       }
     ],
@@ -50,7 +50,46 @@ export const skinProducts = [
     suitableFor: 'All skin types',
     category: 'essence',
     featured: true
-  }
+  },
+  {
+  id: 'remedium-pdrn-ha-complex',
+  name: 'ReMedium PDRN + HA Complex',
+  subtitle: 'Advanced Polynucleotide Skin Therapy',
+  image: '/images/product2.png', // update if needed
+  shortDescription:
+    'A powerful bioreparant therapy combining PDRN, Niacinamide, and Hyaluronic Acid to deeply rejuvenate skin, improve radiance, and restore collagen structure.',
+  fullDescription:
+    'Clinical research confirms effective skin regeneration through DNA-level repair, collagen stimulation, hydration, and antioxidant protection with visible results within days and optimal results after 28 days.',
+  keyBenefits: [
+    {  text: 'Stimulates natural collagen production' },
+    {  text: 'Improves skin radiance and turgor within 24 hours' },
+    {  text: 'Deep hydration through polynucleotide water-binding' },
+    {  text: 'Accelerates tissue regeneration and repair' },
+    { text: 'Removes free radicals and supports skin immunity' }
+  ],
+  keyIngredient: {
+    name: 'PDRN + Niacinamide + Hyaluronic Acid',
+    description:
+      'A clinically proven complex (20mg/ml) where PDRN derived from salmon enzymes acts as a collagen builder, niacinamide enhances whitening and lifting, and hyaluronic acid boosts hydration.'
+  },
+  texture: {
+    title: 'Mechanism & Action',
+    features: [
+      'Embedded into DNA for targeted regeneration',
+      'Immunomodulatory and antioxidant action',
+      'Activates natural skin renewal processes'
+    ]
+  },
+  howToUse: [
+    'Course of 3 procedures',
+    'One session every 14 days',
+    'Administered via linear retrograde, papular, tubercular, or hot point techniques'
+  ],
+  suitableFor: 'All skin types with aesthetic concerns',
+  category: 'injectable-therapy',
+  featured: true
+}
+
   
 ];
 

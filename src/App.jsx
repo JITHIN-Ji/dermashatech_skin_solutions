@@ -16,6 +16,8 @@ import Contact from './pages/Contact';
 import Reviews from './pages/reviews';
 import SkinProducts from './pages/skinproducts';
 import SkinProductDetails from './pages/SkinProductDetails';
+import HairProducts from './pages/hairproducts';
+import HairProductDetails from './pages/hairproductdetails';
 
 function App() {
   return (
@@ -115,6 +117,30 @@ function App() {
                 transition={{ duration: 0.3 }}
               >
                 <SkinProductDetails />
+              </motion.div>
+            } />
+
+            {/* Hair Products Routes */}
+            <Route path="/hairproducts" element={
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.3 }}
+              >
+                <HairProducts />
+              </motion.div>
+            } />
+
+            {/* Hair Product Details Route */}
+            <Route path="/hairproduct/:id" element={
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.3 }}
+              >
+                <HairProductDetails />
               </motion.div>
             } />
 

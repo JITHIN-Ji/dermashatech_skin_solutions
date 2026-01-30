@@ -21,16 +21,23 @@ const HeroSection = () => {
   }, []);
 
   const scrollToNextSection = () => {
-    window.scrollBy({
-      top: window.innerHeight,
-      behavior: "smooth",
-    });
+    // Get the hero section height and navbar offset
+    const heroSection = document.querySelector('section');
+    const navbarHeight = 80; // 20 * 4 = 80px (h-20 in tailwind)
+    
+    if (heroSection) {
+      const heroHeight = heroSection.offsetHeight;
+      window.scrollTo({
+        top: heroHeight - navbarHeight,
+        behavior: "smooth",
+      });
+    }
   };
 
   return (
     <>
       {/* Offset for fixed navbar (h-20 = 5rem) so hero never sits behind it */}
-      <section className="relative min-h-screen pt-20 overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+      <section className="relative h-screen overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
         {/* Background Image Slider with Overlay */}
         <div className="absolute inset-0">
           <AnimatePresence initial={false}>
@@ -54,7 +61,7 @@ const HeroSection = () => {
         </div>
 
         {/* Content Container - FIXED MOBILE ALIGNMENT */}
-        <div className="relative z-10 min-h-[calc(100vh-5rem)] flex items-center">
+        <div className="relative z-10 h-screen flex items-center pt-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-16 w-full">
             <div className="max-w-3xl">
               {/* Main Heading */}
