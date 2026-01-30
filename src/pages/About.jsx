@@ -608,14 +608,7 @@ const About = () => {
               >
                 Get In Touch
               </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => window.location.href = '/products'}
-                className="px-8 py-4 bg-white text-purple-600 font-semibold rounded-xl border-2 border-purple-600 hover:bg-purple-50 transition-all duration-300"
-              >
-                View Products
-              </motion.button>
+              
             </div>
           </motion.div>
         </div>

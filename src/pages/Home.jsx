@@ -522,7 +522,7 @@ const Home = () => {
             className="text-center"
           >
             <motion.a
-              href="/products"
+              href="/machines"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-10 py-4 bg-[#1ba9a0] text-white font-semibold rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 flex items-center space-x-2 mx-auto inline-flex"
