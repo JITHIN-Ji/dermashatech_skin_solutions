@@ -27,53 +27,29 @@ const SkinProducts = () => {
 
   return (
     <div className="pt-16 min-h-screen bg-white">
-      {/* Hero Section - Minimal (extra compact on mobile, unchanged on desktop) */}
-      <section className="relative py-4 sm:py-5 md:py-8 bg-gradient-to-br from-[#FFF8F0] via-[#FFF5EB] to-[#FFE8D6] overflow-hidden min-h-[180px] sm:min-h-[220px] md:min-h-0">
-        {/* Subtle Background Pattern */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-amber-200 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-80 h-80 bg-orange-200 rounded-full blur-3xl"></div>
-        </div>
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-4 md:gap-6 items-center">
-            {/* Left Side - Text Content */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-center lg:text-left z-10"
-            >
-              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2 sm:mb-3 leading-tight">
-                Skin Care
-                <span className="block bg-gradient-to-r from-[#D4A574] via-[#C9915C] to-[#B8956A] bg-clip-text text-transparent">
-                  Products
-                </span>
-              </h1>
-              
-              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
-                Discover our premium collection of skincare essentials designed for radiant, healthy, and glowing skin
-              </p>
-            </motion.div>
-
-            {/* Right Side - 3 Skincare Product Images */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative mt-4 md:mt-0"
-            >
-              <div className="grid grid-cols-3 gap-2 md:gap-3 h-36 sm:h-40 md:h-48">
-                
-
-                
-              </div>
-
-              {/* Subtle Floating Elements */}
-              <div className="absolute -top-2 -right-2 w-12 h-12 bg-gradient-to-br from-amber-200 to-orange-200 rounded-full blur-xl opacity-30 animate-pulse"></div>
-              <div className="absolute -bottom-2 -left-2 w-16 h-16 bg-gradient-to-br from-orange-200 to-amber-200 rounded-full blur-xl opacity-30 animate-pulse" style={{ animationDelay: '1s' }}></div>
-            </motion.div>
-          </div>
+      {/* Hero Section - matches "Our Machine Categories" style */}
+      <section className="py-16 bg-gradient-to-br from-[#FFF8F0] via-[#FFF5EB] to-[#FFE8D6]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-4xl md:text-5xl font-bold text-gray-900 mb-4"
+          >
+            Skin Care
+            <span className="block bg-gradient-to-r from-[#D4A574] via-[#C9915C] to-[#B8956A] bg-clip-text text-transparent">
+              Products
+            </span>
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-xl text-gray-700 max-w-2xl mx-auto"
+          >
+            Discover our premium collection of skincare essentials designed for radiant,
+            healthy, and glowing skin
+          </motion.p>
         </div>
       </section>
 
