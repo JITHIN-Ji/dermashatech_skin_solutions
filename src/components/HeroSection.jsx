@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 // Demo images - replace with your actual images
 const images = [
@@ -32,6 +31,20 @@ const HeroSection = () => {
         behavior: "smooth",
       });
     }
+  };
+
+  const scrollToSection = (sectionId) => {
+    const target = document.getElementById(sectionId);
+    if (!target) return;
+
+    const navbarHeight = 80; // approx h-20 navbar
+    const rect = target.getBoundingClientRect();
+    const offsetTop = window.pageYOffset + rect.top - navbarHeight;
+
+    window.scrollTo({
+      top: offsetTop,
+      behavior: "smooth",
+    });
   };
 
   return (
@@ -119,29 +132,27 @@ const HeroSection = () => {
 
               {/* CTA Buttons */}
               <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1 }}
-              className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4"
-            >
-              <Link to="/products">
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 1 }}
+                className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4"
+              >
                 <button
                   type="button"
+                  onClick={() => scrollToSection("products-section")}
                   className="px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 text-sm sm:text-base"
                 >
                   Explore Products
                 </button>
-              </Link>
 
-              <Link to="/contact">
                 <button
                   type="button"
+                  onClick={() => scrollToSection("featured-machines")}
                   className="px-6 sm:px-8 py-3 sm:py-4 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white font-semibold rounded-lg hover:bg-white/20 transition-all duration-300 text-sm sm:text-base"
                 >
-                  Contact Us
+                  Featured Machines
                 </button>
-              </Link>
-            </motion.div>
+              </motion.div>
 
             </div>
           </div>

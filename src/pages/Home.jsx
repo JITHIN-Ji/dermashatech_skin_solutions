@@ -305,8 +305,11 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Hair Products - Scrolling Left to Right */}
-      <section className="py-20 bg-gradient-to-br from-purple-50 via-pink-50 to-purple-50 overflow-hidden">
+      {/* Hair Products - Scrolling Left to Right (Products section) */}
+      <section
+        id="products-section"
+        className="py-20 bg-gradient-to-br from-purple-50 via-pink-50 to-purple-50 overflow-hidden scroll-mt-24"
+      >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -472,8 +475,11 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Featured Products Section */}
-      <section className="py-20 bg-gray-50">
+      {/* Featured Machines Section */}
+      <section
+        id="featured-machines"
+        className="py-20 bg-gray-50 scroll-mt-24"
+      >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

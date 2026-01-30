@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 // Components
 import Navbar from './components/Navbar';
+import ScrollToTop from './components/ScrollToTop';
 import Footer from './components/Footer';
 
 // Pages
@@ -23,6 +24,7 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen bg-white dark:bg-dark-900 text-gray-900 dark:text-white transition-colors duration-200">
+        <ScrollToTop />
         <Navbar />
         <AnimatePresence mode="wait">
           <Routes>

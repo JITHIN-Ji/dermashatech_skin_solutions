@@ -27,8 +27,8 @@ const SkinProducts = () => {
 
   return (
     <div className="pt-16 min-h-screen bg-white">
-      {/* Hero Section - Minimal (smaller on mobile, same on desktop) */}
-      <section className="relative py-6 md:py-8 bg-gradient-to-br from-[#FFF8F0] via-[#FFF5EB] to-[#FFE8D6] overflow-hidden">
+      {/* Hero Section - Minimal (extra compact on mobile, unchanged on desktop) */}
+      <section className="relative py-4 sm:py-5 md:py-8 bg-gradient-to-br from-[#FFF8F0] via-[#FFF5EB] to-[#FFE8D6] overflow-hidden min-h-[180px] sm:min-h-[220px] md:min-h-0">
         {/* Subtle Background Pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-0 right-0 w-96 h-96 bg-amber-200 rounded-full blur-3xl"></div>
