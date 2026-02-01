@@ -42,7 +42,8 @@ const Navbar = () => {
 
   const productCategories = [
     { name: 'Skin Products', path: '/skinproducts' },
-    { name: 'Hair Products', path: '/hairproducts' }
+    { name: 'Hair Products', path: '/hairproducts' },
+    { name: 'Microneedling Devices', path: '/microneedling' }
   ];
 
   const isActive = (path) => location.pathname === path;

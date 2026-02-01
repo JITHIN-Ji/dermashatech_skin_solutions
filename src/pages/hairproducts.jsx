@@ -8,6 +8,7 @@ import { hairProducts } from '../data/hairproducts';
 
 const HairProducts = () => {
   const [searchQuery, setSearchQuery] = useState('');
+  const [gridCols, setGridCols] = useState(3);
   const navigate = useNavigate();
 
   // Scroll to top when component mounts
@@ -109,7 +110,46 @@ const HairProducts = () => {
               <p className="text-gray-500">Try adjusting your search query</p>
             </motion.div>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <>
+              {/* Grid Layout Switcher Dots */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="flex justify-center gap-2 mb-8"
+              >
+                {[2, 3, 4, 5, 6].map((cols) => (
+                  <button
+                    key={cols}
+                    onClick={() => setGridCols(cols)}
+                    className={`group relative px-2 py-1 rounded-md transition-all duration-300 border border-gray-300 ${
+                      gridCols === cols
+                        ? 'bg-white shadow-md'
+                        : 'bg-white hover:bg-gray-50'
+                    }`}
+                    title={`${cols} columns`}
+                  >
+                    <div className="flex gap-0.5">
+                      {Array(cols).fill(0).map((_, i) => (
+                        <div
+                          key={i}
+                          className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
+                            gridCols === cols ? 'bg-black' : 'bg-gray-400 group-hover:bg-gray-600'
+                          }`}
+                        />
+                      ))}
+                    </div>
+                  </button>
+                ))}
+              </motion.div>
+
+              {/* Products Grid with Dynamic Columns */}
+              <div className={`grid gap-6 ${
+                gridCols === 2 ? 'grid-cols-1 sm:grid-cols-2' :
+                gridCols === 3 ? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3' :
+                gridCols === 4 ? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4' :
+                gridCols === 5 ? 'grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5' :
+                'grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6'
+              }`}>
               {filteredProducts.map((product, index) => (
                 <motion.div
                   key={product.id}
@@ -151,7 +191,8 @@ const HairProducts = () => {
                   </div>
                 </motion.div>
               ))}
-            </div>
+              </div>
+            </>
           )}
         </div>
       </section>

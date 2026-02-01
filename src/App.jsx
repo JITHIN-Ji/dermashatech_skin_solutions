@@ -19,6 +19,7 @@ import SkinProducts from './pages/skinproducts';
 import SkinProductDetails from './pages/SkinProductDetails';
 import HairProducts from './pages/hairproducts';
 import HairProductDetails from './pages/hairproductdetails';
+import Microneedling from './pages/microneedling';
 
 function App() {
   return (
@@ -145,6 +146,20 @@ function App() {
                 <HairProductDetails />
               </motion.div>
             } />
+
+            {/* Microneedling Devices */}
+            <Route path="/microneedling" element={
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.3 }}
+              >
+                <Microneedling />
+              </motion.div>
+            } />
+
+            {/* detail page removed per request */}
 
             <Route path="/reviews" element={
               <motion.div

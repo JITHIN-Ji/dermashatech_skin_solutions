@@ -5,7 +5,7 @@ export const productDetailsData = [
     title: "Nd:Yag Q switch laser machine",
     tagline: "Professional Laser Treatment Technology",
     description: "The ULTRA Q represents the pinnacle of laser technology for professional skin treatments. With its super short pulse width and high output power, this advanced system delivers exceptional results for pigmentation removal, tattoo removal, and skin rejuvenation treatments.",
-    mainImage: "/images/1.png",
+    mainImage: "/images/machines/1.png",
     hasResults: true,
     resultsHeading: "Clinical Results & Transformations",
     keyPoints: [
@@ -55,8 +55,8 @@ export const productDetailsData = [
     title: "Q-switched Nd:YAG Laser System",
     tagline: "Advanced Skin Rejuvenation",
     description: "GENELUX-3 combines cutting-edge laser technology with an intuitive design for gentle yet effective skin treatments. With its patented handpiece and long service life, this system is perfect for practices seeking reliable, professional-grade results.",
-    mainImage: "/images/2.png",
-    resultImages: ["/images/9.png"],
+    mainImage: "/images/machines/2.png",
+    resultImages: ["/images/machines/9.png"],
     hasResults: true,
     resultsHeading: "Before & After Results",
     keyPoints: [
@@ -103,8 +103,8 @@ export const productDetailsData = [
     title: "Advanced Diode + Picosecond System",
     tagline: "Permanent Hair Removal Solution",
     description: "Experience the ultimate in hair removal technology with our advanced 4-wavelength diode laser system. Suitable for all skin types and effective on all hair colors, this powerful system delivers permanent results with maximum patient comfort.",
-    mainImage: "/images/3.png",
-    resultImages: ["/images/10.png", "/images/11.png"],
+    mainImage: "/images/machines/3.png",
+    resultImages: ["/images/machines/10.png", "/images/machines/11.png"],
     hasResults: true,
     resultsHeading: "Hair Removal Results",
     keyPoints: [
@@ -151,8 +151,8 @@ export const productDetailsData = [
     title: "High-Intensity Focused Ultrasound",
     tagline: "Non-Surgical Facial Lifting",
     description: "Achieve remarkable lifting and tightening results without surgery using our advanced HIFU technology. The MEDI LIFT HIFU system combines macro and micro-focused ultrasound with RF technology for comprehensive facial rejuvenation.",
-    mainImage: "/images/4.png",
-    resultImages: ["/images/12.png", "/images/13.png"],
+    mainImage: "/images/machines/4.png",
+    resultImages: ["/images/machines/12.png", "/images/machines/13.png"],
     hasResults: true,
     resultsHeading: "Part Images",
     keyPoints: [
@@ -200,8 +200,8 @@ export const productDetailsData = [
     title: "Professional Fractional CO2 Laser",
     tagline: "Advanced Skin Resurfacing",
     description: "Transform skin texture and appearance with our professional fractional CO2 laser system. Featuring precise control and multiple working modes, ULTRAFRAX delivers exceptional results for skin resurfacing, scar treatment, and wrinkle reduction.",
-    mainImage: "/images/5.png",
-    resultImages: ["/images/14.png", "/images/15.png"],
+    mainImage: "/images/machines/5.png",
+    resultImages: ["/images/machines/14.png", "/images/machines/15.png"],
     hasResults: true,
     resultsHeading: "Skin Resurfacing Results",
     keyPoints: [
@@ -252,8 +252,8 @@ export const productDetailsData = [
     title: "Advanced Cryolipolysis System",
     tagline: "Body Contouring & Fat Freezing",
     description: "Revolutionize body contouring with our advanced cryolipolysis system that combines fat freezing technology with hydrafacial treatment. Featuring 8 specialized handles and precise temperature control, achieve remarkable body sculpting results.",
-    mainImage: "/images/16.png",
-    resultImages: ["/images/17.png", "/images/18.png"],
+    mainImage: "/images/machines/16.png",
+    resultImages: ["/images/machines/17.png", "/images/machines/18.png"],
     hasResults: true,
     resultsHeading: "Body Contouring Results",
     keyPoints: [
@@ -303,8 +303,8 @@ export const productDetailsData = [
     title: "Light Hydrafacial Machine",
     tagline: "O₂ PDT Hydrafacial Treatment",
     description: "Experience the next generation of skincare with our Oxygen Jet Peel PDT LED Light Hydrafacial Machine. This comprehensive system combines multiple advanced technologies for deep cleansing, exfoliation, hydration boost, and skin rejuvenation. Featuring 9 specialized treatment heads and customizable protocols for various skin concerns.",
-    mainImage: "/images/32.png",
-    resultImages: ["/images/32.1.png", "/images/32.2.png"],
+    mainImage: "/images/machines/32.png",
+    resultImages: ["/images/machines/32.1.png", "/images/machines/32.2.png"],
     hasResults: true,
     resultsHeading: "Part Images",
     keyPoints: [
@@ -359,7 +359,7 @@ export const productDetailsData = [
     title: "Hydra Facial Machine",
     tagline: "Advanced Hydradermabrasion System",
     description: "Transform your skincare routine with the ALLICE BUBBLE Hydra Facial Machine. This advanced system combines oxygen bubble technology, vibration atomization, and multiple treatment probes for comprehensive facial care. Featuring precise temperature control and multiple probe options for deep cleansing, hydration, and skin rejuvenation.",
-    mainImage: "/images/6.png",
+    mainImage: "/images/machines/6.png",
     
     hasResults: true,
     resultsHeading: "Part Images",
@@ -421,7 +421,7 @@ export const productDetailsData = [
     title: "Microneedling RF & Cryo Stamp System",
     tagline: "Advanced Anti-Aging RF Technology",
     description: "Experience revolutionary anti-aging treatment with our 2-in-1 MNRF system. Microneedling Radiofrequency (MNRF) is a minimally invasive technique to rejuvenate skin with less downtime. It uses arrays of tiny microneedles with radiofrequency waves to heat the deeper layers of your skin to stimulate collagen production, improving the appearance of acne scars and fine lines. The entire procedure causes minimal damage to the upper layers of skin and involves minimal downtime, making it safe for all skin types.",
-    mainImage: "/images/33.png",
+    mainImage: "/images/machines/33.png",
     
     hasResults: true,
     resultsHeading: "Treatment Results",
@@ -488,8 +488,8 @@ export const productDetailsData = [
     title: "Professional Microneedling RF System",
     tagline: "Advanced RF Microneedling Technology",
     description: "Achieve remarkable skin transformation with the PRO MNRF Professional Microneedling RF System. This advanced device combines radiofrequency energy with microneedling technology to deliver powerful anti-aging and skin rejuvenation results. With dual frequency options (2MHz/8MHz), 400W power output, and multiple treatment modes, this professional-grade system addresses a wide range of skin concerns from wrinkles to acne scars.",
-    mainImage: "/images/34.png",
-    resultImages: ["/images/34.1.png", "/images/34.2.png"],
+    mainImage: "/images/machines/34.png",
+    resultImages: ["/images/machines/34.1.png", "/images/machines/34.2.png"],
     hasResults: true,
     resultsHeading: "Treatment Results",
     keyPoints: [
@@ -556,9 +556,9 @@ export const productDetailsData = [
   "title": "Advanced Cryolipolysis Fat Freezing System",
   "tagline": "360° Cooling & Heating for Body Contouring",
   "description": "The 360 Cryo Slimming Machine is an advanced cryolipolysis system designed for non-invasive fat reduction and body contouring. It uses 360-degree cooling and heating technology with silicone replacement heads for maximum comfort. The system supports up to 8 different cryo handles for treating multiple body areas efficiently, delivering visible fat loss after just one session.",
-  "mainImage": "/images/35.png",
+  "mainImage": "/images/machines/35.png",
   "resultImages": [
-    "/images/35.1.png",
+    "/images/machines/35.1.png",
     
   ],
   "hasResults": true,
@@ -610,7 +610,7 @@ export const productDetailsData = [
   "title": "Advanced Laser Hair Regrowth Therapy Machine",
   "tagline": "650nm Low-Level Laser Therapy for Hair Restoration",
   "description": "The 650nm Hair Regrowth Panel is a professional laser therapy system designed to stimulate hair follicles, improve scalp circulation, and promote natural hair regrowth. Using low-level laser diode technology, it enhances cellular metabolism, increases ATP activity, reduces excess oil secretion, and helps control inflammation for healthier, stronger hair growth.",
-  "mainImage": "/images/36.png",
+  "mainImage": "/images/machines/36.png",
   "resultImages": [
     
   ],
@@ -660,7 +660,7 @@ export const productDetailsData = [
   "title": "Advanced AI Skin Analysis & Imaging System",
   "tagline": "Professional AI Facial Skin Detection Solution",
   "description": "The A5 Plus AI Intelligent Imager is a high-end facial skin analysis system developed with advanced spectral imaging and artificial intelligence technology. It objectively analyzes multiple facial skin problems with one-click photo capture and automatic report generation. Designed for clinics and beauty professionals, it supports cloud storage, data comparison, and long-term skin tracking.",
-  "mainImage": "/images/37.png",
+  "mainImage": "/images/machines/37.png",
   "resultImages": [
     
   ],
@@ -729,7 +729,7 @@ export const productDetailsData = [
   "title": "Professional AI Facial Skin Analysis Machine",
   "tagline": "8-Spectrum Intelligent Skin Detection System",
   "description": "The A3 AI Skin Analyser is an advanced facial skin detection system using artificial intelligence and 8-spectrum imaging technology. It provides accurate facial positioning, zone detection, and multi-layer skin analysis to identify various skin problems. Designed for clinics and beauty professionals, it offers instant report generation, secure data management, and precise skin assessment for personalized treatment planning.",
-  "mainImage": "/images/38.png",
+  "mainImage": "/images/machines/38.png",
   "resultImages": [
     
   ],
@@ -786,7 +786,7 @@ export const productDetailsData = [
   "title": "Advanced EMSLIM NEO RF Body Sculpting System",
   "tagline": "Non-Invasive Muscle Toning & Fat Reduction",
   "description": "The EMSLIM NEO RF is a powerful non-invasive body sculpting machine that combines high-intensity electromagnetic stimulation (EMS) with radiofrequency (RF) technology. It effectively builds and strengthens muscles, improves body tone, reduces fat, and tightens skin. A single 30-minute treatment delivers the equivalent of more than 20,000 muscle contractions, making it an ideal solution for fast and visible body shaping.",
-  "mainImage": "/images/39.png",
+  "mainImage": "/images/machines/39.png",
   "resultImages": [
    
   ],
@@ -838,7 +838,7 @@ export const productDetailsData = [
   "title": "Advanced EM Sculpt Body Contouring System",
   "tagline": "Muscle Growth & Fat Reduction via Supramaximal Contractions",
   "description": "EM Sculpt is a non-invasive body sculpting technology that uses high-intensity electromagnetic stimulation to induce supramaximal muscle contractions. These powerful contractions increase energy demand, triggering epinephrine release and initiating fat cell lipolysis. Triglycerides are broken down into free fatty acids, leading to fat cell dysfunction and apoptosis. The destroyed fat cells are naturally eliminated while muscle tone and strength are significantly improved.",
-  "mainImage": "/images/40.png",
+  "mainImage": "/images/machines/40.png",
   
   "hasResults": true,
   "resultsHeading": "Before & After Results",
@@ -879,10 +879,10 @@ export const productDetailsData = [
   "title": "Professional RF Cautery Surgical System",
   "tagline": "Precision Cutting with Minimal Tissue Damage",
   "description": "Radio Frequency Cautery is an advanced dermatological surgical system designed for precise cutting and coagulation with minimal heat generation. Operating at 2.7MHz, it enables pressure-less cutting, reduced operating time, minimal bleeding, and minimal pain. The system ensures pin-point accuracy with no lateral heat spread, resulting in least tissue damage and faster healing.",
-  "mainImage": "/images/41.png",
+  "mainImage": "/images/machines/41.png",
   "resultImages": [
-    "/images/41.1.png",
-    "/images/41.2.png"
+    "/images/machines/41.1.png",
+    "/images/machines/41.2.png"
   ],
   "hasResults": true,
   "resultsHeading": "Procedure Results",
@@ -928,8 +928,8 @@ export const productDetailsData = [
   "title": "High-Tech Medi-Facial System",
   "tagline": "Complete Skin Rejuvenation & Hydration",
   "description": "Experience advanced skincare with our 9-IN-1 Medi-Facial Device. This system combines CO2 bubble cleaning, bipolar RF, hydra dermabrasion, ultrasonic therapy, and facial contouring for deep cleansing, hydration, lifting, and skin rejuvenation. Comes with 9 handpieces and a metal trolley for professional use.",
-  "mainImage": "/images/42.png",
-  "resultImages": ["/images/42.1.png", "/images/42.2.png"],
+  "mainImage": "/images/machines/42.png",
+  "resultImages": ["/images/machines/42.1.png", "/images/machines/42.2.png"],
  
   "hasResults": true,
   "resultsHeading": "Before & After",
@@ -980,8 +980,8 @@ export const productDetailsData = [
   "title": "Advanced Tattoo & Pigmentation Removal System",
   "tagline": "Effective Skin Rejuvenation & Pigment Removal",
   "description": "This Nd:Yag laser system provides safe and effective treatment for tattoo removal, pigmented lesions, acne scars, wrinkles, and skin rejuvenation. Using high-energy light, the laser selectively targets melanin or tattoo pigments, breaking them down while minimizing side effects. Advanced double-lamp, double-rod technology ensures stable and powerful output.",
-  "mainImage": "/images/43.png",
-  "resultImages": ["/images/43.1.png", "/images/43.2.png", "/images/43.3.png"],
+  "mainImage": "/images/machines/43.png",
+  "resultImages": ["/images/machines/43.1.png", "/images/machines/43.2.png", "/images/machines/43.3.png"],
   "hasResults": true,
   "resultsHeading": "Before & After",
   "keyPoints": [
@@ -1029,8 +1029,8 @@ export const productDetailsData = [
   "title": "Advanced Diode Laser Hair Removal System",
   "tagline": "Safe, Fast, and Painless Hair Removal",
   "description": "This high-power 1600 W Diode Laser Hair Removal system provides effective, precise, and safe hair removal for all skin types. Featuring multiple spot sizes, adjustable pulse widths, and advanced cooling, it ensures comfort while delivering optimal results. The 15.6” color touch display allows easy operation for professional clinics.",
-  "mainImage": "/images/44.png",
-  "resultImages": ["/images/34.1.png", "/images/34.2.png"],
+  "mainImage": "/images/machines/44.png",
+  "resultImages": ["/images/machines/34.1.png", "/images/machines/34.2.png"],
   "hasResults": true,
   "resultsHeading": "Before & After",
   "keyPoints": [
@@ -1078,7 +1078,7 @@ export const productDetailsData = [
   "title": "Multi-Function Hair & Skin Treatment Laser System",
   "tagline": "Hair Removal, Skin Brightening, Pigment Correction & Rejuvenation",
   "description": "This advanced Dio-Pico laser system combines a 3-wavelength diode laser and a pico second laser for comprehensive hair removal, pigmentation correction, tattoo removal, skin rejuvenation, and whitening. Safe for all skin types (I–VI), it features high-power handles, adjustable pulse widths, and precise aiming for professional clinical use.",
-  "mainImage": "/images/45.png",
+  "mainImage": "/images/machines/45.png",
   
   "resultsHeading": "Before & After",
   "keyPoints": [
@@ -1139,8 +1139,8 @@ export const productDetailsData = [
   "title": "Macro & Micro HIFU Ultrasound Lifting System",
   "tagline": "Non-Invasive Skin Lifting, Tightening & Body Contouring",
   "description": "New Doublo HIFU is an advanced Macro & Micro focused ultrasound system designed for non-invasive face lifting, skin tightening, wrinkle reduction, and body contouring. Using MFU, SD, and RF technologies with multiple cartridge depths, it delivers precise energy to different skin layers for collagen stimulation, fascia tightening, and fat compaction with minimal downtime.",
-  "mainImage": "/images/46.png",
-  "resultImages": ["/images/48.1.png", "/images/48.2.png", "/images/48.3.png"],
+  "mainImage": "/images/machines/46.png",
+  "resultImages": ["/images/machines/48.1.png", "/images/machines/48.2.png", "/images/machines/48.3.png"],
   "hasResults": true,
   "resultsHeading": "Before & After",
   

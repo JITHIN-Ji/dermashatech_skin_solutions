@@ -5,7 +5,7 @@ export const products = [
     title: "Nd:Yag Q switch laser machine",
     imageHeading: "PICO",
     tagline: "Professional Laser Treatment Technology",
-    mainImage: "/images/1.png",
+    mainImage: "/images/machines/1.png",
     
     keyPoints: [
       "Super short pulse width (4 ns)",
@@ -26,8 +26,8 @@ export const products = [
     name: "GENELUX-3",
     title: "Q-switched Nd:YAG Laser System",
     tagline: "Advanced Skin Rejuvenation",
-    mainImage: "/images/2.png",
-    resultImages: ["/images/9.png"],
+    mainImage: "/images/machines/2.png",
+    resultImages: ["/images/machines/9.png"],
     keyPoints: [
       "Gentle skin rejuvenation process",
       "No consumable accessories needed",
@@ -48,8 +48,8 @@ export const products = [
     title: "Advanced Diode + Picosecond System",
     imageHeading: "DIODE",
     tagline: "Permanent Hair Removal Solution",
-    mainImage: "/images/3.png",
-    resultImages: ["/images/10.png", "/images/11.png"],
+    mainImage: "/images/machines/3.png",
+    resultImages: ["/images/machines/10.png", "/images/machines/11.png"],
     keyPoints: [
       "Works on all skin types (I–VI)",
       "Four wavelengths technology",
@@ -69,8 +69,8 @@ export const products = [
     name: "MEDI LIFT HIFU",
     title: "High-Intensity Focused Ultrasound",
     tagline: "Non-Surgical Facial Lifting",
-    mainImage: "/images/4.png",
-    resultImages: ["/images/12.png", "/images/13.png"],
+    mainImage: "/images/machines/4.png",
+    resultImages: ["/images/machines/12.png", "/images/machines/13.png"],
     keyPoints: [
       "Painless, non-invasive treatment",
       "Multi-layer skin penetration",
@@ -90,8 +90,8 @@ export const products = [
     name: "ULTRAFRAX CO2 FRACTIONAL",
     title: "Professional Fractional CO2 Laser",
     tagline: "Advanced Skin Resurfacing",
-    mainImage: "/images/5.png",
-    resultImages: ["/images/14.png", "/images/15.png"],
+    mainImage: "/images/machines/5.png",
+    resultImages: ["/images/machines/14.png", "/images/machines/15.png"],
     keyPoints: [
       "Wavelength: 10600 nm",
       "Max 60W Laser Power",
@@ -111,8 +111,8 @@ export const products = [
     name: "ULTRAFRAX PRO CO2",
     title: "Advanced Cryolipolysis System",
     tagline: "Body Contouring & Fat Freezing",
-    mainImage: "/images/16.png",
-    resultImages: ["/images/17.png", "/images/18.png"],
+    mainImage: "/images/machines/16.png",
+    resultImages: ["/images/machines/17.png", "/images/machines/18.png"],
     keyPoints: [
       "8 specialized handles",
       "Temperature Range: -10°C to 45°C",
@@ -132,7 +132,7 @@ export const products = [
   "name": "OXYGEN JET PEEL PDT LED",
   "title": "Advanced Hydradermabrasion System",
   "tagline": "Complete Skin Cleansing & Hydration",
-  "mainImage": "/images/32.png",
+  "mainImage": "/images/machines/32.png",
   "resultImages": [],
   "keyPoints": [
     "Hydradermabrasion technology",
@@ -154,7 +154,7 @@ export const products = [
   "name": "ALLICE BUBBLE",
   "title": "Hydra Facial Machine",
   "tagline": "Advanced Hydradermabrasion System",
-  "mainImage": "/images/6.png",
+  "mainImage": "/images/machines/6.png",
   "resultImages": [],
   "keyPoints": [
     "3 soft heads & 8 hard heads",
@@ -182,7 +182,7 @@ export const products = [
   "name": "2 IN 1 ADVANCED ANTI-AGING RF TECHNOLOGY MNRF",
   "title": "Microneedling RF & Cryo Stamp System",
   "tagline": "Advanced Anti-Aging RF Technology",
-  "mainImage": "/images/33.png",
+  "mainImage": "/images/machines/33.png",
   "resultImages": [],
   "keyPoints": [
     "RF microneedle with vacuum",
@@ -208,8 +208,8 @@ export const products = [
   "name": "PRO MNRF",
   "title": "Professional Microneedling RF System",
   "tagline": "Advanced RF Microneedling Technology",
-  "mainImage": "/images/34.png",
-  "resultImages": ["/images/34.1.png", "/images/34.2.png"],
+  "mainImage": "/images/machines/34.png",
+  "resultImages": ["/images/machines/34.1.png", "/images/machines/34.2.png"],
   "keyPoints": [
     "RF Frequency: 2MHz / 8MHz",
     "Power: 400W",
@@ -236,7 +236,7 @@ export const products = [
   "name": "360 CRYO SLIMMING MACHINE",
   "title": "Cryolipolysis Fat Freezing System",
   "tagline": "Non-Invasive Fat Reduction & Body Contouring",
-  "mainImage": "/images/35.png",
+  "mainImage": "/images/machines/35.png",
   "resultImages": [],
   "keyPoints": [
     "360° cryolipolysis cooling & heating",
@@ -258,7 +258,7 @@ export const products = [
   "name": "650NM HAIR REGROWTH PANEL",
   "title": "Laser Hair Regrowth Therapy System",
   "tagline": "Non-Invasive Solution for Hair Growth",
-  "mainImage": "/images/36.png",
+  "mainImage": "/images/machines/36.png",
   "resultImages": [],
   "keyPoints": [
     "650nm laser diode technology",
@@ -280,7 +280,7 @@ export const products = [
   "name": "A5 PLUS AI INTELLIGENT IMAGER",
   "title": "AI Skin Analysis Imaging System",
   "tagline": "One-Click Facial Skin Detection & Analysis",
-  "mainImage": "/images/37.png",
+  "mainImage": "/images/machines/37.png",
   "resultImages": [],
   "keyPoints": [
     "AI-powered facial skin analysis",
@@ -302,7 +302,7 @@ export const products = [
   "name": "A3 AI SKIN ANALYSER",
   "title": "AI Facial Skin Detection System",
   "tagline": "Accurate Skin Analysis with Artificial Intelligence",
-  "mainImage": "/images/38.png",
+  "mainImage": "/images/machines/38.png",
   "resultImages": [],
   "keyPoints": [
     "AI-based facial positioning and zone detection",
@@ -324,7 +324,7 @@ export const products = [
   "name": "EMSLIM NEO RF",
   "title": "EMS & RF Body Sculpting Machine",
   "tagline": "Muscle Building, Fat Reduction & Skin Tightening",
-  "mainImage": "/images/40.png",
+  "mainImage": "/images/machines/39.png",
   "resultImages": [],
   "keyPoints": [
     "EMS technology for muscle strengthening",
@@ -346,7 +346,7 @@ export const products = [
   "name": "EM SCULPT",
   "title": "High-Intensity Electromagnetic Body Sculpting",
   "tagline": "Muscle Growth & Fat Reduction Through Supramaximal Contractions",
-  "mainImage": "/images/40.png",
+  "mainImage": "/images/machines/40.png",
   "resultImages": [],
   "keyPoints": [
     "Induces supramaximal muscle contractions",
@@ -367,7 +367,7 @@ export const products = [
   "name": "RADIO FREQUENCY CAUTERY",
   "title": "High-Frequency RF Cautery System",
   "tagline": "Precise, Safe & Bloodless Surgical Cutting",
-  "mainImage": "/images/41.png",
+  "mainImage": "/images/machines/41.png",
   "resultImages": [],
   "keyPoints": [
     "Pressure-less and precise cutting",
@@ -390,7 +390,7 @@ export const products = [
   "name": "9-IN-1 ADVANCED MEDI-FACIAL DEVICE",
   "title": "Multi-Functional Medi-Facial System",
   "tagline": "Complete Skin Treatment & Rejuvenation",
-  "mainImage": "/images/42.png",
+  "mainImage": "/images/machines/42.png",
   "resultImages": [],
   "keyPoints": [
     "9 specialized facial treatment functions",
@@ -415,7 +415,7 @@ export const products = [
   "name": "PICO SECOND Q-SWITCH ND:YAG LASER",
   "title": "Advanced Tattoo & Pigmentation Removal System",
   "tagline": "Effective Skin Rejuvenation & Pigment Removal",
-  "mainImage": "/images/43.png",
+  "mainImage": "/images/machines/43.png",
   "resultImages": [],
   "keyPoints": [
     "Double lamp, double rod for stable light output",
@@ -445,7 +445,7 @@ export const products = [
   "name": "DIODE HAIR REMOVAL 1600W",
   "title": "Advanced Diode Laser Hair Removal System",
   "tagline": "Efficient, Safe & Painless Hair Removal",
-  "mainImage": "/images/44.png",
+  "mainImage": "/images/machines/44.png",
   "resultImages": [],
   "keyPoints": [
     "High-power 1600 W diode laser",
@@ -474,7 +474,7 @@ export const products = [
   "name": "3-WAVELENGTH DIODE & PICO SECOND LASER",
   "title": "Advanced Multi-Function Hair & Skin Treatment System",
   "tagline": "Diode & Pico Laser for Hair Removal, Skin Rejuvenation, and Pigment Correction",
-  "mainImage": "/images/45.png",
+  "mainImage": "/images/machines/45.png",
   "resultImages": [],
   "keyPoints": [
     "Diode laser: 755, 808, 1064 nm for hair removal on all skin types",
@@ -512,7 +512,7 @@ export const products = [
   "name": "NEW DOUBLO HIFU",
   "title": "Macro & Micro HIFU Ultrasound Lifting System",
   "tagline": "Non-Invasive Skin Lifting, Tightening & Body Contouring",
-  "mainImage": "/images/46.png",
+  "mainImage": "/images/machines/46.png",
   "resultImages": [],
   "keyPoints": [
     "Macro & Micro HIFU technology for face and body lifting",
@@ -543,7 +543,7 @@ export const products = [
   "name": "8 IN 1 + 9 HYDRA FACIAL MACHINE",
   "title": "Hydra Facial Skincare System",
   "tagline": "Deep Cleansing, Skin Tightening & Rejuvenation",
-  "mainImage": "/images/47.png",
+  "mainImage": "/images/machines/47.png",
   "resultImages": [],
   "keyPoints": [
     "8+9 multifunctional hydra facial system",
@@ -568,7 +568,7 @@ export const products = [
   "name": "EMSLIM NEO RF",
   "title": "Muscle Sculpting & Fat Reduction System",
   "tagline": "HI-EMT Muscle Building with RF Tightening",
-  "mainImage": "/images/48.png",
+  "mainImage": "/images/machines/48.png",
   "resultImages": [],
   "keyPoints": [
     "HI-EMT electromagnetic muscle stimulation",
@@ -610,31 +610,31 @@ export const featuredProducts = [
   {
     id: 1,
     title: "ULTRA Q",
-    image: "/images/1.png"
+    image: "/images/machines/1.png"
   },
   {
     id: 2,
     title: "GENELUX-3",
-    image: "/images/2.png"
+    image: "/images/machines/2.png"
   },
   {
     id: 3,
     title: "DIODE HAIR REMOVAL",
-    image: "/images/3.png"
+    image: "/images/machines/3.png"
   },
   {
     id: 4,
     title: "MEDI LIFT HIFU Machine",
-    image: "/images/4.png"
+    image: "/images/machines/4.png"
   },
   {
     id: 5,
     title: "ULTRAFRAX CO2 FRACTIONAL",
-    image: "/images/5.png"
+    image: "/images/machines/5.png"
   },
   {
     id: 6,
     title: "ALLICE BUBBLE HYDRA FACIAL MACHINE",
-    image: "/images/6.png"
+    image: "/images/machines/6.png"
   }
 ];

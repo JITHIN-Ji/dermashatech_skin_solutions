@@ -1,196 +1,100 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 
-// Demo images - replace with your actual images
-const images = [
-  "/images/30.jpg",
+const desktopImages = [
+  "/images/4.png",
+];
+
+const mobileImages = [
+  "/images/5.png",
 ];
 
 const HeroSection = () => {
   const [current, setCurrent] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
 
+  // Detect mobile vs desktop
+  useEffect(() => {
+    const checkScreen = () => setIsMobile(window.innerWidth < 640);
+    checkScreen();
+    window.addEventListener("resize", checkScreen);
+    return () => window.removeEventListener("resize", checkScreen);
+  }, []);
+
+  const images = isMobile ? mobileImages : desktopImages;
+
+  // Auto-slide (only matters if multiple images exist)
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
     }, 5000);
-
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]);
+
+  // Reset index if switching between mobile/desktop with different array lengths
+  useEffect(() => {
+    setCurrent(0);
+  }, [isMobile]);
 
   const scrollToNextSection = () => {
-    // Get the hero section height and navbar offset
-    const heroSection = document.querySelector('section');
-    const navbarHeight = 80; // 20 * 4 = 80px (h-20 in tailwind)
-    
+    const heroSection = document.querySelector("section");
+    const navbarHeight = 80;
     if (heroSection) {
-      const heroHeight = heroSection.offsetHeight;
       window.scrollTo({
-        top: heroHeight - navbarHeight,
+        top: heroSection.offsetHeight - navbarHeight,
         behavior: "smooth",
       });
     }
   };
 
-  const scrollToSection = (sectionId) => {
-    const target = document.getElementById(sectionId);
-    if (!target) return;
-
-    const navbarHeight = 80; // approx h-20 navbar
-    const rect = target.getBoundingClientRect();
-    const offsetTop = window.pageYOffset + rect.top - navbarHeight;
-
-    window.scrollTo({
-      top: offsetTop,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <>
-      {/* Offset for fixed navbar (h-20 = 5rem) so hero never sits behind it */}
-      <section className="relative h-screen overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
-        {/* Background Image Slider with Overlay */}
+      <section
+        className="relative overflow-hidden bg-slate-900"
+        style={{ height: "100vh", minHeight: "500px" }}
+      >
+        {/* Background Image */}
         <div className="absolute inset-0">
           <AnimatePresence initial={false}>
             <motion.div
-              key={current}
+              key={`${isMobile ? "mobile" : "desktop"}-${current}`}
               className="absolute inset-0"
-              initial={{ opacity: 0, scale: 1.1 }}
+              initial={{ opacity: current === 0 ? 1 : 0, scale: current === 0 ? 1 : 1.1 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ duration: 1.5, ease: "easeInOut" }}
             >
               <img
                 src={images[current]}
-                alt="Dermashatech Equipment"
-                className="w-full h-full object-cover"
+                alt="Dermashatech"
+                className="w-full h-full"
+                style={{
+                  objectFit: "cover",
+                  objectPosition: "center top",
+                  touchAction: "none",
+                  userSelect: "none",
+                  WebkitUserSelect: "none",
+                }}
+                draggable={false}
               />
-              {/* Gradient Overlay for better text readability */}
-              <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent" />
             </motion.div>
           </AnimatePresence>
         </div>
 
-        {/* Content Container - FIXED MOBILE ALIGNMENT */}
-        <div className="relative z-10 h-screen flex items-center pt-20">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-16 w-full">
-            <div className="max-w-3xl">
-              {/* Main Heading */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-              >
-                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight">
-                  DERMASHATECH
-                </h1>
-                <div className="h-1 w-24 sm:w-32 bg-gradient-to-r from-purple-500 to-pink-500 mb-4 sm:mb-6" />
-              </motion.div>
-
-              {/* Tagline */}
-              {/* <motion.h2
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-purple-200 font-light mb-6 sm:mb-8"
-              >
-                Skin Aesthetic Solutions
-              </motion.h2> */}
-
-              {/* Description */}
-              <motion.p
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-                className="text-base sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-8 leading-relaxed max-w-2xl"
-              >
-                High-quality, FDA & CE certified laser machines for dermatology
-                and aesthetics. Advanced technology backed by expert support
-                across India.
-              </motion.p>
-
-              {/* Key Features */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.8 }}
-                className="flex flex-wrap gap-2 sm:gap-3 md:gap-4 mb-8 sm:mb-10"
-              >
-                {["FDA Certified", "CE Approved", "Expert Support", "Mumbai Based"].map(
-                  (feature, idx) => (
-                    <span
-                      key={idx}
-                      className="px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white text-xs sm:text-sm font-medium"
-                    >
-                      {feature}
-                    </span>
-                  )
-                )}
-              </motion.div>
-
-              {/* CTA Buttons */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 1 }}
-                className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4"
-              >
-                <button
-                  type="button"
-                  onClick={() => scrollToSection("products-section")}
-                  className="px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 text-sm sm:text-base"
-                >
-                  Explore Products
-                </button>
-
-                <button
-                  type="button"
-                  onClick={() => scrollToSection("featured-machines")}
-                  className="px-6 sm:px-8 py-3 sm:py-4 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white font-semibold rounded-lg hover:bg-white/20 transition-all duration-300 text-sm sm:text-base"
-                >
-                  Featured Machines
-                </button>
-              </motion.div>
-
-            </div>
-          </div>
-        </div>
-
-        {/* Slide Indicators - Only show if multiple images */}
-        {images.length > 1 && (
-          <div className="absolute bottom-24 sm:bottom-32 left-1/2 -translate-x-1/2 z-20 flex gap-2 sm:gap-3">
-            {images.map((_, idx) => (
-              <button
-                key={idx}
-                onClick={() => setCurrent(idx)}
-                className={`h-1.5 sm:h-2 rounded-full transition-all duration-300 ${
-                  idx === current ? "w-8 sm:w-12 bg-white" : "w-1.5 sm:w-2 bg-white/40"
-                }`}
-                aria-label={`Go to slide ${idx + 1}`}
-              />
-            ))}
-          </div>
-        )}
-
-        {/* Scroll Down Arrow */}
-        <button
+        {/* Full-screen clickable overlay — scrolls to next section on click/tap */}
+        <div
+          className="absolute inset-0 z-10 cursor-pointer"
           onClick={scrollToNextSection}
-          className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 z-20"
-          aria-label="Scroll to next section"
-        >
-          <motion.div
-            animate={{ y: [0, 12, 0] }}
-            transition={{ repeat: Infinity, duration: 1.6 }}
-            className="p-2 sm:p-3 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-all duration-300"
-          >
-            <ChevronDown className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
-          </motion.div>
-        </button>
+          onTouchEnd={scrollToNextSection}
+          aria-label="Tap to scroll to next section"
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => { if (e.key === "Enter") scrollToNextSection(); }}
+        />
       </section>
 
-      {/* WhatsApp Floating Button */}
+      {/* WhatsApp Button */}
       <a
         href="https://wa.me/918451088204"
         target="_blank"
