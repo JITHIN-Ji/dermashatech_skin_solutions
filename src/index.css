@@ -5,11 +5,14 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
   
   body {
     font-family: 'Inter', sans-serif;
     @apply bg-white text-gray-900 dark:bg-dark-900 dark:text-white transition-colors duration-200;
+    overflow-x: hidden;
+    position: relative;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -40,13 +43,14 @@
   
   /* Ensure navbar stays above all content */
   nav {
-    isolation: isolate;
-    will-change: transform;
     position: fixed !important;
     top: 0 !important;
     left: 0 !important;
     right: 0 !important;
+    width: 100% !important;
     z-index: 9999 !important;
+    transform: translateZ(0) !important;
+    backface-visibility: hidden !important;
   }
   
   /* Ensure navbar container has proper positioning */
