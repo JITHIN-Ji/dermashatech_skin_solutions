@@ -12,7 +12,7 @@ export const categories = [
     name: 'Diode Laser',
     description: 'Professional hair removal systems for all skin types',
     image: '/images/machines/3.png',
-    productIds: [3, 20, 21], // DIODE HAIR REMOVAL products
+    productIds: [3, 20, 21, 25], // DIODE HAIR REMOVAL products
     gradient: 'from-blue-100 via-cyan-50 to-blue-50'
   },
   {
@@ -28,7 +28,7 @@ export const categories = [
     name: 'Hydrafacial',
     description: 'Deep cleansing and hydration systems',
     image: '/images/machines/6.png',
-    productIds: [7, 8, 18, 23], // OXYGEN JET PEEL, ALLICE BUBBLE, 9-IN-1
+    productIds: [7, 8, 18, 23, 27], // OXYGEN JET PEEL, ALLICE BUBBLE, 9-IN-1, 8 IN 1 + 9 HYDRA, HYDRA STAR
     gradient: 'from-sky-100 via-blue-50 to-sky-50'
   },
   {
@@ -52,7 +52,7 @@ export const categories = [
     name: 'Energy Based Devices',
     description: 'HIFU and RF technologies for lifting and tightening',
     image: '/images/machines/4.png',
-    productIds: [4, 22], // MEDI LIFT HIFU, Macro & Micro HIFU
+    productIds: [4, 22, 26], // MEDI LIFT HIFU, Macro & Micro HIFU, 10D HIFU
     gradient: 'from-rose-100 via-pink-50 to-rose-50'
   },
   {
@@ -92,7 +92,7 @@ export const categories = [
 // Helper function to get products by category
 export const getProductsByCategory = (categoryId, allProducts) => {
   const category = categories.find(cat => cat.id === categoryId);
-  if (!category) return [];
+  if (!category || !allProducts) return [];
   
   return allProducts.filter(product => 
     category.productIds.includes(product.id)

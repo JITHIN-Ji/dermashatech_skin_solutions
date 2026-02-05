@@ -213,7 +213,7 @@ const SkinProducts = () => {
                 {/* Image 1 - Large */}
                 <div className="col-span-2 rounded-2xl overflow-hidden shadow-xl h-80">
                   <img
-                    src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?w=800&h=600&fit=crop"
+                    src="/images/skinimage3.png"
                     alt="Woman applying skincare"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
@@ -222,7 +222,7 @@ const SkinProducts = () => {
                 {/* Image 2 - Small */}
                 <div className="rounded-2xl overflow-hidden shadow-lg h-48">
                   <img
-                    src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=600&h=400&fit=crop"
+                    src="/images/skinimage2.png"
                     alt="Beautiful skin"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
@@ -231,7 +231,7 @@ const SkinProducts = () => {
                 {/* Image 3 - Small */}
                 <div className="rounded-2xl overflow-hidden shadow-lg h-48">
                   <img
-                    src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600&h=400&fit=crop"
+                    src="/images/skinimage1.png"
                     alt="Skincare routine"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />

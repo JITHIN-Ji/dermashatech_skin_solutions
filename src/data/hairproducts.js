@@ -230,7 +230,125 @@ export const hairProducts = [
   featured: false
 }
 
-];
+,
+{
+  id: 'intomedi-hr-peptide',
+  name: 'Intomedi HR Peptide',
+  subtitle: 'Advanced Peptide-Based Hair Re-Growth',
+  image: '/images/hairproducts/hairproduct8.png',
+  shortDescription:
+    'A peptide-based hair re-growth solution designed to stimulate hair follicles, support the anagen growth phase, and improve overall scalp health. Intended for professional meso/topical application as part of a treatment protocol.',
+  suitableFor:
+    'Individuals with hair thinning, androgenetic alopecia, or scalp-related hair loss — suitable for both men and women when used under medical supervision',
+  keyBenefits: [
+    { text: 'Stimulates follicle activity and supports hair regeneration' },
+    { text: 'Improves hair density and reduces visible thinning' },
+    { text: 'Supports a healthy scalp environment and hair growth cycle' },
+    { text: 'Non-surgical option that complements other therapies' }
+  ],
+  keyIngredient: {
+    name: 'HR Peptide Complex',
+    description:
+      'Peptide formulation specifically developed to activate follicular cells, promote cellular signalling for growth, and support tissue repair in the scalp microenvironment.'
+  },
+  texture: {
+    title: 'Presentation',
+    features: ['Sterile amber vial', 'Formulated for mesotherapy or topical professional application']
+  },
+  howToUse: [
+    'Administered by a trained medical professional via mesotherapy or applied following a topical protocol',
+    'Follow a course of treatments as recommended by the specialist',
+    'Visible improvement typically occurs over several weeks to months'
+  ],
+  presentation: 'Box with vial(s) — follow supplier packaging',
+  category: 'hair-therapy',
+  featured: false
+},
+
+{
+  id: 'heating-therapy-laser-cap',
+  name: 'Heating Therapy Laser Cap Laser Hair Therapy',
+  subtitle: 'Professional Laser Hair Growth Therapy',
+  image: '/images/hairproducts/9.png',
+  shortDescription: 'Advanced heating therapy laser cap designed for scalp rejuvenation, hair growth stimulation, and treating hair loss with professional-grade laser technology.',
+  keyBenefits: [
+    { text: 'Stimulates hair follicle growth and regeneration' },
+    { text: 'Reduces hair loss and thinning' },
+    { text: 'Improves scalp circulation and health' },
+    { text: 'Promotes natural hair thickening' },
+    { text: 'Non-invasive and painless treatment' }
+  ],
+  keyIngredient: {
+    name: 'Low-Level Laser Therapy (LLLT)',
+    description: 'Professional-grade laser technology combined with heating therapy to stimulate hair follicles and promote healthy hair growth.'
+  },
+  texture: {
+    title: 'Laser Technology',
+    features: [
+      'Advanced LLLT technology',
+      'Integrated heating function',
+      'Comfortable cap design',
+      'Multiple treatment settings',
+      'Wireless portable operation'
+    ]
+  },
+  howToUse: [
+    'Ensure scalp is clean and dry',
+    'Place cap on head ensuring full coverage',
+    'Select treatment mode and intensity',
+    'Wear for recommended duration (typically 20-30 minutes)',
+    'Use 3-5 times per week for optimal results',
+    'Results typically visible after 4-6 weeks of consistent use'
+  ],
+  suitableFor: 'All hair types, especially those experiencing hair loss or thinning',
+  category: 'hair-therapy-device',
+  featured: true
+},
+
+{
+  id: 'dermaheal-hl',
+  name: 'Dermaheal HL (Hair Treatment)',
+  subtitle: 'Hair Regeneration Treatment Ampoule',
+  image: '/images/hairproducts/10.png',
+  shortDescription: 'Dermaheal HL formulated to support hair follicle health, stimulate growth, and reduce hair thinning using targeted bioactive components.',
+  keyBenefits: [
+    { text: 'Stimulates hair follicle activity' },
+    { text: 'Improves scalp condition and circulation' },
+    { text: 'Supports thicker, healthier hair growth' }
+  ],
+  keyIngredient: { name: 'Peptide & growth factor blend', description: 'Formulated to nurture hair follicles and support regeneration.' },
+  texture: { title: 'Ampoule', features: ['Sterile liquid for mesotherapy or injection'] },
+  howToUse: ['Apply via mesotherapy or professional injection protocols'],
+  suitableFor: 'Thinning hair and androgenic alopecia under professional guidance',
+  category: 'hair-treatment',
+  featured: true
+ },
+ {
+  id: 'hair-laser-comb',
+  name: 'Hair Laser Comb',
+  subtitle: 'Hair Growth Laser Comb',
+  image: '/images/hairproducts/11.png',
+  shortDescription: 'Portable low-level laser therapy (LLLT) comb to stimulate hair follicles and support hair regrowth for thinning areas.',
+  keyBenefits: [
+    { text: 'Stimulates hair follicles via LLLT' },
+    { text: 'Reduces hair shedding and thinning' },
+    { text: 'Improves hair density and scalp circulation' }
+  ],
+  keyIngredient: {
+    name: 'Low-Level Laser Therapy (LLLT)',
+    description: 'Non-thermal laser light that promotes cellular activity in hair follicles.'
+  },
+  howToUse: [
+    'Use on clean, dry scalp',
+    'Comb slowly across thinning areas for recommended duration',
+    'Use 3–5 times per week for best results'
+  ],
+  suitableFor: 'Thinning hair and early-stage hair loss',
+  category: 'hair-device',
+  featured: false
+ }
+
+ ];
 
 // Helper functions
 export const getProductById = (id) =>

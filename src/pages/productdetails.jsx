@@ -4,17 +4,17 @@ import { motion } from 'framer-motion';
 import { ArrowLeft, Check, Phone, Mail } from 'lucide-react';
 
 // Data
-import { productDetailsData } from '../data/productDetails';
+import { productDetailsData } from '../data/machineDetails';
 
 const ProductDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const location = useLocation();
   
-  // Get the category from location state (if coming from category page)
+  
   const categoryId = location.state?.categoryId;
   
-  // Find product by ID from URL parameter
+  
   const product = productDetailsData.find(p => p.id === parseInt(id));
 
   useEffect(() => {
@@ -24,10 +24,10 @@ const ProductDetails = () => {
   
   const handleBackClick = () => {
     if (categoryId) {
-      // If we have a categoryId, go back to that category's products page
+      
       navigate(`/category/${categoryId}`);
     } else {
-      // Otherwise, go back to machines (categories) page
+      
       navigate('/machines');
     }
   };
@@ -62,7 +62,7 @@ const ProductDetails = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               src={product.mainImage}
               alt={product.name}
-              className="w-full max-w-2xl h-[500px] object-contain mx-auto drop-shadow-2xl"
+              className="w-full max-w-2xl h-[500px] object-contain mx-auto"
             />
           </motion.div>
 

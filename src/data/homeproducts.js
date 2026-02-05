@@ -76,11 +76,6 @@ export const hairProducts = [
     name: "Glutathione Hair Serum",
     image: "/images/hairproducts/hairproduct6.png",
     category: "hair"
-  },
-  {
-    id: 7,
-    name: "Hair Scalp Active + HA",
-    image: "/images/hairproducts/hairproduct7.png",
-    category: "hair"
   }
+  
 ];

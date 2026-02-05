@@ -6,7 +6,7 @@ import { ArrowRight, Award, Shield, Headphones, MapPin, Phone, Mail, Check, Zap,
 import HeroSection from '../components/HeroSection';
 
 // Data
-import { featuredProducts } from '../data/products';
+import { featuredProducts } from '../data/home_machines';
 import { skinProducts, hairProducts } from '../data/homeproducts';
 
 // ProductCard Component
@@ -42,34 +42,35 @@ const ProductCard = ({ product }) => {
   );
 };
 
-// Scrolling Product Card Component
-const ScrollingProductCard = ({ product }) => {
+// Static Product Card Component (for grid display)
+const StaticProductCard = ({ product, index }) => {
   return (
-    <div className="flex-shrink-0 w-72 mx-4">
-      <motion.div
-        whileHover={{ scale: 1.05, y: -5 }}
-        transition={{ duration: 0.3 }}
-        className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-2xl transition-all duration-300"
-      >
-        {/* Image */}
-        <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
-          <img
-            src={product.image}
-            alt={product.name}
-            className="w-full h-full object-contain"
-            loading="lazy"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
-        </div>
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: index * 0.05 }}
+      viewport={{ once: true }}
+      whileHover={{ y: -8 }}
+      className="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-200 hover:shadow-xl transition-all duration-300 group"
+    >
+      {/* Image */}
+      <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
+        <img
+          src={product.image}
+          alt={product.name}
+          className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
+          loading="lazy"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      </div>
 
-        {/* Product Name */}
-        <div className="p-5">
-          <h3 className="font-bold text-gray-900 text-lg text-center">
-            {product.name}
-          </h3>
-        </div>
-      </motion.div>
-    </div>
+      {/* Product Name */}
+      <div className="p-5">
+        <h3 className="font-bold text-gray-900 text-lg text-center group-hover:text-[#1ba9a0] transition-colors duration-300">
+          {product.name}
+        </h3>
+      </div>
+    </motion.div>
   );
 };
 
@@ -248,12 +249,12 @@ const Home = () => {
                   className="col-span-2 relative rounded-2xl overflow-hidden shadow-lg group"
                 >
                   <img
-                    src="/images/22.jpg"
+                    src="/images/laser.jpeg"
                     alt="Laser Equipment"
                     className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
-                    <p className="text-white font-semibold">Q-Switch Laser Systems</p>
+                    <p className="text-white font-semibold">Diode laser technology</p>
                   </div>
                 </motion.div>
 
@@ -263,12 +264,12 @@ const Home = () => {
                   className="relative rounded-2xl overflow-hidden shadow-lg group"
                 >
                   <img
-                    src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80"
+                    src="/images/pico.jpeg"
                     alt="Diode Laser"
                     className="w-full h-40 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-3">
-                    <p className="text-white text-sm font-semibold">Diode Hair Removal</p>
+                    <p className="text-white text-sm font-semibold">Pico laser technology</p>
                   </div>
                 </motion.div>
 
@@ -278,7 +279,7 @@ const Home = () => {
                   className="relative rounded-2xl overflow-hidden shadow-lg group"
                 >
                   <img
-                    src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80"
+                    src="/images/hifu.jpeg"
                     alt="HIFU Machine"
                     className="w-full h-40 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
@@ -305,79 +306,30 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Hair Products - Scrolling Left to Right (Products section) */}
-      <section
-        id="products-section"
-        className="py-20 bg-gradient-to-br from-purple-50 via-pink-50 to-purple-50 overflow-hidden scroll-mt-24"
-      >
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-center"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Products for Hair
-            </h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              Transform your hair care routine with scientifically formulated solutions for strength, shine, and vitality
-            </p>
-          </motion.div>
-        </div>
-
-        {/* Scrolling Container - Left to Right */}
-        <div className="relative">
-          <motion.div
-            animate={{
-              x: [0, -2000],
-            }}
-            transition={{
-              x: {
-                repeat: Infinity,
-                repeatType: "loop",
-                duration: 30,
-                ease: "linear",
-              },
-            }}
-            className="flex"
-          >
-            {/* Duplicate the array to create seamless loop */}
-            {[...hairProducts, ...hairProducts, ...hairProducts].map((product, index) => (
-              <ScrollingProductCard key={`hair-${index}`} product={product} />
-            ))}
-          </motion.div>
-        </div>
-
-        {/* Button Below Grid */}
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-center"
-          >
-            <motion.a
-              href="/hairproducts?category=hair"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              <span>Explore Hair Products</span>
-              <ArrowRight className="w-5 h-5" />
-            </motion.a>
-          </motion.div>
-        </div>
+      {/* Image Banner 1 - Cosderma Skin Cleansers */}
+      <section className="w-full">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          className="w-full overflow-hidden h-64 md:h-80 lg:h-96"
+        >
+          <img
+            src="/images/3.png"
+            alt="Cosderma Skin Cleansers - New Arrival"
+            className="w-full h-full object-cover"
+          />
+        </motion.div>
       </section>
 
-      {/* Skin Products - Scrolling Right to Left */}
-      <section className="py-20 bg-gradient-to-br from-teal-50 via-cyan-50 to-teal-50 overflow-hidden">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+      {/* Skin Products - Professional Grid Layout */}
+      <section className="py-20 bg-gradient-to-br from-teal-50 via-cyan-50 to-teal-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-center"
+            className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Products for Skin
@@ -386,33 +338,15 @@ const Home = () => {
               Reveal your natural radiance with premium skincare formulations designed for healthy, glowing skin
             </p>
           </motion.div>
-        </div>
 
-        {/* Scrolling Container - Right to Left */}
-        <div className="relative">
-          <motion.div
-            animate={{
-              x: [-2000, 0],
-            }}
-            transition={{
-              x: {
-                repeat: Infinity,
-                repeatType: "loop",
-                duration: 30,
-                ease: "linear",
-              },
-            }}
-            className="flex"
-          >
-            {/* Duplicate the array to create seamless loop */}
-            {[...skinProducts, ...skinProducts, ...skinProducts].map((product, index) => (
-              <ScrollingProductCard key={`skin-${index}`} product={product} />
+          {/* Grid Container */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
+            {skinProducts.slice(0, 8).map((product, index) => (
+              <StaticProductCard key={`skin-${index}`} product={product} index={index} />
             ))}
-          </motion.div>
-        </div>
+          </div>
 
-        {/* Button Below Grid */}
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+          {/* Button Below Grid */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -425,16 +359,42 @@ const Home = () => {
               whileTap={{ scale: 0.95 }}
               className="inline-flex items-center gap-2 bg-gradient-to-r from-[#1ba9a0] to-teal-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <span>Explore Skin Products</span>
+              <span>Explore All Skin Products</span>
               <ArrowRight className="w-5 h-5" />
             </motion.a>
           </motion.div>
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Image Banner 2 - Cosderma Beauty Products & Meso Solutions - MOBILE FIXED */}
+      <section className="w-full">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          className="w-full overflow-hidden"
+        >
+          <div className="grid grid-cols-1 md:grid-cols-2">
+            <img
+              src="/images/skin.jpg"
+              alt="Cosderma New Beauty - Sunscreens, Moisturizers, Serum"
+              className="w-full h-64 md:h-80 lg:h-96 object-cover"
+            />
+            <img
+              src="/images/skin1.png"
+              alt="Discover Powerful Meso Solutions for Flawless Skin"
+              className="w-full h-64 md:h-80 lg:h-96 object-cover"
+            />
+          </div>
+        </motion.div>
+      </section>
+
+      {/* Hair Products - Professional Grid Layout */}
+      <section
+        id="products-section"
+        className="py-20 bg-gradient-to-br from-purple-50 via-pink-50 to-purple-50 scroll-mt-24"
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -442,95 +402,36 @@ const Home = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Why Choose DERMASHATECH?
+              Products for Hair
             </h2>
-            <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-              We offer comprehensive post-sale service, maintenance support, and warranty coverage designed to give you complete peace of mind.
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Transform your hair care routine with scientifically formulated solutions for strength, shine, and vitality
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {features.map((feature, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="p-8 rounded-xl bg-white border border-gray-200 hover:shadow-lg transition-all duration-300 group"
-              >
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0">
-                    <div className="w-14 h-14 rounded-xl bg-white text-black border border-gray-300 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-md">
-                      {feature.icon}
-                    </div>
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-purple-600 transition-colors">{feature.title}</h3>
-                    <p className="text-gray-600 leading-relaxed">{feature.description}</p>
-                  </div>
-                </div>
-              </motion.div>
+          {/* Grid Container */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
+            {hairProducts.slice(0, 8).map((product, index) => (
+              <StaticProductCard key={`hair-${index}`} product={product} index={index} />
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* Featured Machines Section */}
-      <section
-        id="featured-machines"
-        className="py-20 bg-gray-50 scroll-mt-24"
-      >
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Button Below Grid */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Our Featured Machines
-            </h2>
-            <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-              Wide range of laser aesthetic machines with advanced technology for dermatology and aesthetic treatments
-            </p>
-          </motion.div>
-
-          {/* Product Grid */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12"
-          >
-            {featuredProducts.map((product, index) => (
-              <motion.div
-                key={product.id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <ProductCard product={product} />
-              </motion.div>
-            ))}
-          </motion.div>
-
-          {/* View All Button */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
             className="text-center"
           >
             <motion.a
-              href="/machines"
+              href="/hairproducts?category=hair"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-10 py-4 bg-[#1ba9a0] text-white font-semibold rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 flex items-center space-x-2 mx-auto inline-flex"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <span>View All Machines</span>
-              <ArrowRight className="h-5 w-5" />
+              <span>Explore All Hair Products</span>
+              <ArrowRight className="w-5 h-5" />
             </motion.a>
-
           </motion.div>
         </div>
       </section>
@@ -577,6 +478,78 @@ const Home = () => {
                 </div>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* HydraFacial Section - Full Width Left Image, Content Right */}
+      <section className="py-16 bg-gradient-to-br from-cyan-50 to-blue-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-center">
+            {/* Left Side - Large Full-Width Image (No padding on left) */}
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              className="h-full"
+            >
+              <div className="relative h-full min-h-[400px] lg:min-h-[500px]">
+                <img
+                  src="/images/hydra.png"
+                  alt="HydraFacial Treatment Machine"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </motion.div>
+
+            {/* Right Side - Content with padding */}
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              className="px-8 lg:px-16 py-12 lg:py-0 space-y-6"
+            >
+              <div className="inline-block">
+                <span className="text-cyan-600 font-semibold text-sm uppercase tracking-wide">
+                  ADVANCED HYDRATION
+                </span>
+              </div>
+
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+                HydraFacial
+              </h2>
+
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Achieve radiant, hydrated skin with our <span className="font-semibold text-cyan-600">6-in-1 HydraStar™</span> technology
+              </p>
+
+              <div className="space-y-3 text-base text-gray-700">
+                <p className="flex items-center gap-2">
+                  <span className="text-cyan-600">✓</span> Deep cleansing & hydration
+                </p>
+                <p className="flex items-center gap-2">
+                  <span className="text-cyan-600">✓</span> Oxygen infusion therapy
+                </p>
+                <p className="flex items-center gap-2">
+                  <span className="text-cyan-600">✓</span> RF skin tightening
+                </p>
+                <p className="flex items-center gap-2">
+                  <span className="text-cyan-600">✓</span> Ultrasonic exfoliation
+                </p>
+              </div>
+
+              <div className="pt-4">
+                <motion.a
+                  href="tel:+918451088204"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-600 to-blue-600 text-white font-semibold py-4 px-10 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                >
+                  <Phone className="w-5 h-5" />
+                  <span>Contact Us</span>
+                </motion.a>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>

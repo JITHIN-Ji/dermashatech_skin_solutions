@@ -1248,11 +1248,1274 @@ export const skinProducts = [
   suitableFor: 'Hyperpigmentation, blemishes, dark spots, and melasma',
   category: 'brightening-injection-therapy',
   featured: false
-}
+},
+{
+  id: 'mooyam-24k-gold-serum-mask',
+  name: 'MOOYAM 24K Gold Serum Facial Mask',
+  subtitle: 'Lightweight, Breathable Face Mask',
+  image: '/images/skinproducts/41.jpeg',
+  shortDescription:
+    'A luxurious 24K gold serum facial mask designed to provide layer-by-layer hydration and anti-aging benefits with a lightweight, breathable formula.',
+  keyBenefits: [
+    { text: 'Layer-by-layer hydration for deep moisture penetration' },
+    { text: 'Anti-aging properties to reduce fine lines and wrinkles' },
+    { text: 'Lightweight and breathable for comfortable wear' },
+    { text: 'Enhances skin radiance with 24K gold essence' },
+    { text: 'Improves skin elasticity and firmness' }
+  ],
+  keyIngredient: {
+    name: '24K Gold Serum',
+    description:
+      'Pure 24K gold infused serum provides luxurious anti-aging benefits, boosts circulation, and enhances skin luminosity for a radiant, youthful glow.'
+  },
+  texture: {
+    title: 'Texture & Absorption',
+    features: [
+      'Lightweight, breathable serum mask',
+      'Non-greasy formula with smooth application',
+      'Quick absorption with long-lasting hydration',
+      'Suitable for all skin types'
+    ]
+  },
+  howToUse: [
+    'Cleanse and tone your face thoroughly',
+    'Apply the mask evenly over face and neck',
+    'Leave on for 15-20 minutes',
+    'Remove gently and pat in any remaining serum',
+    'Use 2-3 times per week for best results'
+  ],
+  suitableFor: 'All skin types, especially dull and aging skin',
+  category: 'face-mask',
+  featured: true
+},
+{
+  id: 'mooyam-hyaluronic-acid-serum-mask',
+  name: 'MOOYAM Hyaluronic Acid Serum Facial Mask',
+  subtitle: 'Lightweight, Breathable Face Mask',
+  image: '/images/skinproducts/42.jpeg',
+  shortDescription:
+    'A refreshing hyaluronic acid serum facial mask that provides intensive hydration, reduces fine lines, and minimizes pore size with layer-by-layer moisture penetration.',
+  keyBenefits: [
+    { text: 'Layer-by-layer hydration for intense moisture penetration' },
+    { text: 'Reduces fine lines and wrinkles effectively' },
+    { text: 'Minimizes pore size for smoother skin appearance' },
+    { text: 'Lightweight and breathable formula' },
+    { text: 'Enhances skin firmness and elasticity' }
+  ],
+  keyIngredient: {
+    name: 'Hyaluronic Acid',
+    description:
+      'High-concentration hyaluronic acid holds up to 1,000 times its weight in water, providing deep hydration and restoring skin plumpness for a youthful, radiant complexion.'
+  },
+  texture: {
+    title: 'Texture & Absorption',
+    features: [
+      'Lightweight, refreshing serum mask',
+      'Non-greasy, breathable formula',
+      'Quick absorption with long-lasting hydration',
+      'Suitable for all skin types'
+    ]
+  },
+  howToUse: [
+    'Cleanse and tone your face thoroughly',
+    'Apply the mask evenly over face and neck',
+    'Leave on for 15-20 minutes',
+    'Remove gently and pat in any remaining serum',
+    'Use 2-3 times per week for best results'
+  ],
+  suitableFor: 'All skin types, especially dry and mature skin',
+  category: 'face-mask',
+  featured: true
+},
+{
+  id: 'mooyam-vitamin-c-serum-mask',
+  name: 'MOOYAM Vitamin C Serum Facial Mask',
+  subtitle: 'Lightweight, Breathable Face Mask',
+  image: '/images/skinproducts/43.jpeg',
+  shortDescription:
+    'A brightening vitamin C serum facial mask that provides layer-by-layer hydration, whitens skin, brightens complexion, and evens skin tone.',
+  keyBenefits: [
+    { text: 'Layer-by-layer hydration for deep moisture penetration' },
+    { text: 'Brightens dull and uneven skin tone' },
+    { text: 'Provides powerful antioxidant protection' },
+    { text: 'Reduces dark spots and hyperpigmentation' },
+    { text: 'Enhances natural skin radiance and glow' }
+  ],
+  keyIngredient: {
+    name: 'Vitamin C',
+    description:
+      'High-potency vitamin C brightens skin, promotes collagen synthesis, and provides antioxidant protection against environmental damage while evening out skin tone and reducing discoloration.'
+  },
+  texture: {
+    title: 'Texture & Absorption',
+    features: [
+      'Lightweight, brightening serum mask',
+      'Non-greasy, breathable formula',
+      'Smooth, luxurious texture',
+      'Quick absorption with lasting radiance'
+    ]
+  },
+  howToUse: [
+    'Cleanse and tone your face thoroughly',
+    'Apply the mask evenly over face and neck',
+    'Leave on for 15-20 minutes',
+    'Remove gently and pat in any remaining serum',
+    'Use 2-3 times per week for best results'
+  ],
+  suitableFor: 'All skin types, especially dull and hyperpigmented skin',
+  category: 'face-mask',
+  featured: true
+},
+{
+  id: 'mooyam-retinol-serum-mask',
+  name: 'MOOYAM Retinol Serum Facial Mask',
+  subtitle: 'Lightweight, Breathable Face Mask',
+  image: '/images/skinproducts/44.jpeg',
+  shortDescription:
+    'A powerful retinol serum facial mask that firms, tightens, and delivers anti-aging benefits. Enriched with vitamins A, B, E to resist wrinkles and promote skin renewal.',
+  keyBenefits: [
+    { text: 'Firms and tightens skin for a lifted appearance' },
+    { text: 'Powerful anti-aging and wrinkle-resisting properties' },
+    { text: 'Stimulates collagen production and skin renewal' },
+    { text: 'Reduces fine lines and improves skin texture' },
+    { text: 'Lightweight and breathable formula' }
+  ],
+  keyIngredient: {
+    name: 'Retinol with Vitamins A, B, E',
+    description:
+      'Advanced retinol complex combined with essential vitamins promotes skin cell turnover, boosts collagen synthesis, and provides powerful anti-aging benefits while nourishing and protecting the skin.'
+  },
+  texture: {
+    title: 'Texture & Absorption',
+    features: [
+      'Lightweight, smoothing serum mask',
+      'Non-greasy, breathable formula',
+      'Absorbs quickly with firming effect',
+      'Suitable for mature and aging skin'
+    ]
+  },
+  howToUse: [
+    'Cleanse and tone your face thoroughly',
+    'Apply the mask evenly over face and neck',
+    'Leave on for 15-20 minutes',
+    'Remove gently and pat in any remaining serum',
+    'Use 2-3 times per week for best results',
+    'Use sunscreen during the day as retinol increases sun sensitivity'
+  ],
+  suitableFor: 'Mature skin, aging skin, and those seeking anti-aging benefits',
+  category: 'face-mask',
+  featured: true
+},
+{
+  id: 'mooyam-collagen-serum-mask',
+  name: 'MOOYAM Collagen Serum Facial Mask',
+  subtitle: 'Lightweight, Breathable Face Mask',
+  image: '/images/skinproducts/45.jpeg',
+  shortDescription:
+    'A luxurious collagen serum facial mask that smooths, firms, and provides elastic skin benefits. Creates a beautiful skin plump with layer-by-layer hydration and elasticity restoration.',
+  keyBenefits: [
+    { text: 'Smooth and delicate firming effects' },
+    { text: 'Enhances skin elasticity and firmness' },
+    { text: 'Creates beautiful skin plump and volume' },
+    { text: 'Layer-by-layer hydration and nourishment' },
+    { text: 'Improves overall skin texture and radiance' }
+  ],
+  keyIngredient: {
+    name: 'Marine Collagen',
+    description:
+      'Premium marine collagen works deeply to restore skin elasticity, improve firmness, and create a plump, youthful appearance while providing intensive hydration and nourishment.'
+  },
+  texture: {
+    title: 'Texture & Absorption',
+    features: [
+      'Lightweight, nourishing serum mask',
+      'Non-greasy, silky formula',
+      'Quick absorption with firming effect',
+      'Suitable for all skin types'
+    ]
+  },
+  howToUse: [
+    'Cleanse and tone your face thoroughly',
+    'Apply the mask evenly over face and neck',
+    'Leave on for 15-20 minutes',
+    'Remove gently and pat in any remaining serum',
+    'Use 2-3 times per week for best results'
+  ],
+  suitableFor: 'All skin types, especially dull, sagging, and inelastic skin',
+  category: 'face-mask',
+  featured: true
+},
+{
+  id: 'mooyam-snail-serum-mask',
+  name: 'MOOYAM Snail Serum Facial Mask',
+  subtitle: 'Lightweight, Breathable Face Mask',
+  image: '/images/skinproducts/46.jpeg',
+  shortDescription:
+    'A regenerative snail serum facial mask that provides intensive skin renewal and rejuvenation. Delivers cell rejuvenation, moisturizing, and anti-aging benefits for beautiful, healthy skin.',
+  keyBenefits: [
+    { text: 'Intensive cell rejuvenation and renewal' },
+    { text: 'Deep moisturizing and hydration benefits' },
+    { text: 'Anti-aging and skin regeneration properties' },
+    { text: 'Soothes and calms sensitive skin' },
+    { text: 'Improves skin elasticity and radiance' }
+  ],
+  keyIngredient: {
+    name: 'Snail Secretion Filtrate',
+    description:
+      'Natural snail secretion filtrate is rich in glycoproteins and enzymes that promote cellular rejuvenation, enhance healing, and provide intensive hydration and anti-aging benefits.'
+  },
+  texture: {
+    title: 'Texture & Absorption',
+    features: [
+      'Lightweight, rejuvenating serum mask',
+      'Non-greasy, gentle formula',
+      'Quick absorption with long-lasting hydration',
+      'Suitable for all skin types including sensitive skin'
+    ]
+  },
+  howToUse: [
+    'Cleanse and tone your face thoroughly',
+    'Apply the mask evenly over face and neck',
+    'Leave on for 15-20 minutes',
+    'Remove gently and pat in any remaining serum',
+    'Use 2-3 times per week for best results'
+  ],
+  suitableFor: 'All skin types, especially sensitive, damaged, and mature skin',
+  category: 'face-mask',
+  featured: true
+},
+{
+  id: 'bamboo-charcoal-jelly-mask',
+  name: 'Bamboo Charcoal Jelly Mask',
+  subtitle: 'Shrink Pores & Deeply Clean',
+  image: '/images/skinproducts/47.jpeg',
+  shortDescription:
+    'An effective purifying bamboo charcoal jelly mask that shrinks pores and deeply cleanses the skin. Draws out impurities and removes dead skin cells for a clean, refined complexion.',
+  keyBenefits: [
+    { text: 'Effectively shrinks and minimizes pores' },
+    { text: 'Deeply cleanses and removes impurities' },
+    { text: 'Extracts blackheads and excess oil' },
+    { text: 'Removes dead skin cells and debris' },
+    { text: 'Creates smooth, refined skin texture' }
+  ],
+  keyIngredient: {
+    name: 'Bamboo Charcoal with Hyaluronic Acid',
+    description:
+      'Activated bamboo charcoal acts as a powerful absorbent drawing out impurities and toxins from pores, while hyaluronic acid provides hydration to balance the purifying action.'
+  },
+  texture: {
+    title: 'Texture & Application',
+    features: [
+      'Smooth jelly consistency for easy application',
+      'Peelable gel formula',
+      'Charcoal-infused for deep cleansing',
+      'Leaves skin clean and refined'
+    ]
+  },
+  howToUse: [
+    'Cleanse your face thoroughly',
+    'Apply an even layer of the jelly mask over face (avoiding eye area)',
+    'Leave on for 15-20 minutes until fully dry',
+    'Gently peel off the mask',
+    'Rinse with lukewarm water',
+    'Apply moisturizer to nourish cleansed skin',
+    'Use 1-2 times per week for best results'
+  ],
+  suitableFor: 'Oily, combination, and acne-prone skin',
+  category: 'peel-off-mask',
+  featured: true
+},
+{
+  id: 'vampire-plla-infusion-mask',
+  name: 'Vampire PLLA Infusion Jelly Mask',
+  subtitle: 'Poly-L-Lactic Acid Jelly Mask',
+  image: '/images/skinproducts/48.jpeg',
+  shortDescription:
+    'An innovative Poly-L-Lactic Acid (PLLA) jelly mask that effectively moisturizes and plumps skin while promoting skin firmness and anti-aging. Enriched with Hyaluronic Acid and collagen for enhanced results.',
+  keyBenefits: [
+    { text: 'Stimulates collagen production for firmer skin' },
+    { text: 'Intensive moisturizing and plumping effect' },
+    { text: 'Promotes skin lifting and tightening' },
+    { text: 'Anti-aging and rejuvenating properties' },
+    { text: 'Improves skin elasticity and resilience' }
+  ],
+  keyIngredient: {
+    name: 'Poly-L-Lactic Acid (PLLA) with Hyaluronic Acid & Collagen',
+    description:
+      'PLLA is a biocompatible ingredient that stimulates natural collagen production, while Hyaluronic Acid and Collagen provide intense hydration and structural support for firmer, more youthful-looking skin.'
+  },
+  texture: {
+    title: 'Texture & Application',
+    features: [
+      'Smooth, luxurious jelly consistency',
+      'Peelable gel mask formula',
+      'Rich, nourishing texture',
+      'Leaves skin soft and plump'
+    ]
+  },
+  howToUse: [
+    'Cleanse and tone your face thoroughly',
+    'Apply an even layer of the jelly mask over face (avoiding eye and lip area)',
+    'Leave on for 15-20 minutes until set',
+    'Gently peel off the mask from the edges',
+    'Rinse with lukewarm water and pat dry',
+    'Apply your regular skincare routine',
+    'Use 2-3 times per week for optimal results'
+  ],
+  suitableFor: 'All skin types, especially mature, dull, and inelastic skin',
+  category: 'peel-off-mask',
+  featured: true
+},
+{
+  id: 'hyaluronic-acid-jelly-mask',
+  name: 'Hyaluronic Acid Jelly Mask',
+  subtitle: 'Moisturize & Whiten',
+  image: '/images/skinproducts/49.jpeg',
+  shortDescription:
+    'An effective hyaluronic acid jelly mask that moisturizes and whitens skin. Enriched with Sodium Alginate, Calcium Sulfate, and natural ingredients to provide intense hydration and brightening effects.',
+  keyBenefits: [
+    { text: 'Intensive moisturizing and hydration' },
+    { text: 'Whitening and brightening effects' },
+    { text: 'Reduces dark spots and discoloration' },
+    { text: 'Improves skin luminosity and radiance' },
+    { text: 'Gentle and suitable for all skin types' }
+  ],
+  keyIngredient: {
+    name: 'Hyaluronic Acid with Sodium Alginate & Calcium Sulfate',
+    description:
+      'Hyaluronic acid holds 1,000 times its weight in water for deep hydration, while sodium alginate and calcium sulfate create a hydrating gel matrix that lifts and firms the skin while promoting brightness.'
+  },
+  texture: {
+    title: 'Texture & Application',
+    features: [
+      'Smooth, lightweight jelly consistency',
+      'Peelable gel mask formula',
+      'Non-irritating and hydrating',
+      'Creates a refreshing cooling effect'
+    ]
+  },
+  howToUse: [
+    'Cleanse your face thoroughly',
+    'Apply an even layer of the jelly mask over face (avoiding eye and lip area)',
+    'Leave on for 15-20 minutes until fully set',
+    'Gently peel off the mask from the edges',
+    'Rinse with lukewarm water and pat dry',
+    'Apply your regular skincare routine',
+    'Use 2-3 times per week for best results'
+  ],
+  suitableFor: 'All skin types, especially dry, dull, and hyperpigmented skin',
+  category: 'peel-off-mask',
+  featured: true
+},
+{
+  id: 'kiwi-fruit-jelly-mask',
+  name: 'Kiwi Fruit Jelly Mask',
+  subtitle: 'Prevent Aging & Brightening',
+  image: '/images/skinproducts/50.jpeg',
+  shortDescription:
+    'An effective kiwi fruit jelly mask that prevents aging and brightens skin. Enriched with natural kiwi fruit extract and seeds, plus sodium hyaluronate for anti-aging and brightening benefits.',
+  keyBenefits: [
+    { text: 'Prevents signs of aging effectively' },
+    { text: 'Brightens and evens skin tone' },
+    { text: 'Rich in antioxidants from kiwi fruit' },
+    { text: 'Intensive hydration with sodium hyaluronate' },
+    { text: 'Promotes radiant, youthful-looking skin' }
+  ],
+  keyIngredient: {
+    name: 'Kiwi Fruit Extract & Sodium Hyaluronate',
+    description:
+      'Natural kiwi fruit extract is rich in vitamins, minerals, and antioxidants that brighten and protect skin, while sodium hyaluronate provides deep hydration and supports anti-aging benefits.'
+  },
+  texture: {
+    title: 'Texture & Application',
+    features: [
+      'Light green, fruity-scented jelly consistency',
+      'Peelable gel mask formula',
+      'Non-greasy and refreshing',
+      'Leaves skin smooth and radiant'
+    ]
+  },
+  howToUse: [
+    'Cleanse your face thoroughly',
+    'Apply an even layer of the jelly mask over face (avoiding eye and lip area)',
+    'Leave on for 15-20 minutes until fully set',
+    'Gently peel off the mask from the edges',
+    'Rinse with lukewarm water and pat dry',
+    'Apply your regular skincare routine',
+    'Use 2-3 times per week for best results'
+  ],
+  suitableFor: 'All skin types, especially dull, mature, and aging skin',
+  category: 'peel-off-mask',
+  featured: true
+},
+{
+  id: 'tea-tree-jelly-mask',
+  name: 'Tea Tree',
+  subtitle: 'Acne Treatment & After-Sun Repair Jelly Mask',
+  image: '/images/skinproducts/51.jpeg',
+  shortDescription: 'An effective jelly mask formulated with Tea Tree extract to treat acne, repair after-sun damage, and provide soothing relief for troubled skin.',
+  keyBenefits: [
+    { text: 'Efficiently improves acne problems and breakouts' },
+    { text: 'Repairs skin after sun exposure' },
+    { text: 'Soothing and calming for irritated skin' },
+    { text: 'Easy to apply and remove with gel-like texture' },
+    { text: 'Helps purify and clarify skin'
+    }
+  ],
+  keyIngredient: {
+    name: 'Tea Tree Extract',
+    description: 'A natural antibacterial and antifungal ingredient known for its effectiveness in treating acne and soothing inflamed skin.'
+  },
+  texture: {
+    title: 'Texture & Application',
+    features: [
+      'Lightweight gel-like jelly texture',
+      'Easy to apply and massage on face and neck',
+      'Peels off cleanly without residue',
+      'Non-greasy and comfortable to wear'
+    ]
+  },
+  howToUse: [
+    'After facial cleansing, apply the jelly mask evenly over face and neck',
+    'Use purified water if needed to aid application',
+    'Leave on for 15-20 minutes until set',
+    'Gently peel off and remove',
+    'Rinse thoroughly with water for a pickle-free finish'
+  ],
+  suitableFor: 'Acne-prone, oily, and sensitive skin',
+  category: 'mask',
+  featured: false
+},
+{
+  id: 'lemon-jelly-mask',
+  name: 'Lemon',
+  subtitle: 'Whitening & Antioxidative Jelly Mask',
+  image: '/images/skinproducts/52.jpeg',
+  shortDescription: 'A brightening jelly mask formulated with Lemon extract to help even skin tone, control oil, reduce dark spots, and provide antioxidant protection.',
+  keyBenefits: [
+    { text: 'Brightens and helps reduce dark spots' },
+    { text: 'Antioxidative protection against free radicals' },
+    { text: 'Oil control and reduces shine' },
+    { text: 'Anti-wrinkle and skin tightening support' },
+    { text: 'Improves skin repair and radiance' }
+  ],
+  keyIngredient: {
+    name: 'Lemon Extract',
+    description: 'Rich in vitamin C and antioxidants; helps brighten skin, reduce pigmentation, and support skin renewal.'
+  },
+  texture: {
+    title: 'Texture & Application',
+    features: [
+      'Lightweight jelly texture',
+      'Easy to spread and forms an even film',
+      'Peels off cleanly after setting',
+      'Non-sticky and comfortable on skin'
+    ]
+  },
+  howToUse: [
+    'After cleansing, apply an even layer of the jelly mask over face (avoid eye and lip areas)',
+    'Leave on for 15-20 minutes until fully set',
+    'Gently peel off from the edges',
+    'Rinse with lukewarm water and pat dry',
+    'Use 2-3 times per week for best results'
+  ],
+  suitableFor: 'All skin types, especially dull and pigmented skin',
+  category: 'mask',
+  featured: false
+},
+{
+  id: 'collagen-jelly-mask',
+  name: 'Collagen',
+  subtitle: 'Moisturing & Nutritional Supplement Jelly Mask',
+  image: '/images/skinproducts/53.jpeg',
+  shortDescription: 'A moisturizing jelly mask enriched with collagen to support skin elasticity, hydration, and a nourished complexion.',
+  keyBenefits: [
+    { text: 'Deep hydration and moisture retention' },
+    { text: 'Supports skin elasticity and firmness' },
+    { text: 'Nourishes and improves skin texture' },
+    { text: 'Helps reduce the appearance of fine lines' },
+    { text: 'Comforting, non-greasy jelly feel' }
+  ],
+  keyIngredient: {
+    name: 'Collagen',
+    description: 'Hydrolyzed collagen helps replenish the skin’s matrix, improving elasticity and supporting a plumper, more youthful appearance.'
+  },
+  texture: {
+    title: 'Texture & Application',
+    features: [
+      'Creamy jelly consistency',
+      'Spreads evenly and forms a gentle film',
+      'Peels off cleanly after setting',
+      'Non-sticky and lightweight on skin'
+    ]
+  },
+  howToUse: [
+    'After cleansing, apply a thin, even layer across face avoiding eyes and lips',
+    'Leave on for 15-20 minutes until set',
+    'Gently peel off from the edges and rinse any residue',
+    'Pat dry and continue with your regular skincare routine',
+    'Use 2-3 times weekly for best results'
+  ],
+  suitableFor: 'All skin types, especially dehydrated or aging skin',
+  category: 'mask',
+  featured: false
+},
 
-];
 
-// Helper function to get product by ID
+{
+  id: 'bulgarian-rose-jelly-mask',
+  name: 'Bulgarian Rose',
+  subtitle: 'Whitening & Skin Refining Jelly Mask',
+  image: '/images/skinproducts/54.jpeg',
+  shortDescription: 'A soothing jelly mask infused with Bulgarian Rose extract to brighten, hydrate, and improve overall skin tone while enhancing skin delicacy.',
+  keyBenefits: [
+    { text: 'Helps brighten and even out skin tone' },
+    { text: 'Improves skin softness and delicacy' },
+    { text: 'Provides deep hydration and nourishment' },
+    { text: 'Soothes and refreshes tired skin' },
+    { text: 'Enhances natural glow and clarity' }
+  ],
+  keyIngredient: {
+    name: 'Bulgarian Rose Extract',
+    description: 'Rich in antioxidants and soothing properties, Bulgarian Rose extract helps hydrate, calm irritation, and improve skin radiance.'
+  },
+  texture: {
+    title: 'Texture & Application',
+    features: [
+      'Smooth jelly-like consistency',
+      'Spreads easily across the skin',
+      'Forms a flexible peel-off layer',
+      'Lightweight and cooling feel'
+    ]
+  },
+  howToUse: [
+    'Cleanse your face thoroughly before application',
+    'Apply a thin, even layer avoiding eyes, lips, and eyebrows',
+    'Leave on for 15–20 minutes until fully set',
+    'Gently peel off from the edges',
+    'Rinse any residue and follow with moisturizer'
+  ],
+  suitableFor: 'All skin types, especially dull and dehydrated skin',
+  category: 'mask',
+  featured: false
+},
+
+
+{
+  id: 'provence-lavender-jelly-mask',
+  name: 'Provence Lavender',
+  subtitle: 'Calm & Repair Jelly Mask',
+  image: '/images/skinproducts/55.jpeg',
+  shortDescription: 'A calming jelly mask enriched with Provence Lavender extract to soothe sensitive skin, reduce irritation, and support skin repair.',
+  keyBenefits: [
+    { text: 'Calms irritated and sensitive skin' },
+    { text: 'Helps repair and restore skin balance' },
+    { text: 'Reduces redness and discomfort' },
+    { text: 'Provides gentle hydration and nourishment' },
+    { text: 'Promotes a relaxed, refreshed complexion' }
+  ],
+  keyIngredient: {
+    name: 'Lavender Extract',
+    description: 'Lavender extract is known for its soothing and anti-inflammatory properties, helping to calm stressed skin and support natural repair.'
+  },
+  texture: {
+    title: 'Texture & Application',
+    features: [
+      'Soft jelly-like texture',
+      'Spreads smoothly without tugging',
+      'Sets into a flexible peel-off layer',
+      'Cooling and non-sticky finish'
+    ]
+  },
+  howToUse: [
+    'Cleanse face thoroughly before use',
+    'Apply an even layer avoiding eyes, lips, and eyebrows',
+    'Leave on for 15–20 minutes until fully set',
+    'Gently peel off from edges',
+    'Rinse residue and apply moisturizer'
+  ],
+  suitableFor: 'All skin types, especially sensitive and irritated skin',
+  category: 'mask',
+  featured: false
+},
+
+
+{
+  id: 'luxury-24k-gold-jelly-mask',
+  name: 'Luxury 24K Gold',
+  subtitle: 'Anti-Aging & Antioxidant Jelly Mask',
+  image: '/images/skinproducts/56.jpeg',
+  shortDescription: 'A premium jelly mask infused with 24K Gold to help fight signs of aging, protect against environmental stress, and improve skin radiance.',
+  keyBenefits: [
+    { text: 'Helps reduce the appearance of fine lines and wrinkles' },
+    { text: 'Provides antioxidant protection against skin damage' },
+    { text: 'Improves skin firmness and elasticity' },
+    { text: 'Enhances skin brightness and glow' },
+    { text: 'Refines pores and smooths skin texture' }
+  ],
+  keyIngredient: {
+    name: '24K Gold',
+    description: '24K Gold helps boost skin radiance, supports collagen function, and provides antioxidant benefits to combat visible signs of aging.'
+  },
+  texture: {
+    title: 'Texture & Application',
+    features: [
+      'Silky jelly texture with a luxurious feel',
+      'Spreads evenly for full facial coverage',
+      'Sets into a flexible peel-off layer',
+      'Non-greasy and comfortable on skin'
+    ]
+  },
+  howToUse: [
+    'Cleanse face thoroughly before application',
+    'Apply a thin, even layer avoiding eyes and lips',
+    'Leave on for 15–20 minutes until fully set',
+    'Gently peel off from edges',
+    'Rinse residue and continue skincare routine'
+  ],
+  suitableFor: 'All skin types, especially mature and dull skin',
+  category: 'mask',
+  featured: false
+},
+
+{
+  id: 'chamomile-petals-jelly-mask',
+  name: 'Chamomile Petals',
+  subtitle: 'Moisturize & Repair Jelly Mask',
+  image: '/images/skinproducts/57.jpeg',
+  shortDescription: 'A gentle jelly mask infused with chamomile petals to deeply moisturize, soothe irritation, and support skin repair.',
+  keyBenefits: [
+    { text: 'Deeply moisturizes and nourishes skin' },
+    { text: 'Soothes irritation and redness' },
+    { text: 'Supports skin repair and recovery' },
+    { text: 'Improves skin softness and comfort' },
+    { text: 'Leaves skin calm and refreshed' }
+  ],
+  keyIngredient: {
+    name: 'Chamomile Extract',
+    description: 'Chamomile extract is known for its calming and anti-inflammatory properties, helping to soothe sensitive skin and promote repair.'
+  },
+  texture: {
+    title: 'Texture & Application',
+    features: [
+      'Soft jelly texture with botanical petals',
+      'Spreads evenly and comfortably',
+      'Sets into a peel-off layer',
+      'Non-sticky and cooling on skin'
+    ]
+  },
+  howToUse: [
+    'Cleanse face thoroughly before use',
+    'Apply an even layer avoiding eyes and lips',
+    'Leave on for 15–20 minutes until fully set',
+    'Gently peel off from edges',
+    'Rinse residue and apply moisturizer'
+  ],
+  suitableFor: 'All skin types, especially dry and sensitive skin',
+  category: 'mask',
+  featured: false
+},
+
+
+{
+  id: 'pure-himalayan-jelly-mask',
+  name: 'Pure Himalayan',
+  subtitle: 'Calm, Hydrating & Repair Jelly Mask',
+  image: '/images/skinproducts/58.jpeg',
+  shortDescription: 'A soothing jelly mask designed to calm stressed skin, restore hydration, and support overall skin repair and balance.',
+  keyBenefits: [
+    { text: 'Deeply hydrates and replenishes skin' },
+    { text: 'Calms sensitive and irritated skin' },
+    { text: 'Supports skin repair and strengthening' },
+    { text: 'Improves skin smoothness and tone' },
+    { text: 'Enhances natural skin balance' }
+  ],
+  keyIngredient: {
+    name: 'Himalayan Botanical Complex',
+    description: 'A blend inspired by Himalayan botanicals that helps soothe, hydrate, and restore skin’s natural resilience.'
+  },
+  texture: {
+    title: 'Texture & Application',
+    features: [
+      'Smooth jelly consistency',
+      'Lightweight and refreshing feel',
+      'Forms a flexible peel-off layer',
+      'Comfortable for regular use'
+    ]
+  },
+  howToUse: [
+    'Cleanse face before application',
+    'Apply a thin, even layer avoiding eyes and lips',
+    'Leave on for 15–20 minutes until set',
+    'Peel off gently and rinse residue',
+    'Follow with moisturizer or serum'
+  ],
+  suitableFor: 'All skin types, especially sensitive and dehydrated skin',
+  category: 'mask',
+  featured: false
+},
+
+
+{
+  id: 'vitamin-c-jelly-mask',
+  name: 'Vitamin C',
+  subtitle: 'Brighten & Remove Freckle Jelly Mask',
+  image: '/images/skinproducts/59.jpeg',
+  shortDescription: 'A brightening jelly mask enriched with Vitamin C to improve skin tone, reduce dullness, and enhance overall radiance.',
+  keyBenefits: [
+    { text: 'Brightens and evens skin tone' },
+    { text: 'Helps reduce appearance of freckles and spots' },
+    { text: 'Boosts skin radiance and clarity' },
+    { text: 'Provides antioxidant protection' },
+    { text: 'Refreshes tired-looking skin' }
+  ],
+  keyIngredient: {
+    name: 'Vitamin C',
+    description: 'Vitamin C helps brighten the complexion, reduce pigmentation, and protect skin from environmental damage.'
+  },
+  texture: {
+    title: 'Texture & Application',
+    features: [
+      'Smooth jelly texture',
+      'Easy to spread evenly',
+      'Peels off cleanly after setting',
+      'Lightweight and non-greasy finish'
+    ]
+  },
+  howToUse: [
+    'Cleanse face thoroughly',
+    'Apply an even layer avoiding eyes and lips',
+    'Leave on for 15–20 minutes',
+    'Peel off gently from edges',
+    'Rinse and follow with skincare routine'
+  ],
+  suitableFor: 'All skin types, especially dull and uneven skin tone',
+  category: 'mask',
+  featured: false
+},
+
+
+{
+  id: 'taygete-carbon-gel',
+  name: 'TAYGETE Carbon Gel',
+  subtitle: 'Carbon Laser Treatment Gel',
+  image: '/images/skinproducts/60.jpeg',
+  shortDescription: 'A professional-grade carbon gel designed for carbon laser treatments to deeply cleanse pores, absorb excess oil, and improve skin texture.',
+  keyBenefits: [
+    { text: 'Deeply cleanses pores during carbon laser treatment' },
+    { text: 'Helps control excess oil and sebum' },
+    { text: 'Improves skin texture and smoothness' },
+    { text: 'Supports brightening and rejuvenation treatments' },
+    { text: 'Enhances laser treatment effectiveness' }
+  ],
+  keyIngredient: {
+    name: 'Activated Carbon',
+    description: 'Activated carbon effectively absorbs oil, impurities, and debris from pores, making it ideal for carbon laser facial treatments.'
+  },
+  texture: {
+    title: 'Texture & Application',
+    features: [
+      'Smooth gel consistency',
+      'Spreads evenly on skin',
+      'Dries into a thin carbon layer',
+      'Non-greasy and easy to remove'
+    ]
+  },
+  howToUse: [
+    'Cleanse face thoroughly before application',
+    'Apply a thin, even layer of carbon gel to treatment area',
+    'Allow gel to dry completely',
+    'Proceed with carbon laser treatment as directed by a professional',
+    'Remove residue and apply soothing skincare post-treatment'
+  ],
+  suitableFor: 'All skin types, especially oily and acne-prone skin',
+  category: 'treatment-gel',
+  featured: false
+  },
+{
+  id: 'omega-light-dual-fog',
+  name: 'Omega Light With Dual Fog Skin Care',
+  subtitle: 'Advanced LED Light Therapy System',
+  image: '/images/skinproducts/62.png',
+  shortDescription: 'Professional-grade LED light therapy device with dual fog technology for comprehensive skin rejuvenation, collagen stimulation, and anti-aging treatment.',
+  keyBenefits: [
+    { text: 'Stimulates collagen production and skin elasticity' },
+    { text: 'Reduces fine lines, wrinkles, and signs of aging' },
+    { text: 'Improves skin tone and texture' },
+    { text: 'Reduces inflammation and acne breakouts' },
+    { text: 'Non-invasive with no downtime required' }
+  ],
+  keyIngredient: {
+    name: 'Multi-wavelength LED Technology',
+    description: 'Advanced LED light therapy with dual fog function for enhanced skin penetration and rejuvenation results.'
+  },
+  texture: {
+    title: 'Technology & Features',
+    features: [
+      'Professional-grade LED light therapy',
+      'Dual fog skin care technology',
+      'Multiple treatment wavelengths',
+      'Easy-to-use control panel',
+      'Suitable for all skin types'
+    ]
+  },
+  howToUse: [
+    'Cleanse and prepare skin before treatment',
+    'Apply appropriate skincare products as needed',
+    'Position device over treatment area',
+    'Select desired light wavelength and intensity',
+    'Treatment duration typically 15-30 minutes',
+    'Repeat sessions 1-3 times per week for optimal results'
+  ],
+  suitableFor: 'All skin types, especially aging and acne-prone skin',
+  category: 'light-therapy-device',
+  featured: true
+},
+{
+  id: 'spa-omega-light-high-quality',
+  name: 'SPA Omega Light High Quality Skin Therapy',
+  subtitle: 'Premium LED Skin Rejuvenation',
+  image: '/images/skinproducts/63.png',
+  shortDescription: 'Premium SPA-grade omega light therapy system designed for intensive skin rejuvenation, brightening, and anti-aging treatments in professional settings.',
+  keyBenefits: [
+    { text: 'Promotes skin brightening and radiance' },
+    { text: 'Enhances skin firmness and elasticity' },
+    { text: 'Reduces hyperpigmentation and dark spots' },
+    { text: 'Stimulates natural collagen regeneration' },
+    { text: 'Provides anti-inflammatory benefits' }
+  ],
+  keyIngredient: {
+    name: 'Premium LED Light Wavelengths',
+    description: 'High-quality LED light technology with multiple wavelengths for comprehensive skin rejuvenation and therapeutic benefits.'
+  },
+  texture: {
+    title: 'Premium Features',
+    features: [
+      'SPA-grade professional equipment',
+      'Multiple light wavelengths',
+      'High-intensity LED system',
+      'Adjustable treatment settings',
+      'Advanced cooling technology'
+    ]
+  },
+  howToUse: [
+    'Perform professional facial cleanse',
+    'Apply protective eye gear',
+    'Select appropriate light wavelength',
+    'Adjust intensity based on skin sensitivity',
+    'Treat face and neck area for 20-30 minutes',
+    'Apply soothing serum post-treatment'
+  ],
+  suitableFor: 'All skin types, ideal for professional spa treatments',
+  category: 'spa-light-therapy',
+  featured: true
+},
+{
+  id: 'omega-light-u-shape-facial',
+  name: 'Omega Light U Shape Model Facial Lifting Device',
+  subtitle: 'Advanced Facial Lifting & Tightening',
+  image: '/images/skinproducts/64.png',
+  shortDescription: 'Innovative U-shaped LED light therapy device specifically designed for facial lifting, skin tightening, and contouring with advanced light technology.',
+  keyBenefits: [
+    { text: 'Provides non-invasive facial lifting and tightening' },
+    { text: 'Improves jawline definition and contour' },
+    { text: 'Reduces sagging skin and loss of elasticity' },
+    { text: 'Stimulates deep collagen production' },
+    { text: 'Visible results with consistent use' }
+  ],
+  keyIngredient: {
+    name: 'U-Shaped LED Light System',
+    description: 'Ergonomically designed U-shape with advanced LED technology for precise facial lifting and tightening treatment.'
+  },
+  texture: {
+    title: 'Lifting Technology',
+    features: [
+      'U-shaped ergonomic design',
+      'Targeted facial contouring',
+      'Advanced LED lifting mechanism',
+      'Adjustable intensity levels',
+      'Suitable for all facial zones'
+    ]
+  },
+  howToUse: [
+    'Cleanse face thoroughly',
+    'Apply lifting serum or moisturizer',
+    'Position U-shaped device along jawline and face',
+    'Activate light therapy on desired intensity',
+    'Move device upward in lifting motions for 15-20 minutes',
+    'Use 2-3 times per week for optimal lifting results'
+  ],
+  suitableFor: 'All skin types seeking facial lifting and tightening',
+  category: 'facial-lifting-device',
+  featured: true
+},
+{
+  id: 'diamond-dermabrasion-machine',
+  name: 'Diamond Dermabrasion Machine Skin Rejuvenation',
+  subtitle: 'Professional Microdermabrasion System',
+  image: '/images/skinproducts/65.png',
+  shortDescription: 'Professional-grade diamond dermabrasion machine for exfoliation, skin resurfacing, and treatment of acne scars, wrinkles, and uneven skin texture.',
+  keyBenefits: [
+    { text: 'Effectively exfoliates and removes dead skin cells' },
+    { text: 'Reduces appearance of acne scars and pitting' },
+    { text: 'Improves fine lines and wrinkles' },
+    { text: 'Evens out skin tone and texture' },
+    { text: 'Promotes cell regeneration and collagen production' }
+  ],
+  keyIngredient: {
+    name: 'Diamond Tip Technology',
+    description: 'Advanced diamond-tipped heads for gentle yet effective mechanical exfoliation and skin resurfacing treatments.'
+  },
+  texture: {
+    title: 'Dermabrasion System',
+    features: [
+      'Multiple diamond tip sizes available',
+      'Adjustable suction levels',
+      'Professional-grade motor',
+      'Digital display and controls',
+      'Cordless and portable design'
+    ]
+  },
+  howToUse: [
+    'Cleanse and dry skin completely',
+    'Apply appropriate pre-treatment serum',
+    'Select appropriate diamond tip for treatment area',
+    'Adjust suction and speed settings',
+    'Move device in gentle upward motions over face',
+    'Treatment duration typically 20-30 minutes',
+    'Apply soothing mask and moisturizer post-treatment'
+  ],
+  suitableFor: 'All skin types, especially acne-prone and aging skin',
+  category: 'dermabrasion-device',
+  featured: true
+},
+{
+  id: '3-in-1-diamond-dermabrasion',
+  name: '3 in 1 Diamond Dermabrasion Machine Professional',
+  subtitle: 'Multi-Function Skin Rejuvenation System',
+  image: '/images/skinproducts/66.png',
+  shortDescription: 'Multi-functional 3-in-1 professional dermabrasion machine combining diamond dermabrasion, vacuum therapy, and spray technology for comprehensive skin treatment.',
+  keyBenefits: [
+    { text: 'Three treatment modes in one device' },
+    { text: 'Comprehensive skin exfoliation and rejuvenation' },
+    { text: 'Improves skin absorption of serums and products' },
+    { text: 'Reduces fine lines, wrinkles, and scars' },
+    { text: 'Promotes bright, smooth, and healthy-looking skin' }
+  ],
+  keyIngredient: {
+    name: '3-in-1 Technology System',
+    description: 'Combines diamond microdermabrasion, vacuum suction, and spray therapy for enhanced skin treatment results.'
+  },
+  texture: {
+    title: 'Multi-Function Features',
+    features: [
+      'Diamond dermabrasion tip',
+      'Vacuum therapy suction system',
+      'Spray atomization technology',
+      'Adjustable intensity levels',
+      'Professional-grade equipment'
+    ]
+  },
+  howToUse: [
+    'Cleanse face thoroughly before treatment',
+    'Select desired treatment function',
+    'Apply appropriate skincare serum',
+    'Begin with lower intensity and gradually increase',
+    'Treat all facial areas with gentle upward motions',
+    'Complete treatment in 25-35 minutes',
+    'Apply cooling mask and hydrating serum after'
+  ],
+  suitableFor: 'All skin types for comprehensive skin rejuvenation',
+  category: 'multi-function-device',
+  featured: true
+},
+{
+  id: 'diamond-dermabrasion-spray',
+  name: 'Diamond Dermabrasion Spray Model Professional',
+  subtitle: 'Advanced Spray Dermabrasion Therapy',
+  image: '/images/skinproducts/67.png',
+  shortDescription: 'Professional diamond dermabrasion device with integrated spray technology for advanced skin exfoliation, cleansing, and rejuvenation with optimal hydration.',
+  keyBenefits: [
+    { text: 'Combines mechanical exfoliation with spray hydration' },
+    { text: 'Removes dead skin cells while delivering treatment serums' },
+    { text: 'Improves skin texture and clarity' },
+    { text: 'Reduces pores and refines skin appearance' },
+    { text: 'Prevents dryness during exfoliation treatment' }
+  ],
+  keyIngredient: {
+    name: 'Diamond Tip + Spray Technology',
+    description: 'Advanced combination of diamond exfoliation with synchronized spray delivery for enhanced skincare treatment efficacy.'
+  },
+  texture: {
+    title: 'Spray Technology',
+    features: [
+      'Synchronized diamond and spray function',
+      'Adjustable spray mist levels',
+      'Professional diamond tips',
+      'Multiple treatment programs',
+      'Efficient and comfortable treatment'
+    ]
+  },
+  howToUse: [
+    'Prepare face with cleanser',
+    'Fill spray reservoir with appropriate serum or essence',
+    'Select treatment program',
+    'Begin with lower intensity settings',
+    'Apply device to facial areas with gentle motions',
+    'Treatment duration 20-30 minutes',
+    'Finish with soothing and hydrating skincare'
+  ],
+  suitableFor: 'All skin types, especially sensitive and dehydrated skin',
+  category: 'spray-dermabrasion',
+  featured: true
+},
+{
+  id: 'diamond-micro-carving-kit',
+  name: 'Diamond Micro Carving Grinding Kit Professional',
+  subtitle: 'Advanced Micro-Abrasion System',
+  image: '/images/skinproducts/68.png',
+  shortDescription: 'Professional diamond micro carving kit featuring multiple grinding and sculpting tools for precision skin resurfacing, scar treatment, and advanced aesthetic procedures.',
+  keyBenefits: [
+    { text: 'Precision micro-abrasion for targeted skin treatment' },
+    { text: 'Effective for deep scars and textural issues' },
+    { text: 'Customizable treatment with multiple tool options' },
+    { text: 'Promotes collagen remodeling and skin smoothing' },
+    { text: 'Professional-grade results for aesthetic practices' }
+  ],
+  keyIngredient: {
+    name: 'Diamond Micro-Carving Tool System',
+    description: 'Comprehensive kit with multiple diamond-tipped carving and grinding tools for precision skin resurfacing and micro-abrasion treatments.'
+  },
+  texture: {
+    title: 'Professional Kit Contents',
+    features: [
+      'Multiple precision grinding tips',
+      'Various carving and sculpting tools',
+      'Diamond-coated treatment heads',
+      'Professional carrying case included',
+      'Suitable for clinical use'
+    ]
+  },
+  howToUse: [
+    'Sanitize and sterilize all tools before use',
+    'Cleanse treatment area thoroughly',
+    'Select appropriate tool for target area',
+    'Use with proper suction and safety equipment',
+    'Apply micro-carving with precision and control',
+    'Treatment duration varies by area and concern',
+    'Apply protective and soothing post-treatment serum'
+  ],
+  suitableFor: 'Professional aesthetic practices, specialized scar treatment',
+  category: 'professional-micro-carving',
+  featured: true
+
+},
+{
+  id: 'gfc-growth-factor-concentrate',
+  name: 'GFC (Growth Factor Concentrate) Gel',
+  subtitle: 'Concentrated Growth Factor Serum',
+  image: '/images/skinproducts/69.png',
+  shortDescription: 'High-concentration growth factor gel formulated to support skin regeneration, healing, and post-procedure recovery.',
+  keyBenefits: [
+    { text: 'Accelerates wound healing and tissue regeneration' },
+    { text: 'Supports collagen and elastin production' },
+    { text: 'Improves skin texture and elasticity' },
+    { text: 'Useful post-aesthetic procedures' }
+  ],
+  keyIngredient: {
+    name: 'Growth Factor Complex',
+    description: 'A blend of growth factors and peptides to support cellular repair and regeneration.'
+  },
+  texture: {
+    title: 'Gel Texture',
+    features: ['Light gel, quick-absorbing', 'Non-greasy finish', 'Suitable for layering']
+  },
+  howToUse: ['Cleanse skin', 'Apply a thin layer to treated area', 'Use as part of post-procedure care'],
+  suitableFor: 'All skin types, especially post-procedure skin',
+  category: 'growth-factor-serum',
+  featured: true
+},
+{
+  id: 'hydra-trolley-metal',
+  name: 'Hydra Trolley Metal Beauty Trolley',
+  subtitle: 'Mobile Treatment Equipment Stand',
+  image: '/images/skinproducts/70.png',
+  shortDescription: 'Sturdy metal trolley with multiple shelves and wheels designed to organize and transport aesthetic devices and supplies in clinics and spas.',
+  keyBenefits: [
+    { text: 'Durable metal construction' },
+    { text: 'Multiple storage shelves' },
+    { text: 'Smooth-rolling caster wheels for mobility' }
+  ],
+  keyIngredient: {
+    name: 'Stainless Metal Frame',
+    description: 'Corrosion-resistant metal designed for clinical environments.'
+  },
+  texture: { title: 'Build & Features', features: ['Stable metal frame', 'Lockable wheels', 'Compact footprint'] },
+  howToUse: ['Assemble according to instructions', 'Load equipment securely', 'Lock wheels when stationary'],
+  suitableFor: 'Clinics, spas, and beauty salons',
+  category: 'equipment',
+  featured: false
+},
+
+{
+  id: 'dermaheal-hsr',
+  name: 'Dermaheal HSR (Hyaluronic Skin Rejuvenation)',
+  subtitle: 'Hyaluronic & Peptide Skin Rejuvenation Ampoule',
+  image: '/images/skinproducts/71.png',
+  shortDescription: 'Dermaheal HSR ampoules combine hyaluronic acid and peptides to hydrate, rejuvenate, and improve skin elasticity for a long-lasting glow.',
+  keyBenefits: [
+    { text: 'Deep hydration and plumping' },
+    { text: 'Improves skin elasticity and texture' },
+    { text: 'Supports collagen production' }
+  ],
+  keyIngredient: { name: 'Hyaluronic Acid + Peptides', description: 'Hydrating and regenerative ingredients for skin rejuvenation.' },
+  texture: { title: 'Ampoule', features: ['Clear liquid', 'Fast-absorbing'] },
+  howToUse: ['Use via mesotherapy, injection, or microneedling as directed by professionals'],
+  suitableFor: 'Dry, aging, or dull skin',
+  category: 'injectable-serum',
+  featured: true
+},
+{
+  id: 'dermaheal-sr',
+  name: 'Dermaheal SR (Skin Rejuvenation)',
+  subtitle: 'Regenerative Skin Rejuvenation Solution',
+  image: '/images/skinproducts/72.png',
+  shortDescription: 'Dermaheal SR designed to revitalize and restore skin using a blend of growth factors and peptides tailored for rejuvenation treatments.',
+  keyBenefits: [
+    { text: 'Stimulates skin regeneration' },
+    { text: 'Improves skin tone and firmness' },
+    { text: 'Reduces appearance of fine lines' }
+  ],
+  keyIngredient: { name: 'Growth factors & peptides', description: 'Clinically-focused components for tissue repair and rejuvenation.' },
+  texture: { title: 'Solution', features: ['Clear sterile ampoule'] },
+  howToUse: ['Professional use: injection or mesotherapy protocols'],
+  suitableFor: 'Aging or photo-damaged skin under professional supervision',
+  category: 'injectable-serum',
+  featured: true
+},
+
+{
+  id: 'dermaheal-sb',
+  name: 'Dermaheal SB (Skin Brightening)',
+  subtitle: 'Brightening Ampoule for Uneven Tone',
+  image: '/images/skinproducts/73.png',
+  shortDescription: 'Formulated to reduce hyperpigmentation and brighten skin tone using targeted peptides and brightening actives.',
+  keyBenefits: [
+    { text: 'Reduces dark spots and pigmentation' },
+    { text: 'Evens out skin tone' },
+    { text: 'Supports overall skin radiance' }
+  ],
+  keyIngredient: { name: 'Brightening peptide complex', description: 'Targets melanin synthesis and supports brighter skin appearance.' },
+  texture: { title: 'Ampoule', features: ['Concentrated liquid', 'For professional application'] },
+  howToUse: ['Use in professional mesotherapy or topical protocols as instructed'],
+  suitableFor: 'Hyperpigmented or uneven skin tone',
+  category: 'brightening-serum',
+  featured: true
+},
+{
+  id: 'reezefats-anti-freezing-membrane',
+  name: 'Reezefats Anti Freezing Membrane',
+  subtitle: 'Anti-Freezing Protective Membrane',
+  image: '/images/skinproducts/74.png',
+  shortDescription: 'Protective membrane sheets designed to prevent freezing and protect sterile ampoules during transport and storage.',
+  keyBenefits: [
+    { text: 'Protects fragile ampoules during shipping' },
+    { text: 'Thermal insulation properties' },
+    { text: 'Easy to apply and dispose' }
+  ],
+  keyIngredient: { name: 'Thermal insulating membrane', description: 'Materials designed to limit temperature fluctuations.' },
+  texture: { title: 'Sheet', features: ['Lightweight', 'Disposable', 'Protective'] },
+  howToUse: ['Wrap ampoules during transport or store as recommended'],
+  suitableFor: 'Shipping and storage of temperature-sensitive products',
+  category: 'accessory',
+  featured: false
+ }
+ ,
+ {
+  id: 'ultrasonic-scrubber-facial-cleaner',
+  name: 'Ultrasonic Scrubber Facial Cleaner',
+  subtitle: 'Deep Pore Exfoliation & Cleanser',
+  image: '/images/skinproducts/75.png',
+  shortDescription: 'Handheld ultrasonic skin scrubber that deeply exfoliates, removes blackheads, and improves product absorption for brighter, cleaner skin.',
+  keyBenefits: [
+    { text: 'Removes dead skin cells and blackheads' },
+    { text: 'Improves serum absorption' },
+    { text: 'Gentle exfoliation for sensitive skin' }
+  ],
+  keyIngredient: { name: 'Ultrasonic Vibration', description: 'High-frequency vibrations that loosen debris and promote gentle exfoliation.' },
+  howToUse: [ 'Cleanse skin', 'Run device gently across damp skin', 'Use 1–2 times per week' ],
+  suitableFor: 'Oily, combination, and congested skin',
+  category: 'home-device',
+  featured: false
+ },
+ {
+  id: 'digital-microscope-1000x-wireless',
+  name: 'Digital Microscope 1000x Wireless',
+  subtitle: 'Wireless Skin & Scalp Inspection Microscope',
+  image: '/images/skinproducts/76.png',
+  shortDescription: 'Portable digital microscope for close-up inspection of skin and scalp conditions, useful for consultations and home monitoring.',
+  keyBenefits: [ { text: 'High magnification for detailed inspection' }, { text: 'Wireless connection to phone or tablet' } ],
+  keyIngredient: { name: 'Optical Lens + LED', description: 'High-magnification optics with built-in LED illumination.' },
+  howToUse: [ 'Connect via Wi-Fi or USB', 'Focus on area of interest', 'Capture images for review' ],
+  suitableFor: 'Clinicians and at-home monitoring',
+  category: 'equipment',
+  featured: false
+ },
+ {
+  id: 'mesotherapy-radiofrequency-7color',
+  name: 'Mesotherapy Radiofrequency 7 Color',
+  subtitle: 'Multi-Function RF & LED Therapy Device',
+  image: '/images/skinproducts/77.png',
+  shortDescription: 'Handheld mesotherapy radiofrequency device with 7-color LED options for skin tightening, rejuvenation, and pore improvement.',
+  keyBenefits: [ { text: 'Improves skin elasticity and firmness' }, { text: 'Combines RF heating with LED therapy' }, { text: 'Non-invasive rejuvenation' } ],
+  keyIngredient: { name: 'RF + Multi-LED', description: 'Radiofrequency energy combined with multiple LED wavelengths for synergistic skin benefits.' },
+  howToUse: [ 'Cleanse skin', 'Apply conductive gel if required', 'Treat area with selected mode' ],
+  suitableFor: 'Sagging, dull, or uneven skin',
+  category: 'device',
+  featured: false
+ },
+ {
+  id: 'led-mask-with-neck-facial',
+  name: 'LED Mask With Neck Facial Mask',
+  subtitle: 'Full Face & Neck LED Light Therapy Mask',
+  image: '/images/skinproducts/78.png',
+  shortDescription: 'Silicone LED therapy mask that covers face and neck with multiple light wavelengths to address acne, aging, and pigmentation.',
+  keyBenefits: [ { text: 'Targets acne, inflammation, and signs of aging' }, { text: 'Full-face and neck coverage' } ],
+  keyIngredient: { name: 'Multi-wavelength LEDs', description: 'Different LED colors target specific skin concerns like bacteria, collagen, and pigmentation.' },
+  howToUse: [ 'Wear mask for recommended duration', 'Use 2–3 times per week' ],
+  suitableFor: 'All skin types',
+  category: 'light-therapy-device',
+  featured: false
+ },
+ {
+  id: 'silicon-led-light-therapy-face-mask',
+  name: 'Silicon LED Light Therapy Face Mask',
+  subtitle: 'Flexible Silicone LED Phototherapy Mask',
+  image: '/images/skinproducts/79.png',
+  shortDescription: 'Comfortable silicone LED mask with multiple color modes for at-home skin therapy to reduce acne and improve skin texture and tone.',
+  keyBenefits: [ { text: 'Flexible silicone for comfortable fit' }, { text: 'Multiple LED color therapy modes' } ],
+  keyIngredient: { name: 'Silicone + LEDs', description: 'Medical-grade silicone housing with embedded LED matrix.' },
+  howToUse: [ 'Place mask on clean face', 'Select mode and duration', 'Use regularly for best results' ],
+  suitableFor: 'Home LED therapy users',
+  category: 'light-therapy-device',
+  featured: false
+ },
+ {
+  id: 'omega-light-7-colors-kiyo920',
+  name: 'Omega Light 7 Colors Kiyo920',
+  subtitle: '7-Color Professional LED Therapy Device',
+  image: '/images/skinproducts/80.png',
+  shortDescription: 'Compact LED therapy device offering seven light wavelengths for targeted skin treatments including acne reduction, collagen stimulation and calming.',
+  keyBenefits: [ { text: 'Seven wavelengths for tailored treatments' }, { text: 'Portable and easy to use' } ],
+  keyIngredient: { name: 'Multi-wavelength LED', description: 'Precision LED selection for various skin concerns.' },
+  howToUse: [ 'Select wavelength', 'Apply treatment to target area', 'Use as directed by device guidelines' ],
+  suitableFor: 'Professional and home use',
+  category: 'light-therapy-device',
+  featured: false
+ }
+
+ ];
+
 
 
 

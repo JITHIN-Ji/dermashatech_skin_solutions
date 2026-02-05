@@ -213,7 +213,7 @@ const HairProducts = () => {
                 {/* Image 1 - Large */}
                 <div className="col-span-2 rounded-2xl overflow-hidden shadow-xl h-80">
                   <img
-                    src="https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=800&h=600&fit=crop"
+                    src="/images/hairimage.png"
                     alt="Hair care treatment"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
@@ -222,7 +222,7 @@ const HairProducts = () => {
                 {/* Image 2 - Small */}
                 <div className="rounded-2xl overflow-hidden shadow-lg h-48">
                   <img
-                    src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&h=400&fit=crop"
+                    src="/images/hairimage2.png"
                     alt="Healthy hair"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
@@ -231,7 +231,7 @@ const HairProducts = () => {
                 {/* Image 3 - Small */}
                 <div className="rounded-2xl overflow-hidden shadow-lg h-48">
                   <img
-                    src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?w=600&h=400&fit=crop"
+                    src="/images/hairimage3.png"
                     alt="Hair care routine"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />

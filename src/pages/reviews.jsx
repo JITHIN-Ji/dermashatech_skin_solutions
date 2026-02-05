@@ -1,104 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Star } from 'lucide-react';
+import { reviews } from '../data/reviews';
 
 const Reviews = () => {
-  // Reviews data
-  const reviews = [
-    {
-      id: 1,
-      customerName: "Priya",
-      product: "ULTRA Q",
-      rating: 5,
-      review: "The ULTRA Q has transformed our clinic's capabilities. The results on pigmentation and tattoo removal are outstanding. Clients are extremely satisfied with the machine's reliability."
-    },
-    {
-      id: 2,
-      customerName: "Rajesh",
-      product: "GENELUX-3",
-      rating: 5,
-      review: "GENELUX-3 is a game-changer for hair removal treatments. The quad wavelength technology works perfectly on all skin types. Patient satisfaction has increased significantly."
-    },
-    {
-      id: 3,
-      customerName: "Anjali",
-      product: "MEDI LIFT HIFU",
-      rating: 5,
-      review: "The HIFU machine delivers incredible non-surgical facelift results. Clients love the natural-looking lifting effect. The technology is advanced yet easy to operate."
-    },
-    {
-      id: 4,
-      customerName: "Vikram",
-      product: "ULTRAFRAX CO2",
-      rating: 5,
-      review: "Exceptional results on acne scars and skin resurfacing. The fractional CO2 laser is precise and effective. Patients see visible improvements after just 2-3 sessions."
-    },
-    {
-      id: 5,
-      customerName: "Meera",
-      product: "DIODE HAIR REMOVAL",
-      rating: 5,
-      review: "This diode laser system is incredibly efficient. The combination of laser and picosecond technology provides comprehensive treatment options. Very satisfied with the results."
-    },
-    {
-      id: 6,
-      customerName: "Sanjay",
-      product: "HYDRA FACIAL",
-      rating: 5,
-      review: "The multi-functional capabilities of this hydrafacial machine are impressive. Deep cleansing, exfoliation, and hydration all in one. Clients love the immediate glow."
-    },
-    {
-      id: 7,
-      customerName: "Kavita",
-      product: "ULTRA Q",
-      rating: 5,
-      review: "Amazing machine for pigmentation treatment! The wavelengths work wonders. Minimal downtime for patients and remarkable results. Training support was very helpful."
-    },
-    {
-      id: 8,
-      customerName: "Arjun",
-      product: "GENELUX-3",
-      rating: 5,
-      review: "The multiple wavelengths make this perfect for all skin tones. Fast treatments, comfortable for patients, and long-lasting results. Clients are booking repeat sessions."
-    },
-    {
-      id: 9,
-      customerName: "Neha",
-      product: "MEDI LIFT HIFU",
-      rating: 5,
-      review: "Outstanding results for facial lifting and skin tightening. No surgery, no downtime, and clients see visible improvements immediately. This has become our most popular treatment."
-    },
-    {
-      id: 10,
-      customerName: "Suresh",
-      product: "ULTRAFRAX CO2",
-      rating: 5,
-      review: "Best CO2 laser for skin resurfacing. Treats everything from acne scars to wrinkles effectively. The precision and control are excellent. Highly satisfied with this purchase."
-    },
-    {
-      id: 11,
-      customerName: "Deepa",
-      product: "DIODE HAIR REMOVAL",
-      rating: 5,
-      review: "Excellent machine for permanent hair reduction. Works beautifully on all areas. Clients are thrilled with the painless treatment and quick results."
-    },
-    {
-      id: 12,
-      customerName: "Anil",
-      product: "HYDRA FACIAL",
-      rating: 5,
-      review: "This hydrafacial system is a must-have for any aesthetic clinic. Clients see instant results and keep coming back. The multiple functions make it very versatile."
-    }
-  ];
+  const [showAllReviews, setShowAllReviews] = useState(false);
 
   return (
     <div className="pt-16 min-h-screen bg-white">
       
       
 
-      {/* Reviews Animation Section */}
-      <section className="py-20 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Reviews Grid Section */}
+      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -113,103 +28,79 @@ const Reviews = () => {
             </p>
           </motion.div>
 
-          {/* Continuous Scrolling Reviews Container */}
-          <div className="relative h-[500px] overflow-hidden">
-            <div className="absolute inset-0">
-              {/* First set of reviews */}
+          {/* Grid Layout for Reviews */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            {(showAllReviews ? reviews : reviews.slice(0, 9)).map((review, index) => (
               <motion.div
-                animate={{
-                  y: [0, -2400] // Move up by total height of all reviews
-                }}
-                transition={{
-                  duration: 40,
-                  repeat: Infinity,
-                  ease: "linear"
-                }}
-                className="space-y-6"
+                key={review.id}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 flex flex-col h-full"
               >
-                {reviews.map((review) => (
-                  <div
-                    key={`first-${review.id}`}
-                    className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 mx-4"
-                  >
-                    {/* Stars */}
-                    <div className="flex justify-center mb-4">
-                      {[...Array(review.rating)].map((_, i) => (
-                        <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                      ))}
-                    </div>
+                {/* Stars */}
+                <div className="flex justify-center mb-4">
+                  {[...Array(review.rating)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
 
-                    {/* Product Name */}
-                    <div className="text-center mb-4">
-                      <span className="inline-block px-4 py-1 bg-purple-100 text-purple-700 font-semibold rounded-full text-sm">
-                        {review.product}
-                      </span>
-                    </div>
+                {/* Category Badge */}
+                <div className="text-center mb-4">
+                  <span className="inline-block px-3 py-1 bg-purple-100 text-purple-700 font-semibold rounded-full text-xs mb-2">
+                    {review.category}
+                  </span>
+                  <span className="inline-block px-3 py-1 bg-blue-100 text-blue-700 font-semibold rounded-full text-xs">
+                    {review.product}
+                  </span>
+                </div>
 
-                    {/* Review Text */}
-                    <p className="text-gray-700 text-base leading-relaxed text-center mb-6">
-                      "{review.review}"
-                    </p>
+                {/* Review Text */}
+                <p className="text-gray-700 text-sm leading-relaxed mb-6 flex-grow">
+                  "{review.review}"
+                </p>
 
-                    {/* Customer Name */}
-                    <p className="font-bold text-gray-900 text-center text-lg">
-                      - {review.customerName}
-                    </p>
-                  </div>
-                ))}
+                {/* Customer Name */}
+                <p className="font-bold text-gray-900 text-center text-lg">
+                  - {review.customerName}
+                </p>
               </motion.div>
-
-              {/* Duplicate set for seamless loop */}
-              <motion.div
-                animate={{
-                  y: [0, -2400]
-                }}
-                transition={{
-                  duration: 40,
-                  repeat: Infinity,
-                  ease: "linear"
-                }}
-                className="space-y-6"
-                style={{ position: 'absolute', top: '2400px' }}
-              >
-                {reviews.map((review) => (
-                  <div
-                    key={`second-${review.id}`}
-                    className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 mx-4"
-                  >
-                    {/* Stars */}
-                    <div className="flex justify-center mb-4">
-                      {[...Array(review.rating)].map((_, i) => (
-                        <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                      ))}
-                    </div>
-
-                    {/* Product Name */}
-                    <div className="text-center mb-4">
-                      <span className="inline-block px-4 py-1 bg-purple-100 text-purple-700 font-semibold rounded-full text-sm">
-                        {review.product}
-                      </span>
-                    </div>
-
-                    {/* Review Text */}
-                    <p className="text-gray-700 text-base leading-relaxed text-center mb-6">
-                      "{review.review}"
-                    </p>
-
-                    {/* Customer Name */}
-                    <p className="font-bold text-gray-900 text-center text-lg">
-                      - {review.customerName}
-                    </p>
-                  </div>
-                ))}
-              </motion.div>
-            </div>
-
-            {/* Gradient Overlays for fade effect */}
-            <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-gray-50 to-transparent pointer-events-none z-10"></div>
-            <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent pointer-events-none z-10"></div>
+            ))}
           </div>
+
+          {/* Load More Button */}
+          {!showAllReviews && reviews.length > 6 && (
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-center"
+            >
+              <button
+                onClick={() => setShowAllReviews(true)}
+                className="px-8 py-3 bg-[#1ba9a0] text-white font-semibold rounded-lg hover:bg-[#16958d] transition-all duration-300 shadow-md hover:shadow-lg"
+              >
+                Load More Reviews
+              </button>
+            </motion.div>
+          )}
+
+          {/* Show Less Button */}
+          {showAllReviews && (
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-center"
+            >
+              <button
+                onClick={() => setShowAllReviews(false)}
+                className="px-8 py-3 bg-gray-600 text-white font-semibold rounded-lg hover:bg-gray-700 transition-all duration-300 shadow-md hover:shadow-lg"
+              >
+                Show Less
+              </button>
+            </motion.div>
+          )}
         </div>
       </section>
 

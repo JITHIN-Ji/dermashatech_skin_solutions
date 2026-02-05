@@ -5,7 +5,7 @@ import { ArrowLeft, Search } from 'lucide-react';
 
 // Import data
 import { categories, getProductsByCategory } from '../data/categories';
-import { products } from '../data/products';
+import { productDetailsData as products } from '../data/machineDetails';
 
 const CategoryProducts = () => {
   const { categoryId } = useParams();
@@ -65,9 +65,9 @@ const CategoryProducts = () => {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             onClick={handleBackToCategories}
-            className="flex items-center gap-2 text-gray-700 hover:text-gray-900 mb-6 transition-colors"
+            className="flex items-center gap-1 text-gray-700 hover:text-gray-900 mb-6 transition-colors text-sm"
           >
-            <ArrowLeft className="w-5 h-5" />
+            <ArrowLeft className="w-4 h-4" />
             <span className="font-medium">Back to Categories</span>
           </motion.button>
 
@@ -152,7 +152,7 @@ const CategoryProducts = () => {
                           transition={{ duration: 0.6, delay: 0.2 }}
                           src={product.mainImage}
                           alt={product.name}
-                          className="w-full max-w-md h-96 object-contain drop-shadow-2xl"
+                          className="w-full max-w-md h-96 object-contain"
                         />
                       </div>
 

@@ -111,7 +111,7 @@ const SkinProductDetails = () => {
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="relative w-full h-auto object-contain drop-shadow-2xl"
+                    className="relative w-full h-auto object-contain"
                     onError={(e) => {
                       e.target.src = 'https://via.placeholder.com/500x500?text=Product+Image';
                     }}
