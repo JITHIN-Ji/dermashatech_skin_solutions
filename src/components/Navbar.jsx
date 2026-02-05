@@ -60,7 +60,7 @@ const Navbar = () => {
       style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 9999 }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-28">
           {/* Logo */}
           <Link to="/">
             <motion.div
@@ -68,9 +68,12 @@ const Navbar = () => {
               animate={{ opacity: 1, x: 0 }}
               className="flex items-center space-x-3 cursor-pointer -ml-2"
             >
-              <div className="w-12 h-12 bg-[#1ba9a0] rounded-lg flex items-center justify-center shadow-lg">
-                <span className="text-white font-bold text-xl">D</span>
-              </div>
+              <motion.img
+                src="/images/logo.png"
+                alt="DERMASHATECH Logo"
+                className="h-24 w-auto object-contain"
+                whileHover={{ scale: 1.05 }}
+              />
               <div>
                 <h1 className="text-lg sm:text-xl font-bold text-gray-900">
                   DERMASHATECH

@@ -147,9 +147,12 @@ const Home = () => {
                 transition={{ duration: 0.5 }}
                 className="inline-block mb-6"
               >
-                <div className="w-16 h-16 bg-[#1ba9a0] rounded-xl flex items-center justify-center shadow-lg">
-                  <span className="text-white font-bold text-2xl">D</span>
-                </div>
+                <motion.img
+                  src="/images/logo.png"
+                  alt="DERMASHATECH Logo"
+                  className="h-28 w-auto object-contain drop-shadow-lg"
+                  whileHover={{ scale: 1.1 }}
+                />
               </motion.div>
               
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
