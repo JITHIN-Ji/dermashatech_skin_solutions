@@ -346,6 +346,44 @@ export const hairProducts = [
   suitableFor: 'Thinning hair and early-stage hair loss',
   category: 'hair-device',
   featured: false
+ },
+ {
+  id: 'bosidin-hair-removal-device',
+  name: 'BOSIDIN Hair Removal Device Permanent',
+  subtitle: 'Professional IPL Hair Removal System',
+  image: '/images/hairproducts/12.png',
+  shortDescription: 'A professional-grade IPL (Intense Pulsed Light) hair removal device for permanent hair reduction with safe and effective technology.',
+  suitableFor: 'Body and facial hair removal for all skin tones',
+  keyBenefits: [
+    { text: 'Permanent hair reduction with repeated use' },
+    { text: 'Fast and pain-free treatment' },
+    { text: 'Safe professional-grade IPL technology' },
+    { text: 'Can be used on multiple body areas' },
+    { text: 'Long-lasting results with maintenance' }
+  ],
+  keyIngredient: {
+    name: 'Intense Pulsed Light (IPL) Technology',
+    description: 'Advanced IPL technology targets hair follicles at the root to prevent regrowth while being gentle on surrounding skin.'
+  },
+  texture: {
+    title: 'Device Features',
+    features: [
+      'Professional IPL hair removal',
+      'Multiple power settings',
+      'Skin tone sensor for safety',
+      'Cordless design for convenience'
+    ]
+  },
+  howToUse: [
+    'Start with clean, dry skin',
+    'Select appropriate power level for skin tone',
+    'Apply device to skin and activate',
+    'Move systematically across treatment area',
+    'Treat every 2 weeks for optimal results'
+  ],
+  presentation: 'Professional IPL Device',
+  category: 'hair-removal-device',
+  featured: false
  }
 
  ];

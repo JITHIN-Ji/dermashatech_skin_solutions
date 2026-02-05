@@ -121,7 +121,7 @@ const Home = () => {
     },
     {
       name: "Dr. Nadeer Ahmed",
-      clinic: "Aesthetic Practitioner",
+      clinic: "Aesthetic Theory, Mumbai",
       text: "Dermashatech's cosmetic machines deliver exceptional performance and versatility. With intuitive controls and customizable settings, results are noticeable within just a few sessions. The advanced cooling system and safety features make it a truly all-in-one solution."
     }
   ];

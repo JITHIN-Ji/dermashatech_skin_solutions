@@ -2512,6 +2512,260 @@ export const skinProducts = [
   suitableFor: 'Professional and home use',
   category: 'light-therapy-device',
   featured: false
+ },
+ {
+  id: '24k-gold-serum',
+  name: '24K Gold Serum',
+  subtitle: 'Luxury Anti-Aging Facial Serum',
+  image: '/images/skinproducts/81.png',
+  shortDescription: 'A premium facial serum infused with 24K gold particles to provide luxury skincare with anti-aging and brightening benefits.',
+  keyBenefits: [
+    { text: 'Provides anti-aging and rejuvenation effects' },
+    { text: 'Brightens and illuminates dull skin' },
+    { text: 'Reduces appearance of fine lines and wrinkles' },
+    { text: 'Enhances skin elasticity and firmness' },
+    { text: 'Delivers luxury skincare experience' }
+  ],
+  keyIngredient: {
+    name: '24K Gold Particles',
+    description: 'Premium gold particles provide anti-inflammatory benefits, improve circulation, and deliver a luxurious brightening effect to the skin.'
+  },
+  texture: {
+    title: 'Texture & Absorption',
+    features: [
+      'Lightweight serum with gold particles',
+      'Fast-absorbing formula',
+      'Non-greasy finish with radiant glow'
+    ]
+  },
+  howToUse: [
+    'Cleanse your face thoroughly',
+    'Apply a small amount of serum to face and neck',
+    'Gently massage until fully absorbed',
+    'Follow with moisturizer and sunscreen'
+  ],
+  suitableFor: 'All skin types, especially mature and dull skin',
+  category: 'serum',
+  featured: false
+ },
+ {
+  id: 'ha-hyaluronic-acid-serum-vitamin-c',
+  name: 'HA Hyaluronic Acid Serum Vitamin C',
+  subtitle: 'Advanced Hydration & Brightening Complex',
+  image: '/images/skinproducts/82.png',
+  shortDescription: 'A potent serum combining Hyaluronic Acid and Vitamin C to deeply hydrate, brighten, and protect skin from environmental damage.',
+  keyBenefits: [
+    { text: 'Deep hydration with hyaluronic acid' },
+    { text: 'Brightens and evens skin tone' },
+    { text: 'Powerful antioxidant protection from Vitamin C' },
+    { text: 'Reduces fine lines and promotes collagen synthesis' },
+    { text: 'Suitable for sensitive and reactive skin' }
+  ],
+  keyIngredient: {
+    name: 'Hyaluronic Acid + Vitamin C',
+    description: 'Hyaluronic acid holds moisture for deep hydration while Vitamin C brightens, protects against free radicals, and boosts collagen production.'
+  },
+  texture: {
+    title: 'Texture & Absorption',
+    features: [
+      'Lightweight, hydrating serum',
+      'Quick-absorbing formula',
+      'Non-sticky finish'
+    ]
+  },
+  howToUse: [
+    'Cleanse and dry face completely',
+    'Apply a few drops to face and neck',
+    'Gently pat until absorbed',
+    'Follow with moisturizer and sunscreen (AM)'
+  ],
+  suitableFor: 'All skin types',
+  category: 'serum',
+  featured: false
+ },
+ {
+  id: '24k-ampoule-serum-kygo-gold',
+  name: '24K Ampoule Serum Kygo Gold',
+  subtitle: 'Premium Gold-Infused Ampoule Serum',
+  image: '/images/skinproducts/83.png',
+  shortDescription: 'A concentrated ampoule serum enriched with 24K gold and Kygo technology for intensive anti-aging and skin revitalization.',
+  keyBenefits: [
+    { text: 'Intensive anti-aging treatment' },
+    { text: 'Boosts skin luminosity and radiance' },
+    { text: 'Improves skin texture and smoothness' },
+    { text: 'Reduces wrinkles and fine lines' },
+    { text: 'Provides luxury spa-like treatment at home' }
+  ],
+  keyIngredient: {
+    name: '24K Gold + Kygo Technology',
+    description: 'Premium gold particles combined with Kygo advanced technology deliver intensive rejuvenation, improved circulation, and radiant skin transformation.'
+  },
+  texture: {
+    title: 'Presentation',
+    features: [
+      'Concentrated ampoule format',
+      'Rich, nourishing texture',
+      'Professional-grade treatment'
+    ]
+  },
+  howToUse: [
+    'Use one ampoule per treatment',
+    'Cleanse face thoroughly',
+    'Apply ampoule serum evenly',
+    'Gently massage and leave for absorption',
+    'Follow with night cream for enhanced results'
+  ],
+  suitableFor: 'Mature skin seeking intensive anti-aging',
+  category: 'ampoule-serum',
+  featured: false
+ },
+ {
+  id: 'vitamin-c-face-essence-box',
+  name: 'Vitamin C Face Essence Box',
+  subtitle: 'Multi-Pack Brightening Essence',
+  image: '/images/skinproducts/84.png',
+  shortDescription: 'A set of 20 Vitamin C-infused essence treatments designed to brighten, protect, and rejuvenate skin with daily use.',
+  keyBenefits: [
+    { text: 'Brightens dull and tired skin' },
+    { text: 'Provides powerful antioxidant protection' },
+    { text: 'Improves skin clarity and glow' },
+    { text: 'Boosts collagen production' },
+    { text: 'Convenient daily treatment format' }
+  ],
+  keyIngredient: {
+    name: 'Vitamin C (L-Ascorbic Acid)',
+    description: 'A highly effective brightening and protective ingredient that stimulates collagen synthesis, reduces hyperpigmentation, and shields skin from environmental stressors.'
+  },
+  texture: {
+    title: 'Presentation',
+    features: [
+      'Box of 20 individual essence treatments',
+      'Lightweight essence texture',
+      'Convenient daily use format'
+    ]
+  },
+  howToUse: [
+    'Use one essence daily or as needed',
+    'Cleanse face thoroughly',
+    'Apply essence evenly over face and neck',
+    'Gently massage until absorbed',
+    'Follow with moisturizer'
+  ],
+  suitableFor: 'All skin types seeking brightening and protection',
+  category: 'essence',
+  featured: false
+ },
+ {
+  id: 'carbarn-peel-off-skin-rejuvenation',
+  name: 'Carbarn Peel Off For Skin Rejuvenation',
+  subtitle: 'Carbon-Based Peel-Off Mask',
+  image: '/images/skinproducts/85.png',
+  shortDescription: 'An innovative peel-off mask with carbon technology to deeply cleanse, exfoliate, and rejuvenate skin in one treatment.',
+  keyBenefits: [
+    { text: 'Deep cleansing action removing impurities' },
+    { text: 'Gentle mechanical exfoliation' },
+    { text: 'Reduces pores and improves skin texture' },
+    { text: 'Brightens and revitalizes dull skin' },
+    { text: 'Leaves skin smooth and refreshed' }
+  ],
+  keyIngredient: {
+    name: 'Carbon Particles',
+    description: 'Carbon powder provides deep cleansing, gentle exfoliation, and pore minimization while being safe for sensitive skin.'
+  },
+  texture: {
+    title: 'Presentation & Application',
+    features: [
+      'Peel-off mask format',
+      'Easy application and removal',
+      'Visible carbon particles for cleansing action'
+    ]
+  },
+  howToUse: [
+    'Cleanse face and pat dry',
+    'Apply thin, even layer to face (avoid eyes and lips)',
+    'Wait 15-20 minutes until fully dry',
+    'Gently peel off mask starting from edges',
+    'Rinse any residue and follow with toner and moisturizer'
+  ],
+  suitableFor: 'All skin types, especially oily and congested skin',
+  category: 'mask',
+  featured: false
+ },
+ {
+  id: 'jade-stone-roller-face-massager',
+  name: 'Jade Stone Roller For Face Massager',
+  subtitle: 'Traditional Chinese Jade Facial Tool',
+  image: '/images/skinproducts/86.png',
+  shortDescription: 'A classic jade stone facial roller that provides soothing facial massage, improves circulation, and reduces puffiness with traditional beauty benefits.',
+  keyBenefits: [
+    { text: 'Improves facial circulation and blood flow' },
+    { text: 'Reduces puffiness and inflammation' },
+    { text: 'Enhances product absorption' },
+    { text: 'Provides soothing and relaxing massage' },
+    { text: 'Natural cooling effect when chilled' }
+  ],
+  keyIngredient: {
+    name: 'Natural Jade Stone',
+    description: 'Premium jade stone has been used in traditional Chinese medicine for centuries to promote circulation, calm skin, and provide therapeutic benefits.'
+  },
+  texture: {
+    title: 'Tool Features',
+    features: [
+      'Smooth jade stone surface',
+      'Ergonomic roller design',
+      'Durable and long-lasting',
+      'Can be chilled for enhanced benefits'
+    ]
+  },
+  howToUse: [
+    'Start with clean skin or apply serum/moisturizer',
+    'Chill roller in refrigerator for 5-10 minutes',
+    'Roll gently upward from center of face outward',
+    'Use on cheeks, forehead, and jawline',
+    'Use 5-10 minutes daily for best results'
+  ],
+  suitableFor: 'All skin types',
+  category: 'facial-tool',
+  featured: false
+ },
+
+ {
+  id: 'hair-removal-cooling-gel',
+  name: 'Hair Removal Cooling Gel For Use',
+  subtitle: 'Soothing IPL Treatment Companion',
+  image: '/images/skinproducts/87.png',
+  shortDescription: 'A specialized cooling gel designed to be used with hair removal devices for comfort, skin protection, and enhanced treatment results.',
+  suitableFor: 'Use with IPL and laser hair removal devices',
+  keyBenefits: [
+    { text: 'Soothes skin during hair removal treatment' },
+    { text: 'Provides cooling sensation for comfort' },
+    { text: 'Protects skin from heat damage' },
+    { text: 'Improves light transmission for better results' },
+    { text: 'Reduces redness and irritation post-treatment' }
+  ],
+  keyIngredient: {
+    name: 'Cooling Gel Complex',
+    description: 'Specially formulated gel with cooling agents and skin-soothing ingredients to protect skin during IPL hair removal treatments.'
+  },
+  texture: {
+    title: 'Presentation',
+    features: [
+      'Clear cooling gel',
+      'Non-greasy formula',
+      'Easy to apply and clean',
+      'Dermatologist-tested'
+    ]
+  },
+  howToUse: [
+    'Apply thin layer of gel to treatment area',
+    'Spread evenly across skin',
+    'Use IPL device over gel-covered area',
+    'Wipe off gel after treatment',
+    'Rinse with cool water and pat dry'
+  ],
+  presentation: 'Cooling Gel Tube',
+  category: 'hair-removal-support',
+  featured: false
  }
 
  ];
