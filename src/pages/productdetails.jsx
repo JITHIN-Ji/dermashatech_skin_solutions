@@ -41,13 +41,13 @@ const ProductDetails = () => {
           <motion.button
             whileHover={{ x: -3 }}
             onClick={handleBackClick} 
-            className="inline-flex items-center gap-2 px-0 py-2 mb-8
+            className="inline-flex items-center gap-3 px-0 py-4 mb-16 pt-6
                       text-gray-700 dark:text-gray-300 
                       hover:text-black dark:hover:text-white
                       transition-all text-sm font-medium"
           >
             <ArrowLeft className="w-5 h-5" />
-            <span>{categoryId ? 'Back to Products' : 'Back to Categories'}</span>
+            <span>Back to Machines</span>
           </motion.button>
 
           <motion.div

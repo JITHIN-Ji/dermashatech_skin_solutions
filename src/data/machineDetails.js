@@ -1296,7 +1296,7 @@ export const productDetailsData = [
   "hasResults": true,
   "resultsHeading": "Before & After",
   keyPoints: [
-    "High-power 808nm diode laser technology",
+    "Four wavelengths (755nm / 808nm / 940nm / 1064nm)",
     "Fast and permanent hair removal",
     "Suitable for all hair types and skin types",
     "Pain-free treatment with sapphire cooling system",
@@ -1475,8 +1475,110 @@ export const productDetailsData = [
     "Creates a youthful, glowing complexion"
   ],
   "category": "hydrafacial"
+},
+
+
+{
+  id: 28,
+  name: "T3 AI Intelligent Scalp Analyzer",
+  title: "AI Intelligent Scalp Analyzer",
+  tagline: "Four-Spectrum Imaging + AI Analysis for Scalp Health",
+  description: "T3 AI Intelligent Scalp Analyzer combines ISP image processing, four-spectrum light sensing, and AI algorithms to convert microscopic scalp conditions into visual data and diagnostic reports. It evaluates 13 scalp indicators across five scalp regions to provide objective, professional analysis for salons, clinics, and home use.",
+  mainImage: "/images/machines/55.png",
+  resultImages: [],
+  hasResults: true,
+  resultsHeading: "Scalp Analysis Results",
+  keyPoints: [
+    "Four-spectral imaging (White, Positive Polarized, Negative Polarized, UV 365nm)",
+    "AI-driven analysis with 13 diagnostic indicators",
+    "50x and 200x magnification with HD optics",
+    "Five-part detection: forehead, left, right, top, occiput",
+    "Cloud data storage, custom reports and watermarking"
+  ],
+  specifications: {
+    "Spectra": "White / Positive Polarized / Negative Polarized / UV (365nm)",
+    "Magnification": "50x, 200x",
+    "Imaging": "ISP image processing + AI algorithms",
+    "Report Modes": "Single | Comprehensive | Custom",
+    "Connectivity": "App integration and cloud storage",
+    "Applicable Scenarios": "Beauty salon, Hair salon, Hair transplant clinic, Home use"
+  },
+  testingIndicators: [
+    "Moisture",
+    "Scalp sebum",
+    "Blocked hair follicles",
+    "Dandruff",
+    "Sensitivity",
+    "Red area map",
+    "Gray hair",
+    "Heat Map of Pigment",
+    "Hair density",
+    "Hair thickness",
+    "Hair follicle health",
+    "Heat Map of Sensitivity",
+    "Scalp condition"
+  ],
+  applications: [
+    "Scalp condition diagnosis",
+    "Pre-treatment assessment and post-treatment monitoring",
+    "Hair loss risk evaluation",
+    "Customized treatment and product recommendations",
+    "Clinic and salon consultations; home self-check"
+  ],
+  features: [
+    "Four-spectrum shooting with retake/confirm workflow",
+    "Three testing modes: Comprehensive, Real-time preview, Free mode",
+    "Moisture detection handheld probe",
+    "13 objective detection indicators with heatmaps and overlays",
+    "Comparison mode across timepoints and regions",
+    "Report export, watermarking, and cloud archive",
+    "Backend management and customer file system"
+  ],
+  category: "scalp-analyser"
 }
 
-  
+  ,
+  {
+    id: 29,
+    name: "AUTOMATIC DERMA BED",
+    title: "Automatic Electric Derma Treatment Bed",
+    tagline: "Adjustable Electric Treatment Bed for Clinics & Salons",
+    description: "Automatic Derma Bed designed for professional clinics and salons. Built with thickened steel plate construction and electric adjustments for backrest and legs to ensure patient comfort and efficient treatment workflows.",
+    mainImage: "/images/machines/56.png",
+    resultImages: [],
+    hasResults: false,
+    keyPoints: [
+      "Electric adjustable backrest and leg sections",
+      "Thickened steel plate construction",
+      "Comfortable padded surface with removable covers",
+      "Handrail support and safety features",
+      "Compact footprint for clinic spaces"
+    ],
+    specifications: {
+      "Product Size": "1080 × 870 × 1060 mm",
+      "Product Material": "Thickened steel plate",
+      "Handrail Size": "40 mm",
+      "Height Size": "46.5 mm",
+      "Adjustable Backrest": "0–70°",
+      "Legs Adjustment": "0–70°",
+      "Power": "AC 220V / 50Hz"
+    },
+    applications: [
+      "Medical aesthetic treatments",
+      "Facial and dermal procedures",
+      "Hair and scalp treatments",
+      "General clinic use",
+      "Salon treatment bed"
+    ],
+    features: [
+      "Electric lift and tilt for effortless positioning",
+      "Durable powder-coated steel frame",
+      "Easy-to-clean upholstery",
+      "Safety handrails and cable management",
+      "Stable base with adjustable feet"
+    ],
+    category: "body-toning"
+  }
 ];
+
 

@@ -80,6 +80,22 @@ export const categories = [
     gradient: 'from-fuchsia-100 via-purple-50 to-fuchsia-50'
   },
   {
+    id: 'scalp-analyser',
+    name: 'T3 AI Scalp Analyzer',
+    description: 'AI-powered four-spectral scalp analysis and reporting system',
+    image: '/images/machines/55.png',
+    productIds: [28], // T3 AI Intelligent Scalp Analyzer
+    gradient: 'from-emerald-100 via-teal-50 to-emerald-50'
+  },
+  {
+    id: 'derma-bed',
+    name: 'Derma Beds',
+    description: 'Electric adjustable treatment beds and chairs for clinics and salons',
+    image: '/images/machines/56.png',
+    productIds: [29], // AUTOMATIC DERMA BED
+    gradient: 'from-cyan-100 via-green-50 to-cyan-50'
+  },
+  {
     id: 'body-toning',
     name: 'Body Toning',
     description: 'EMS technology for muscle building and fat reduction',
