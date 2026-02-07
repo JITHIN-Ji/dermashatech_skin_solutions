@@ -55,26 +55,26 @@ export const hairProducts = [
   
   {
     id: 3,
-    name: "B-Complex",
-    image: "/images/hairproducts/hairproduct1.png",
+    name: "BOSIDIN Hair Removal Device",
+    image: "/images/hairproducts/12.png",
     category: "hair"
   },
   {
     id: 4,
-    name: "Biotin Hidrizin",
-    image: "/images/hairproducts/hairproduct4.png",
+    name: "Hair Laser Comb",
+    image: '/images/hairproducts/11.png',
     category: "hair"
   },
   {
     id: 5,
-    name: "Hair Cocktail",
-    image: "/images/hairproducts/hairproduct5.png",
+    name: "Dermaheal HL",
+    image: '/images/hairproducts/10.png',
     category: "hair"
   },
   {
     id: 6,
-    name: "Glutathione Hair Serum",
-    image: "/images/hairproducts/hairproduct6.png",
+    name: "Heating Therapy Laser Cap",
+    image:'/images/hairproducts/9.png',
     category: "hair"
   }
   

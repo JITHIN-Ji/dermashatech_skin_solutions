@@ -22,8 +22,8 @@ const Machines = () => {
   return (
     <div className="pt-16 min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="py-16 bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 flex items-center justify-center min-h-[220px]">
-        <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="py-16 bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

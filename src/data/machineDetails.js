@@ -1287,7 +1287,7 @@ export const productDetailsData = [
 },
 {
   id: 25,
-  name: "808NM DIODE LASER HAIR REMOVAL",
+  name: "808M DIODE LASER HAIR REMOVAL",
   title: "Advanced 808nm Diode Laser Hair Removal Machine",
   tagline: "Permanent Hair Removal Solution - Fast & Painless",
   description: "The 808NM Diode Laser Hair Removal Machine is a state-of-the-art system designed for fast, safe, and permanent hair removal on all skin types. Featuring advanced cooling technology and a high-resolution display, this professional-grade system delivers exceptional results with maximum patient comfort.",
