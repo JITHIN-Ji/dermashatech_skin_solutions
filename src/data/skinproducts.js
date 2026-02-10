@@ -2766,10 +2766,525 @@ export const skinProducts = [
   presentation: 'Cooling Gel Tube',
   category: 'hair-removal-support',
   featured: false
+ },
+ {
+  id: 'bb-glow-kit-cream',
+  name: 'BB Glow Kit BB Cream',
+  subtitle: 'Brightening & Whitening BB Cream Treatment',
+  image: '/images/skinproducts/88.png',
+  shortDescription: 'Professional BB Glow cream kit designed to brighten, whiten, and unify skin tone with buildable coverage and natural finish.',
+  keyBenefits: [
+    { text: 'Brightens and whitens dull skin' },
+    { text: 'Evens out skin tone and hyperpigmentation' },
+    { text: 'Provides buildable medium to full coverage' },
+    { text: 'Long-lasting formula resistant to sweat' },
+    { text: 'Suitable for semi-permanent makeup applications' }
+  ],
+  keyIngredient: {
+    name: 'BB Cream Complex with Brightening Agents',
+    description: 'Advanced BB cream formulation combined with whitening and brightening complexes to provide professional-grade results.'
+  },
+  texture: {
+    title: 'Presentation',
+    features: [
+      'Professional BB cream kit',
+      'Smooth, blendable texture',
+      'Long-wearing formula',
+      'Multiple shades available'
+    ]
+  },
+  howToUse: [
+    'Cleanse and prep skin with moisturizer',
+    'Apply thin layer and blend with brush or sponge',
+    'Build coverage as needed',
+    'Set with powder for extended wear',
+    'Can be used as base for semi-permanent makeup'
+  ],
+  suitableFor: 'All skin types seeking brightening and coverage',
+  category: 'bb-cream',
+  featured: false
+ },
+ {
+  id: 'bb-serum-booster-kit',
+  name: 'BB Serum Booster Kit BB Serum',
+  subtitle: 'Enhanced Brightening Serum Treatment',
+  image: '/images/skinproducts/89.png',
+  shortDescription: 'Professional BB serum booster kit with powerful brightening and skin-boosting properties for enhanced luminosity and skin refinement.',
+  keyBenefits: [
+    { text: 'Intense skin brightening and whitening' },
+    { text: 'Energizes and boosts skin vitality' },
+    { text: 'Improves skin clarity and glow' },
+    { text: 'Lightweight serum format for layering' },
+    { text: 'Fast absorption with immediate visible results' }
+  ],
+  keyIngredient: {
+    name: 'BB Serum Complex with Brightening Peptides',
+    description: 'Potent serum formula combining brightening agents and peptides to deliver professional results for luminous, refined skin.'
+  },
+  texture: {
+    title: 'Presentation & Texture',
+    features: [
+      'Lightweight serum texture',
+      'Non-sticky formula',
+      'Fast-absorbing',
+      'Professional-grade booster'
+    ]
+  },
+  howToUse: [
+    'Apply to cleansed face and neck',
+    'Use morning and evening',
+    'Can layer under moisturizer or BB cream',
+    'Best results with consistent daily application',
+    'Compatible with other skincare products'
+  ],
+  suitableFor: 'All skin types seeking brightening boost',
+  category: 'serum',
+  featured: false
+ },
+ {
+  id: 'bb-glow-mix-serum-cream',
+  name: 'BB Glow Mix BB Serum And Cream Kit',
+  subtitle: 'Complete Brightening System Serum & Cream',
+  image: '/images/skinproducts/90.png',
+  shortDescription: 'Comprehensive BB Glow treatment kit combining serum and cream for synergistic brightening, whitening, and skin rejuvenation.',
+  keyBenefits: [
+    { text: 'Complete two-step brightening system' },
+    { text: 'Serum + cream combination for enhanced results' },
+    { text: 'Brightens and whitens effectively' },
+    { text: 'Deeply hydrates and nourishes skin' },
+    { text: 'Professional results with prolonged effects' }
+  ],
+  keyIngredient: {
+    name: 'BB Brightening Complex + Hydrating Cream Base',
+    description: 'Dual-formula system where the serum delivers active brightening ingredients and the cream locks in hydration and nourishment.'
+  },
+  texture: {
+    title: 'Dual-Format System',
+    features: [
+      'Lightweight BB serum',
+      'Rich nourishing cream',
+      'Complementary formulas',
+      'Professional kit presentation'
+    ]
+  },
+  howToUse: [
+    'Step 1: Apply BB serum to clean skin',
+    'Step 2: Follow with BB cream',
+    'Use morning and evening',
+    'Massage gently until fully absorbed',
+    'Can be used daily or as intensive treatment'
+  ],
+  suitableFor: 'All skin types, especially dry and dull skin',
+  category: 'treatment-kit',
+  featured: false
+ },
+ {
+  id: 'neeravive-kit-capsules-gels',
+  name: 'Neeravive Kit Capsules And Gels',
+  subtitle: 'Advanced Skincare Capsule & Gel System',
+  image: '/images/skinproducts/91.png',
+  shortDescription: 'Professional skincare kit combining innovative capsule technology with gel formulations for targeted skin treatment and visible results.',
+  keyBenefits: [
+    { text: 'Innovative capsule-in-gel technology' },
+    { text: 'Precise ingredient delivery' },
+    { text: 'Targets specific skin concerns' },
+    { text: 'Professional-grade treatment' },
+    { text: 'Visible results with consistent use' }
+  ],
+  keyIngredient: {
+    name: 'Encapsulated Active Ingredients + Gel Base',
+    description: 'Advanced delivery system where active capsules release targeted ingredients through gel matrix for maximum efficacy and absorption.'
+  },
+  texture: {
+    title: 'Presentation & Application',
+    features: [
+      'Dual capsule-gel system',
+      'Precise targeting formulation',
+      'Professional treatment kit',
+      'Easy application method'
+    ]
+  },
+  howToUse: [
+    'Cleanse skin thoroughly',
+    'Apply gel base to treatment area',
+    'Add capsules as directed',
+    'Gently massage and allow absorption',
+    'Use as intensive treatment 2-3 times weekly'
+  ],
+  suitableFor: 'All skin types with specific treatment needs',
+  category: 'treatment-kit',
+  featured: false
+ },
+ {
+  id: 'nee-bright-kit-skin-lightening',
+  name: 'Nee Bright Kit Skin Lightening Cream',
+  subtitle: 'Professional Skin Brightening & Lightening System',
+  image: '/images/skinproducts/92.png',
+  shortDescription: 'Professional-grade skin lightening and brightening cream kit designed to reduce hyperpigmentation and achieve even, radiant complexion.',
+  keyBenefits: [
+    { text: 'Effective skin lightening and whitening' },
+    { text: 'Reduces dark spots and hyperpigmentation' },
+    { text: 'Brightens overall complexion' },
+    { text: 'Safe professional formulation' },
+    { text: 'Visible results in 2-4 weeks' }
+  ],
+  keyIngredient: {
+    name: 'Advanced Lightening Complex with Arbutin & Kojic Acid',
+    description: 'Professional-grade blend of proven lightening agents including arbutin, kojic acid, and brightening peptides for safe, effective skin lightening.'
+  },
+  texture: {
+    title: 'Cream Formulation',
+    features: [
+      'Rich, nourishing cream',
+      'Professional-strength formula',
+      'Non-irritating composition',
+      'Smooth application texture'
+    ]
+  },
+  howToUse: [
+    'Use on clean, dry skin',
+    'Apply morning and evening',
+    'Use SPF 50+ during day (essential)',
+    'Consistent application for best results',
+    'Results visible after 2-4 weeks of use'
+  ],
+  suitableFor: 'Hyperpigmented, dark, and uneven skin tone',
+  category: 'brightening-cream',
+  featured: false
+ },
+ {
+  id: 'hydra-serum-liquid-solution',
+  name: 'Hydra Serum Liquid Solution AS1',
+  subtitle: 'Multi-Option Hydrating Serum Solution',
+  image: '/images/skinproducts/93.png',
+  shortDescription: 'Professional hydrating serum solution available in three specialized formulations (SA1, AS1, AQ1) for customized skin treatment and deep hydration.',
+  keyBenefits: [
+    { text: 'Intense hydration and moisture retention' },
+    { text: 'Three specialized formulations for different needs' },
+    { text: 'Lightweight serum texture' },
+    { text: 'Fast absorption without stickiness' },
+    { text: 'Suitable for all hydration concerns' }
+  ],
+  keyIngredient: {
+    name: 'Hydrating Serum Complex (Multiple Formulations)',
+    description: 'SA1: Soothing & Antioxidant formula | AS1: Advanced Serum formula | AQ1: Aqua-intensive hydration formula. Each targets specific hydration and skin needs.'
+  },
+  texture: {
+    title: 'Presentation & Variants',
+    features: [
+      'SA1 - Soothing & Antioxidant variant',
+      'AS1 - Advanced Serum variant',
+      'AQ1 - Aqua-intensive variant',
+      'Lightweight liquid serum texture'
+    ]
+  },
+  howToUse: [
+    'Choose appropriate variant for your skin type',
+    'Apply to clean face and neck',
+    'Use morning and evening',
+    'Pat in gently for absorption',
+    'Follow with moisturizer for sealed hydration'
+  ],
+  variants: [
+    { name: 'SA1 - Soothing & Antioxidant', description: 'For sensitive and reactive skin' },
+    { name: 'AS1 - Advanced Serum', description: 'For comprehensive skin treatment' },
+    { name: 'AQ1 - Aqua-Intensive', description: 'For dehydrated and ultra-dry skin' }
+  ],
+  suitableFor: 'All skin types, choose variant by specific need',
+  category: 'serum',
+  featured: false
+ },
+ {
+  id: 'charmient-princess-tattoo-pen',
+  name: 'Charmient Princess Tattoo Pen Touch',
+  subtitle: 'Professional Semi-Permanent Makeup Pen',
+  image: '/images/skinproducts/94.png',
+  shortDescription: 'Advanced semi-permanent makeup (micropigmentation) pen with multiple mode options for precise eyebrow, lip, and eyeliner tattooing with professional results.',
+  keyBenefits: [
+    { text: 'Professional-grade micropigmentation device' },
+    { text: 'Multiple mode selections for different techniques' },
+    { text: 'Precise control for detailed work' },
+    { text: 'Comfortable touch design for extended use' },
+    { text: 'Creates natural-looking, long-lasting tattooed makeup' }
+  ],
+  keyIngredient: {
+    name: 'Advanced Tattooing Technology',
+    description: 'High-precision micropigmentation pen with adjustable settings for eyebrow design, lip coloring, eyeliner application, and other semi-permanent makeup procedures.'
+  },
+  texture: {
+    title: 'Device Features',
+    features: [
+      'Ergonomic touch design',
+      'Multiple mode settings (eyes, lips, eyebrows, smile and more)',
+      'Professional-grade precision',
+      'Comfortable grip for extended sessions',
+      'Digital interface display'
+    ]
+  },
+  howToUse: [
+    'Select appropriate mode for desired application',
+    'Connect compatible needle cartridge',
+    'Adjust depth and settings for skin type',
+    'Apply micropigmentation to prepared skin area',
+    'Follow post-care instructions for optimal healing',
+    'Touch-up sessions recommended every 12-18 months'
+  ],
+  suitableFor: 'Semi-permanent makeup for eyebrows, lips, eyeliner, and other facial features',
+  category: 'micropigmentation-device',
+  featured: false
+ },
+ {
+  id: 'charmient-needles-cartridge',
+  name: 'Charmient Needles For Tattoo Pen',
+  subtitle: 'Disposable Needle Cartridges (1R, 3R, 5R, 5F)',
+  image: '/images/skinproducts/95.png',
+  shortDescription: 'Professional disposable needle cartridges designed for Charmient tattoo pens in multiple configurations for various micropigmentation techniques.',
+  keyBenefits: [
+    { text: 'Sterile, single-use needle cartridges' },
+    { text: 'Multiple needle configurations for different techniques' },
+    { text: 'Compatible with Charmient tattoo systems' },
+    { text: 'Ensures precision and safety' },
+    { text: 'Prevents cross-contamination' }
+  ],
+  keyIngredient: {
+    name: 'Medical-Grade Stainless Steel Needles',
+    description: 'Precision-engineered stainless steel needles in different configurations (1R: single round, 3R: triple round, 5R: five round, 5F: five flat) for specific micropigmentation applications.'
+  },
+  texture: {
+    title: 'Needle Configurations',
+    features: [
+      '1R - Single round needle for fine lines and details',
+      '3R - Triple round needle for medium applications',
+      '5R - Five round needle for larger areas',
+      '5F - Five flat needle for shading and fills',
+      'Medical-grade stainless steel',
+      'Individually packaged and sterilized'
+    ]
+  },
+  howToUse: [
+    'Select appropriate needle configuration for your design',
+    'Install cartridge into Charmient tattoo pen',
+    'Ensure secure connection before use',
+    'Use single cartridge for one patron to prevent infection',
+    'Dispose of cartridge after single use',
+    'Store unused cartridges in sterile, dry environment'
+  ],
+  variants: [
+    { name: '1R - Single Round', description: 'Fine lines and detailed work' },
+    { name: '3R - Triple Round', description: 'Medium precision applications' },
+    { name: '5R - Five Round', description: 'Larger shading areas' },
+    { name: '5F - Five Flat', description: 'Full coverage and color fills' }
+  ],
+  suitableFor: 'Professional micropigmentation and semi-permanent makeup procedures',
+  category: 'tattoo-needles',
+  featured: false
+ },
+ {
+  id: 'portable-high-frequency-skin',
+  name: 'Portable High Frequency For Skin T1',
+  subtitle: 'Professional High-Frequency Skin Treatment Device',
+  image: '/images/skinproducts/96.png',
+  shortDescription: 'Portable high-frequency skin treatment device for acne reduction, circulation improvement, and skin rejuvenation with multiple application attachments.',
+  keyBenefits: [
+    { text: 'Reduces acne and bacterial infections' },
+    { text: 'Improves blood circulation and cellular renewal' },
+    { text: 'Minimizes pores and evens skin texture' },
+    { text: 'Portable and easy to use at home or clinic' },
+    { text: 'Non-invasive skin treatment solution' }
+  ],
+  keyIngredient: {
+    name: 'High-Frequency Electrical Technology',
+    description: 'Generates high-frequency electrical currents that kill bacteria, improve circulation, and stimulate skin renewal without damaging healthy tissue.'
+  },
+  texture: {
+    title: 'Device Specifications',
+    features: [
+      'Portable handheld design',
+      'Multiple glass electrode attachments for different areas',
+      'Adjustable frequency settings',
+      'Safe, non-invasive application',
+      'Professional clinical results'
+    ]
+  },
+  howToUse: [
+    'Select appropriate glass electrode for desired application',
+    'Start with lowest frequency setting',
+    'Apply electrode to clean, dry skin',
+    'Move electrode slowly across treatment area',
+    'Use 2-3 minutes per area, 3-4 times weekly',
+    'Best results after 6-8 weeks of regular use'
+  ],
+  suitableFor: 'Acne-prone, oily, congested skin; anti-aging and rejuvenation',
+  category: 'electrotherapy-device',
+  featured: false
+ },
+ {
+  id: 'smb-laser-spot-remover',
+  name: 'SMB Laser Spot Remover Face Lift W',
+  subtitle: 'Professional Laser Spot Removal & Skin Lifting System',
+  image: '/images/skinproducts/97.png',
+  shortDescription: 'Professional-grade laser device combining spot removal and micro-lifting technology with multiple color options for age spots, pigmentation, and skin tightening.',
+  keyBenefits: [
+    { text: 'Effectively removes age spots and dark spots' },
+    { text: 'Reduces pigmentation and skin discoloration' },
+    { text: 'Provides micro-lifting for skin tightening' },
+    { text: 'Non-invasive with minimal downtime' },
+    { text: 'Multiple device color options for different applications' }
+  ],
+  keyIngredient: {
+    name: 'Advanced Laser Technology with Lifting Function',
+    description: 'Combines laser pigmentation removal with micro-lifting thermal effects to address age spots while simultaneously tightening skin for facial lift benefits.'
+  },
+  texture: {
+    title: 'Device Features & Variants',
+    features: [
+      'Professional laser spot remover',
+      'Multiple color/variant options',
+      'Precise targeting for spots and pigmentation',
+      'Integrated skin lifting technology',
+      'Adjustable laser intensity',
+      'Safe for facial and body treatment'
+    ]
+  },
+  howToUse: [
+    'Consult professional before treatment',
+    'Apply protective eyewear',
+    'Prepare skin with cleansing',
+    'Select appropriate laser setting for specific concern',
+    'Apply laser to pigmented areas or treatment zones',
+    'Post-treatment care with SPF and moisturizer essential',
+    'Multiple sessions may be needed for optimal results'
+  ],
+  variants: [
+    { name: 'Option 1 - Standard White', description: 'General spot and pigmentation removal' },
+    { name: 'Option 2 - Pro Gold', description: 'Enhanced lifting with anti-aging benefits' },
+    { name: 'Option 3 - Advanced Black', description: 'Intensive pigmentation targeting' },
+    { name: 'Option 4 - Premium Silver', description: 'Multi-functional comprehensive treatment' }
+  ],
+  suitableFor: 'Age spots, dark spots, hyperpigmentation, and skin tightening',
+  category: 'laser-treatment-device',
+  featured: false
+ },
+{
+  id: 'mini-ozone-cold-plasma-pen',
+  name: 'Mini Ozone Cold Plasma Pen',
+  subtitle: 'Portable Cold Plasma & Ozone Skin Therapy Device',
+  image: '/images/skinproducts/100.png',
+  shortDescription: 'Compact cold plasma pen delivering ozone-enriched plasma for wound healing, skin rejuvenation, and fibroblast stimulation.',
+  keyBenefits: [
+    { text: 'Promotes wound healing and skin regeneration' },
+    { text: 'Stimulates fibroblast activity and collagen production' },
+    { text: 'Antibacterial and antiseptic ozone effect' },
+    { text: 'Non-invasive, precise spot treatment' },
+    { text: 'Portable and easy-to-use for clinic or home use' }
+  ],
+  keyIngredient: {
+    name: 'Cold Plasma with Ozone',
+    description: 'Generates low-temperature plasma combined with controlled ozone release to support tissue repair, disinfection, and cellular stimulation.'
+  },
+  texture: {
+    title: 'Device Features',
+    features: [
+      'Compact handheld design',
+      'Multiple tip attachments for different zones',
+      'Adjustable intensity settings',
+      'Battery-powered and rechargeable',
+      'Safe low-temperature plasma output'
+    ]
+  },
+  howToUse: [
+    'Clean and disinfect treatment area',
+    'Select appropriate tip and attach to the pen',
+    'Start with lowest intensity and increase as needed',
+    'Apply short passes over targeted spots for 1–3 minutes',
+    'Use per manufacturer instructions and avoid prolonged exposure',
+    'Recommended for professional use or under guidance'
+  ],
+  suitableFor: 'Minor skin wounds, acne lesions, post-procedure care, and skin rejuvenation',
+  category: 'plasma-device',
+  featured: false
+},
+{
+  id: 'illuminate-pod-kit',
+  name: 'Illuminate POD',
+  subtitle: 'Complete Skin Illumination & Brightening System',
+  image: '/images/skinproducts/98.png',
+  shortDescription: 'Comprehensive beauty pod system with multiple illuminating and brightening treatments for radiant, glowing skin transformation.',
+  keyBenefits: [
+    { text: 'Complete illumination and brightening system' },
+    { text: 'Multiple product options in one pod' },
+    { text: 'Professional-grade treatment results' },
+    { text: 'Enhances natural skin radiance and glow' },
+    { text: 'Easy-to-use pod format' }
+  ],
+  keyIngredient: {
+    name: 'Advanced Illuminating Complex',
+    description: 'Multi-component brightening system combining illuminating peptides, light-reflecting particles, and skin-radiance enhancers for comprehensive glow.'
+  },
+  texture: {
+    title: 'Pod System Components',
+    features: [
+      'Multiple illuminating treatments',
+      'Complementary product formulas',
+      'Professional-grade formulation',
+      'Easy Pod format for convenience',
+      'Light yellow shade for radiance effect'
+    ]
+  },
+  howToUse: [
+    'Select desired treatment from pod options',
+    'Cleanse face thoroughly',
+    'Apply illuminating treatment as directed',
+    'Massage gently for even coverage',
+    'Allow absorption for optimal glow',
+    'Can be layered with other products',
+    'Use daily or as intensive treatment'
+  ],
+  suitableFor: 'All skin types seeking enhanced radiance and illumination',
+  category: 'illumination-system',
+  featured: false
+ },
+ {
+  id: 'charcoal-mask-deep-cleaning',
+  name: 'Charcoal Mask Deep Cleaning Mask',
+  subtitle: 'Professional Charcoal Detoxifying Mask',
+  image: '/images/skinproducts/99.png',
+  shortDescription: 'Professional-grade charcoal detoxifying mask for deep pore cleansing, impurity removal, and comprehensive skin detoxification.',
+  keyBenefits: [
+    { text: 'Deep pore cleansing and purification' },
+    { text: 'Removes impurities, oil, and toxins' },
+    { text: 'Detoxifies congested skin' },
+    { text: 'Minimizes pores and refines texture' },
+    { text: 'Leaves skin feeling clean and refreshed' }
+  ],
+  keyIngredient: {
+    name: 'Activated Charcoal with Detoxifying Agents',
+    description: 'Medical-grade activated charcoal combined with detoxifying plant extracts to absorb impurities, draw out toxins, and deeply cleanse skin.'
+  },
+  texture: {
+    title: 'Mask Formulation',
+    features: [
+      'Rich, creamy charcoal mask base',
+      'Dark charcoal color for visible detoxification',
+      'Easily spreadable texture',
+      'Professional-grade formulation',
+      'Easy to rinse without residue'
+    ]
+  },
+  howToUse: [
+    'Cleanse face and pat dry',
+    'Apply thin, even layer of charcoal mask',
+    'Avoid eye area and lips',
+    'Leave on for 10-15 minutes or until dry',
+    'Rinse thoroughly with lukewarm water',
+    'Pat dry and apply toner and moisturizer',
+    'Use 1-2 times per week for maintenance'
+  ],
+  suitableFor: 'Oily, congested, acne-prone skin; intensive detoxification treatment',
+  category: 'mask',
+  featured: false
  }
-
- ];
-
+];
 
 
 
@@ -2786,7 +3301,8 @@ export const skinProducts = [
 
 // Helper function to get product by ID
 export const getProductById = (id) => {
-  return skinProducts.find(product => product.id === id);
+  if (!id) return undefined;
+  return skinProducts.find(product => product && product.id === id);
 };
 
 // Helper function to get featured products

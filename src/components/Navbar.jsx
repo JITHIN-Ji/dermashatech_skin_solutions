@@ -60,20 +60,14 @@ const Navbar = () => {
       style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 9999 }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-28">
+        <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
-              className="flex items-center space-x-3 cursor-pointer -ml-2"
+              className="flex items-center space-x-3 cursor-pointer"
             >
-              <motion.img
-                src="/images/logo.png"
-                alt="DERMASHATECH Logo"
-                className="h-16 w-auto object-contain"
-                whileHover={{ scale: 1.05 }}
-              />
               <div>
                 <h1 className="text-lg sm:text-xl font-bold text-gray-900">
                   DERMASHATECH
@@ -174,7 +168,7 @@ const Navbar = () => {
           <div className="hidden lg:flex items-center space-x-4">
             <a
               href="mailto:info@dermashatech.com"
-              className="px-6 py-2 bg-gray-900 text-white text-sm font-medium rounded-lg hover:bg-gray-800 transition-all duration-300"
+              className="px-6 py-2 border-2 border-[#1ba9a0] text-[#1ba9a0] text-sm font-medium rounded-lg hover:bg-[#1ba9a0] hover:text-white transition-all duration-300"
             >
               Get Quote
             </a>

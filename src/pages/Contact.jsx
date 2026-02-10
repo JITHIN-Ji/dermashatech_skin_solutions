@@ -95,8 +95,8 @@ const Contact = () => {
                       <p className="text-gray-900 font-semibold mb-2">DERMASHATECH</p>
                       <p className="text-gray-600 leading-relaxed">
                         Skin Aesthetic Solutions<br />
-                        Shop No 16, Oshiwara Adarsh BLDG. No. 1<br />
-                        SRA, CHS LTD, Near City INT School<br />
+                        Reliable business centre, 2nd floor. Office no 211<br />
+                        Near Heera Panna Mall, Opp cafe safar restaurant<br />
                         Jogeshwari West, Mumbai 400102
                       </p>
                     </div>

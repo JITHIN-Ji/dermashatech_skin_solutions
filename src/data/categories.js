@@ -10,7 +10,6 @@ export const categories = [
   {
     id: 'diode',
     name: 'Diode Laser',
-    description: 'Professional hair removal systems for all skin types',
     image: '/images/machines/3.png',
     productIds: [3, 20, 21, 25], // DIODE HAIR REMOVAL products
     gradient: 'from-blue-100 via-cyan-50 to-blue-50'
@@ -102,6 +101,15 @@ export const categories = [
     image: '/images/machines/40.png',
     productIds: [15, 16,24], // EMSLIM NEO RF, EM SCULPT
     gradient: 'from-orange-100 via-amber-50 to-orange-50'
+  }
+  ,
+  {
+    id: 'device',
+    name: 'Centrifuges',
+    description: 'Clinical centrifuges for PRP and sample processing.',
+    image: '/images/machines/57.png',
+    productIds: [30],
+    gradient: 'from-stone-100 via-slate-50 to-stone-50'
   }
 ];
 

@@ -49,11 +49,11 @@ const HeroSection = () => {
   return (
     <>
       <section
-        className="relative overflow-hidden bg-slate-900"
+        className="relative overflow-hidden bg-white"
         style={{ height: "100vh", minHeight: "500px" }}
       >
-        {/* Background Image Container - starts below fixed navbar (80px) */}
-        <div className="absolute left-0 right-0 top-20 bottom-0 w-full h-full">
+        {/* Background Image Container - starts below fixed navbar */}
+        <div className="absolute left-0 right-0 top-16 bottom-0 w-full h-full">
           <AnimatePresence initial={false}>
             {images.map((img, index) => (
               index === current && (

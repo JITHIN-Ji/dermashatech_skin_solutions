@@ -93,7 +93,8 @@ const Footer = () => {
                 <div className="flex items-start space-x-3">
                   <MapPin className="h-5 w-5 text-purple-500 flex-shrink-0 mt-0.5" />
                   <span className="text-gray-600 text-sm">
-                    Shop No 16, Oshiwara Adarsh BLDG. No. 1<br />
+                    Reliable business centre, 2nd floor. Office no 211<br />
+                    Near Heera Panna Mall, Opp cafe safar restaurant<br />
                     Jogeshwari West, Mumbai 400102
                   </span>
                 </div>

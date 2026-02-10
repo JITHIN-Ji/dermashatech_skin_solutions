@@ -228,9 +228,9 @@ export const hairProducts = [
 //   suitableFor: 'Hair loss treatment and scalp regeneration',
 //   category: 'hair-scalp-therapy',
 //   featured: false
-// }
+// },
 
-,
+
 {
   id: 'intomedi-hr-peptide',
   name: 'Intomedi HR Peptide',
@@ -384,13 +384,101 @@ export const hairProducts = [
   presentation: 'Professional IPL Device',
   category: 'hair-removal-device',
   featured: false
+ },
+ {
+  id: 'jade-comb-hair-growth',
+  name: 'Jade Comb Green For Hair Growth',
+  subtitle: 'Traditional Jade Stone Hair Growth Comb',
+  image: '/images/hairproducts/13.png',
+  shortDescription: 'Premium jade comb with hair growth benefits, combining traditional beauty wisdom with modern scalp care for enhanced hair growth and vitality.',
+  suitableFor: 'All hair types, especially those seeking natural hair growth support',
+  keyBenefits: [
+    { text: 'Stimulates hair growth and follicle health' },
+    { text: 'Improves scalp circulation' },
+    { text: 'Reduces hair fall and breakage' },
+    { text: 'Natural jade stone benefits' },
+    { text: 'Soothing scalp massage therapy' }
+  ],
+  keyIngredient: {
+    name: 'Natural Jade Stone',
+    description: 'Premium natural jade stone combined with comb technology to provide scalp stimulation, improved blood circulation, and traditional hair growth support.'
+  },
+  texture: {
+    title: 'Tool Features',
+    features: [
+      'Authentic natural jade stone',
+      'Smooth, rounded teeth for gentle massage',
+      'Anti-static properties',
+      'Durable and long-lasting',
+      'Beautiful green jade finish'
+    ]
+  },
+  howToUse: [
+    'Use on clean, damp hair',
+    'Comb from roots to ends with gentle pressure',
+    'Focus on scalp area for massage effect',
+    'Use daily for optimal hair growth results',
+    'Can be used as part of scalp treatment routine'
+  ],
+  category: 'hair-growth-tool',
+  featured: true
+ },
+ {
+  id: 'nano-needle-cartridge-set',
+  name: 'Nano Needle Cartridge Set For Hair Treatment',
+  subtitle: 'Precision Microneedling Cartridges (12μm, 36μm, 40μm Options)',
+  image: '/images/hairproducts/14.png',
+  shortDescription: 'Professional-grade nano needle cartridges in multiple sizes for scalp microneedling therapy to stimulate hair growth and improve scalp health.',
+  suitableFor: 'Hair loss treatment, scalp rejuvenation, and hair growth stimulation',
+  keyBenefits: [
+    { text: 'Multiple needle sizes for different treatment depths' },
+    { text: 'Sterile, single-use cartridges' },
+    { text: 'Precise microneedling technology' },
+    { text: 'Stimulates collagen and hair growth factors' },
+    { text: 'Compatible with professional microneedling devices' }
+  ],
+  keyIngredient: {
+    name: 'Medical-Grade Stainless Steel Nano Needles',
+    description: 'Precision-engineered nano needles in different gauges (12μm, 36μm, 40μm) for controlled microneedling depth and optimal hair follicle stimulation.'
+  },
+  texture: {
+    title: 'Needle Size Options',
+    features: [
+      '12μm - Ultra-fine needles for superficial scalp treatment and product penetration',
+      '36μm - Standard microneedling depth for hair follicle stimulation',
+      '40μm - Deep penetration for intensive scalp rejuvenation',
+      'Medical-grade stainless steel construction',
+      'Individually packaged and sterilized cartridges'
+    ]
+  },
+  howToUse: [
+    'Select appropriate needle size for treatment depth needed',
+    'Install cartridge into microneedling pen or device',
+    'Ensure secure connection before use',
+    'Apply anesthetic cream to scalp if needed',
+    'Perform microneedling with gentle, controlled pressure',
+    'Dispose of cartridge after single use',
+    'Apply hair growth serum or treatment post-procedure',
+    'Store unused cartridges in sterile, dry environment'
+  ],
+  variants: [
+    { name: '12μm Ultra-Fine', description: 'Light surface treatment and serum penetration' },
+    { name: '36μm Standard', description: 'Standard depth for optimal hair growth stimulation' },
+    { name: '40μm Deep', description: 'Deep penetration for intensive scalp recovery' },
+    { name: 'Combination Pack', description: 'All three sizes in one set' }
+  ],
+  suitableFor: 'Hair loss prevention, androgenic alopecia, and scalp rejuvenation under professional guidance',
+  category: 'microneedling-cartridge',
+  featured: true
  }
 
  ];
 
 // Helper functions
-export const getProductById = (id) =>
-  hairProducts.find(product => product.id === id);
+export const getProductById = (id) => {
+  if (!id) return undefined;
+  return hairProducts.find(product => product && product.id === id);
+};
 
 export const getAllProducts = () => hairProducts;
 

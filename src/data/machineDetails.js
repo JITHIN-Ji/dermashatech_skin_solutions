@@ -17,7 +17,7 @@ export const productDetailsData = [
     ],
     specifications: {
       "Laser Type": "Picosecond Nd:YAG Laser",
-      "Wavelengths": "1064 nm / 532 nm",
+        mainImage: "/images/machines/remi-centrifuge.svg",
       "Energy": "100–5000 mJ (Adjustable)",
       "Cooling System": "Water + Air Cooling",
       "Pulse Width": "4 ns",
@@ -1578,7 +1578,44 @@ export const productDetailsData = [
       "Stable base with adjustable feet"
     ],
     category: "body-toning"
-  }
+  },
+    
+    {
+      id: 30,
+      name: "REMI CENTRIFUGE",
+      title: "Remi Clinical Centrifuge",
+      tagline: "Compact centrifuge for PRP and sample processing",
+      description: "Compact Remi centrifuge suitable for clinical sample processing, PRP preparation, and small-scale lab procedures in aesthetic clinics.",
+      mainImage: "/images/machines/57.png",
+      resultImages: [],
+      hasResults: false,
+      keyPoints: [
+        "Compact footprint for clinic benches",
+        "Adjustable speed settings",
+        "Safety lid interlock",
+        "Suitable for PRP and sample separation",
+        "Low maintenance"
+      ],
+      specifications: {
+        "Speed Range": "0–4000 RPM",
+        "Rotor Type": "Fixed-angle rotor",
+        "Capacity": "Up to 6 × 10ml tubes",
+        "Power": "AC 220V / 50Hz",
+        "Dimensions": "Approx 20 × 20 × 18 cm"
+      },
+      applications: [
+        "PRP preparation",
+        "Clinical sample separation",
+        "Small lab centrifugation tasks"
+      ],
+      features: [
+        "Easy-to-use speed dial",
+        "Safety interlock lid",
+        "Compact and durable design",
+        "Non-slip feet"
+      ],
+      category: "device"
+    }
 ];
 
 

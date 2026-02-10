@@ -141,20 +141,6 @@ const Home = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <motion.div
-                initial={{ scale: 0 }}
-                whileInView={{ scale: 1 }}
-                transition={{ duration: 0.5 }}
-                className="inline-block mb-6"
-              >
-                <motion.img
-                  src="/images/logo.png"
-                  alt="DERMASHATECH Logo"
-                  className="h-28 w-auto object-contain drop-shadow-lg"
-                  whileHover={{ scale: 1.1 }}
-                />
-              </motion.div>
-              
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                 Advanced Aesthetic Technology
               </h2>
